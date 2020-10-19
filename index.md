@@ -4,7 +4,7 @@ layout: default
 
 ## About
 
-Hey! I'm a Master's student in the [School of Computing](https://cs.kaist.ac.kr/) at [KAIST](https://www.kaist.ac.kr/). I work with [Juho Kim](https://juhokim.com/) as a member of [KIXLAB](https://www.kixlab.org/).
+I am a Master's student in the [School of Computing](https://cs.kaist.ac.kr/) at [KAIST](https://www.kaist.ac.kr/). I work with [Juho Kim](https://juhokim.com/) as a member of [KIXLAB](https://www.kixlab.org/). I'm interested in building interactive systems to support diverse collaborative tasks (from travel planning to UI design). In particular, I aim to introduce various types of technological support (e.g., AI, visualizations, multi-modal input) to enhance communication within collaboration teams.
 
 ## Publications
 
@@ -29,7 +29,7 @@ CHI 2020 Extended Abstract | [acm dl](https://dl.acm.org/doi/10.1145/3334480.338
 M.S. in [School of Computing](https://cs.kaist.ac.kr/), [KAIST](https://www.kaist.ac.kr/)  
 <sup>Mar. 2020 - present</sup>
 
-B.S. in [School of Computing](https://cs.kaist.ac.kr/), [KAIST](https://www.kaist.ac.kr/)]  
+B.S. in [School of Computing](https://cs.kaist.ac.kr/), [KAIST](https://www.kaist.ac.kr/)  
 <sup>Sep. 2015 - Feb. 2020, Magna Cum Laude</sup>
 
 
