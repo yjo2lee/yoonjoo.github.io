@@ -32,6 +32,3 @@ M.S. in School of Computing, KAIST
 <sup>Mar. 2020 - present</sup>  
 B.S. in School of Computing, KAIST  
 <sup>Sep. 2015 - Feb. 2020, Magna Cum Laude</sup>
-
-
-<div style="text-align: right"> <small>Last updated: October 19, 2020</small> </div>
