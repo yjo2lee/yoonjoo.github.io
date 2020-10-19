@@ -34,4 +34,4 @@ B.S. in [School of Computing](https://cs.kaist.ac.kr/), [KAIST](https://www.kais
 <sup>Sep. 2015 - Feb. 2020, Magna Cum Laude</sup>
 
 
-<div style="text-align: right"> <small>Last updated: October 19, 2020</small </div>
+<div style="text-align: right"> <small>Last updated: October 19, 2020</small> </div>
