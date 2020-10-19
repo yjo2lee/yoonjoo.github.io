@@ -2,50 +2,30 @@
 layout: default
 ---
 
-Text can be **bold**, _italic_, or ~~strikethrough~~.
+## About
 
-There should be whitespace between paragraphs.
+About me
 
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
+## Publications
 
-# Header 1
+#### Conference Papers
 
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
+List
 
-## Header 2
+#### Posters, Demos, Workshop Papers
 
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
+List
 
-### Header 3
+## Services
 
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
-```
+**Reviewer:** CSCW2020
 
-```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
-```
+## Education
 
-#### Header 4
-
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-
-##### Header 5
-
-1.  This is an ordered list following a header.
-2.  This is an ordered list following a header.
-3.  This is an ordered list following a header.
+M.S. in [School of Computing](https://cs.kaist.ac.kr/), [KAIST](https://www.kaist.ac.kr/)
+<sup>Mar. 2020 - present</sup>
+B.S. in [School of Computing](https://cs.kaist.ac.kr/), [KAIST](https://www.kaist.ac.kr/)]
+<sup>Sep. 2015 - Feb. 2020, Magna Cum Laude</sup>
 
 ###### Header 6
 
@@ -111,6 +91,8 @@ end
 <dt>Color</dt>
 <dd>Green</dd>
 </dl>
+
+<div style="text-align: right"> Last updated: October 19, 2020 </div>
 
 ```
 Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
