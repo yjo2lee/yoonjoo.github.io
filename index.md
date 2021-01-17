@@ -41,14 +41,17 @@ KICS, Jun. 2018 | [PDF](https://dl.acm.org/doi/10.1145/3334480.3382906){:target=
 From Jan. 2018 to Dec. 2019, as a Research Assistant at the [Electronics and Telecommunications Research Institute(ETRI)](https://www.etri.re.kr/eng/main/main.etri){:target="_blank"}, I worked on performing analysis of Spectral Efficiency for LTE with probabilistic modeling and Deep Neural Network. I also worked on research to predict future Resource Block Usage with stochastic modeling and Recurrent Neural Network. During the research, I was advised by Yunbae Kim.
 
 ## Teaching
-2018.9 ~ 2018.12 : Mentor, Regression Analysis, Ewha Womans University
-_2019.3 ~ 2019.6 : Teaching Assistant, Time Series Analysis, Ewha Womans University_
-_2020.9 ~ 2020.12 : Teaching Assistant, [CS473 Introduction to Social Computing, KAIST](https://www.kixlab.org/courses/cs473-fall-2020/index.html){:target="_blank"}, KAIST_
+Mentor, Regression Analysis, Ewha Womans University
+<sup>Sep. 2018 - Dec. 2018</sup> 
+Teaching Assistant, Time Series Analysis, Ewha Womans University
+<sup>Mar. 2019 - June. 2019</sup> 
+Teaching Assistant, [CS473 Introduction to Social Computing](https://www.kixlab.org/courses/cs473-fall-2020/index.html){:target="_blank"}, KAIST
+<sup>Sep. 2020 - Dec. 2020</sup> 
 
 ## Education
 Ph.D. in School of Computing, KAIST   
 <sup>Sep. 2020 - present</sup> 
-_M.S. in Statistics, Ewha Womans University_
+M.S. in Statistics, Ewha Womans University
 <sup>Mar. 2018 - Feb. 2020</sup>  
-_B.S. in Math Education, Ewha Womans University (Minor: Statistics)_
+B.S. in Math Education, Ewha Womans University (Minor: Statistics)
 <sup>Mar. 2014 - Feb. 2018, Magna Cum Laude</sup>
