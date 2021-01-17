@@ -4,11 +4,10 @@ layout: default
 
 ## About
 
-I am a Master's student in the [School of Computing](https://cs.kaist.ac.kr/){:target="_blank"} at [KAIST](https://www.kaist.ac.kr/){:target="_blank"}. I work with [Juho Kim](https://juhokim.com/){:target="_blank"} as a member of [KIXLAB](https://www.kixlab.org/){:target="_blank"}.
+I am a Ph.D. student in the [School of Computing](https://cs.kaist.ac.kr/){:target="_blank"} at [KAIST](https://www.kaist.ac.kr/){:target="_blank"}. I work with [Juho Kim](https://juhokim.com/){:target="_blank"} as a member of [KIXLAB](https://www.kixlab.org/){:target="_blank"}.
 
 I'm interested in building interactive systems to support diverse collaborative tasks (from travel planning to UI design). In particular, I aim to introduce various types of support (e.g., AI, visualizations, or multi-modal input) to enhance communication within collaboration teams.
 
-I received my bachelor’s degree in Mathematics Education (with a minor in Statistics) master's degree in Statistics from Ewha Womans University.
 
 ## Publications
 
