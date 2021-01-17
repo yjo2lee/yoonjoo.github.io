@@ -42,13 +42,13 @@ From Jan. 2018 to Dec. 2019, as a Research Assistant at the [Electronics and Tel
 
 ## Teaching
 2018.9 ~ 2018.12 : Mentor, Regression Analysis, Ewha Womans University
-2019.3 ~ 2019.6 : Teaching Assistant, Time Series Analysis, Ewha Womans University
-2020.9 ~ 2020.12 : Teaching Assistant, [CS473 Introduction to Social Computing, KAIST](https://www.kixlab.org/courses/cs473-fall-2020/index.html){:target="_blank"}, , KAIST
+_2019.3 ~ 2019.6 : Teaching Assistant, Time Series Analysis, Ewha Womans University_
+_2020.9 ~ 2020.12 : Teaching Assistant, [CS473 Introduction to Social Computing, KAIST](https://www.kixlab.org/courses/cs473-fall-2020/index.html){:target="_blank"}, KAIST_
 
 ## Education
 Ph.D. in School of Computing, KAIST   
 <sup>Sep. 2020 - present</sup> 
-M.S. in Statistics, Ewha Womans University  
+_M.S. in Statistics, Ewha Womans University_
 <sup>Mar. 2018 - Feb. 2020</sup>  
-B.S. in Math Education, Ewha Womans University (Minor: Statistics)
+_B.S. in Math Education, Ewha Womans University (Minor: Statistics)_
 <sup>Mar. 2014 - Feb. 2018, Magna Cum Laude</sup>
