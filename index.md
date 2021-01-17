@@ -8,27 +8,48 @@ I am a Master's student in the [School of Computing](https://cs.kaist.ac.kr/){:t
 
 I'm interested in building interactive systems to support diverse collaborative tasks (from travel planning to UI design). In particular, I aim to introduce various types of support (e.g., AI, visualizations, or multi-modal input) to enhance communication within collaboration teams.
 
+I received my bachelor’s degree in Mathematics Education (with a minor in Statistics) master's degree in Statistics from Ewha Womans University.
+
 ## Publications
 
 #### Conference Papers
 
-[Design for Collaborative Information-Seeking: Understanding User Challenges and Deploying Collaborative Dynamic Queries](https://kixlab.github.io/website-files/2019/cscw2019-ComeTogether-paper.pdf){:target="_blank"}  
-_Sungsoo (Ray) Hong, Minhyang (Mia) Suh, **Tae Soo Kim**, Irina Smoke, Sangwha Sien, Janet Ng, Mark Zachry, Juho Kim_  
-CSCW 2019 | [acm dl](https://dl.acm.org/doi/10.1145/3359208){:target="_blank"}
+[Personalizing Ambience and Illusionary Presence: How People Use “Study with Me” Videos to Create Effective Studying Environments](https://kixlab.github.io/website-files/2019/cscw2019-ComeTogether-paper.pdf){:target="_blank"}  
+_**Yoonjoo Lee**, John Joon Young Chung, Jean Y. Song, Minsuk Chang, and Juho Kim_
+CHI 2021 | [acm dl](https://dl.acm.org/doi/10.1145/3359208){:target="_blank"}
 
-#### Posters, Demos, Workshop Papers
+#### Journal Articles
+[Probabilistic Analysis of Spectral Efficiency for LTE based on PDCCH Measurement Data](https://ieeexplore.ieee.org/document/8750883){:target="_blank"}  
+_**Yoonjoo Lee**, Yunbae Kim, Yeongyu Park, and Seungken Park_
+IEEE Communications Letters, vol. 23, no. 9, Sep. 2019 | [PDF](https://dl.acm.org/doi/10.1145/3359208){:target="_blank"}
 
-[Consensus Building in Collaborative Sequencing with Visual Awareness](https://kixlab.github.io/website-files/2020/chi2020-lbw-CoSeq-paper.pdf){:target="_blank"}  
-_**Tae Soo Kim**, Sungsoo (Ray) Hong, Nitesh Goyal, Jeongyeon Kim, Juho Kim_  
-CHI 2020 Extended Abstract | [acm dl](https://dl.acm.org/doi/10.1145/3334480.3382906){:target="_blank"}
+[A Machine Learning Approach that meets Axiomatic Properties in Probabilistic Analysis of LTE Spectral Efficiency](https://ieeexplore.ieee.org/document/8939989){:target="_blank"}  
+_**Yoonjoo Lee**, Yunbae Kim, and Seungken Park_
+ICTC, Oct. 2019 | [PDF](https://dl.acm.org/doi/10.1145/3359208){:target="_blank"}
 
-## Services
 
-**Reviewer:** CSCW2020
+#### Posters, Workshop Papers
+
+[A Study on the Distribution Analysis of LTE Resource Block Usage from TSME Measurement Data](http://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE07512759&language=ko_KR){:target="_blank"}  
+_**Yoonjoo Lee**, Yunbae Kim, and Seungken Park_ 
+KICS, Jun. 2018 | [PDF](https://dl.acm.org/doi/10.1145/3334480.3382906){:target="_blank"}
+
+[A Study on the Distribution Analysis of LTE Resource Block Usage from TSME Measurement Data](http://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE07512760){:target="_blank"}  
+_Yunbae Kim, **Yoonjoo Lee**, and Seungken Park_ 
+KICS, Jun. 2018 | [PDF](https://dl.acm.org/doi/10.1145/3334480.3382906){:target="_blank"}
+
+## Research Experience
+From Jan. 2018 to Dec. 2019, as a Research Assistant at the [Electronics and Telecommunications Research Institute(ETRI)](https://www.etri.re.kr/eng/main/main.etri){:target="_blank"}, I worked on performing analysis of Spectral Efficiency for LTE with probabilistic modeling and Deep Neural Network. I also worked on research to predict future Resource Block Usage with stochastic modeling and Recurrent Neural Network. During the research, I was advised by Yunbae Kim.
+
+## Teaching
+2018.9 ~ 2018.12 : Mentor, Regression Analysis, Ewha Womans University
+2019.3 ~ 2019.6 : Teaching Assistant, Time Series Analysis, Ewha Womans University
+2020.9 ~ 2020.12 : Teaching Assistant, [CS473 Introduction to Social Computing, KAIST](https://www.kixlab.org/courses/cs473-fall-2020/index.html){:target="_blank"}, , KAIST
 
 ## Education
-
-M.S. in School of Computing, KAIST  
-<sup>Mar. 2020 - present</sup>  
-B.S. in School of Computing, KAIST  
-<sup>Sep. 2015 - Feb. 2020, Magna Cum Laude</sup>
+Ph.D. in School of Computing, KAIST   
+<sup>Sep. 2020 - present</sup> 
+M.S. in Statistics, Ewha Womans University  
+<sup>Mar. 2018 - Feb. 2020</sup>  
+B.S. in Math Education, Ewha Womans University (Minor: Statistics)
+<sup>Mar. 2014 - Feb. 2018, Magna Cum Laude</sup>
