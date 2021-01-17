@@ -12,7 +12,7 @@ My research interest is using data-driven method, especially applying machine le
 
 #### Conference Papers
 
-[Personalizing Ambience and Illusionary Presence: How People Use “Study with Me” Videos to Create Effective Studying Environments](https://kixlab.github.io/website-files/2019/cscw2019-ComeTogether-paper.pdf){:target="_blank"}  
+[Personalizing Ambience and Illusionary Presence: How People Use “Study with Me” Videos to Create Effective Studying Environments](){:target="_blank"}  
 _**Yoonjoo Lee**, John Joon Young Chung, Jean Y. Song, Minsuk Chang, and Juho Kim_\
 CHI 2021 | [acm dl](https://dl.acm.org/doi/10.1145/3359208){:target="_blank"}
 
