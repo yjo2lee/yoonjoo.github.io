@@ -48,7 +48,7 @@ Teaching Assistant, [CS473 Introduction to Social Computing](https://www.kixlab.
 <sup>Sep. 2020 - Dec. 2020</sup> 
 
 ## Education
-Ph.D. in School of Computing, KAIST\ 
+Ph.D. in School of Computing, KAIST \ 
 <sup>Sep. 2020 - present</sup>\
 M.S. in Statistics, Ewha Womans University\
 <sup>Mar. 2018 - Feb. 2020</sup>\
