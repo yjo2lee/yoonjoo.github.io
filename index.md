@@ -16,15 +16,14 @@ My research interest is using data-driven method, especially applying machine le
 _**Yoonjoo Lee**, John Joon Young Chung, Jean Y. Song, Minsuk Chang, and Juho Kim_\
 CHI 2021 | [acm dl](){:target="_blank"}
 
-#### Journal Articles
-[Probabilistic Analysis of Spectral Efficiency for LTE based on PDCCH Measurement Data](https://ieeexplore.ieee.org/document/8750883){:target="_blank"}  
-_**Yoonjoo Lee**, Yunbae Kim, Yeongyu Park, and Seungken Park_\
-IEEE Communications Letters, vol. 23, no. 9, Sep. 2019 | [PDF](){:target="_blank"}
-
 [A Machine Learning Approach that meets Axiomatic Properties in Probabilistic Analysis of LTE Spectral Efficiency](https://ieeexplore.ieee.org/document/8939989){:target="_blank"}  
 _**Yoonjoo Lee**, Yunbae Kim, and Seungken Park_\
 ICTC, Oct. 2019 | [PDF](){:target="_blank"}
 
+#### Journal Articles
+[Probabilistic Analysis of Spectral Efficiency for LTE based on PDCCH Measurement Data](https://ieeexplore.ieee.org/document/8750883){:target="_blank"}  
+_**Yoonjoo Lee**, Yunbae Kim, Yeongyu Park, and Seungken Park_\
+IEEE Communications Letters, vol. 23, no. 9, Sep. 2019 | [PDF](){:target="_blank"}
 
 #### Posters, Workshop Papers
 
