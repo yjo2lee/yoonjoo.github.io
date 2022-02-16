@@ -12,9 +12,13 @@ My research interest is using data-driven method, especially applying machine le
 
 #### Conference Papers
 
+[Promptiverse: Scalable Generation of Scaffolding Prompts Through Human-AI Hybrid Knowledge Graph Annotation](){:target="_blank"}  
+_**Yoonjoo Lee**, John Joon Young Chung, Tae Soo Kim, Jean Y. Song, and Juho Kim_\
+CHI 2022 | [acm dl](){:target="_blank"}
+
 [Personalizing Ambience and Illusionary Presence: How People Use “Study with Me” Videos to Create Effective Studying Environments](){:target="_blank"}  
 _**Yoonjoo Lee**, John Joon Young Chung, Jean Y. Song, Minsuk Chang, and Juho Kim_\
-CHI 2021 | [acm dl](){:target="_blank"}
+CHI 2021 | [acm dl](https://dl.acm.org/doi/10.1145/3411764.3445222)
 
 [A Machine Learning Approach that meets Axiomatic Properties in Probabilistic Analysis of LTE Spectral Efficiency](https://ieeexplore.ieee.org/document/8939989){:target="_blank"}  
 _**Yoonjoo Lee**, Yunbae Kim, and Seungken Park_\
