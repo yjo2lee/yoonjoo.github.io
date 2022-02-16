@@ -31,6 +31,10 @@ IEEE Communications Letters, vol. 23, no. 9, Sep. 2019 | [PDF](){:target="_blank
 
 #### Posters, Workshop Papers
 
+[XDesign: Integrating Interface Design into Explainable AI Education](https://ieeexplore.ieee.org/document/8750883){:target="_blank"}  
+_Hyungyu Shin, Nabila Sindi, **Yoonjoo Lee**, Jaeryoung Ka, Jean Y. Song, and Juho Kim_\
+SIGCSE TS 2022 Posters | [PDF](){:target="_blank"}
+
 [A Study on the Distribution Analysis of LTE Resource Block Usage from TSME Measurement Data](http://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE07512759&language=ko_KR){:target="_blank"}  
 _**Yoonjoo Lee**, Yunbae Kim, and Seungken Park_\
 KICS, Jun. 2018 | [PDF](){:target="_blank"}
