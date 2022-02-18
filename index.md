@@ -52,7 +52,7 @@ Mentor, Regression Analysis, Ewha Womans University\
 Teaching Assistant, Time Series Analysis, Ewha Womans University\
 <sup>Mar. 2019 - June. 2019</sup>\
 Teaching Assistant, [CS473 Introduction to Social Computing](https://www.kixlab.org/courses/cs473-fall-2020/index.html){:target="_blank"}, KAIST\
-<sup>Sep. 2020 - Dec. 2020</sup> 
+<sup>Sep. 2020 - Dec. 2020</sup>\
 Teaching Assistant, [CS473 Introduction to Social Computing](https://www.kixlab.org/courses/cs473-fall-2020/index.html){:target="_blank"}, KAIST\
 <sup>Sep. 2021 - Dec. 2021</sup> 
 
