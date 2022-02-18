@@ -10,7 +10,7 @@ My research interest is using data-driven method, especially applying machine le
 
 ## Publications
 
-#### Conference Papers
+### Conference Papers
 
 [Promptiverse: Scalable Generation of Scaffolding Prompts Through Human-AI Hybrid Knowledge Graph Annotation](https://kixlab.github.io/website-files/2022/chi2022-promptiverse-paper.pdf){:target="_blank"}
 _**Yoonjoo Lee**, John Joon Young Chung, Tae Soo Kim, Jean Y. Song, and Juho Kim_\
@@ -24,12 +24,12 @@ CHI 2021 | [acm dl](https://dl.acm.org/doi/10.1145/3411764.3445222){:target="_bl
 _**Yoonjoo Lee**, Yunbae Kim, and Seungken Park_\
 ICTC, Oct. 2019 | [ieee dl](https://ieeexplore.ieee.org/document/8939989){:target="_blank"}
 
-#### Journal Articles
+### Journal Articles
 [Probabilistic Analysis of Spectral Efficiency for LTE based on PDCCH Measurement Data](https://yoonjoolee.com/assets/papers/IEEE-AnalysisofSpectralEfficiency.pdf){:target="_blank"}  
 _**Yoonjoo Lee**, Yunbae Kim, Yeongyu Park, and Seungken Park_\
 IEEE Communications Letters, vol. 23, no. 9, Sep. 2019 | [ieee dl](https://ieeexplore.ieee.org/document/8750883){:target="_blank"}
 
-#### Posters, Workshop Papers
+### Posters, Workshop Papers
 
 [XDesign: Integrating Interface Design into Explainable AI Education](https://kixlab.github.io/website-files/2022/sigcse2022-poster-XDesign-paper.pdf)
 _Hyungyu Shin, Nabila Sindi, **Yoonjoo Lee**, Jaeryoung Ka, Jean Y. Song, and Juho Kim_\
