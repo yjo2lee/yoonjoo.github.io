@@ -32,11 +32,11 @@ IEEE Communications Letters, vol. 23, no. 9, Sep. 2019 | [ieee dl](https://ieeex
 ### Posters, Workshop Papers
 [Interactive Children’s Story Rewriting Through Parent-Children Interaction](https://kixlab.github.io/website-files/2022/acl2022-workshop-childrenstory-paper.pdf)
 _**Yoonjoo Lee**, Tae Soo Kim, Minsuk Chang, and Juho Kim_\
-ACL 2022 workshop on [In2Writing](https://in2writing.glitch.me/) | [PDF](){:target="_blank"}
+ACL 2022 workshop on [In2Writing](https://in2writing.glitch.me/)
 
 [XDesign: Integrating Interface Design into Explainable AI Education](https://kixlab.github.io/website-files/2022/sigcse2022-poster-XDesign-paper.pdf)
 _Hyungyu Shin, Nabila Sindi, **Yoonjoo Lee**, Jaeryoung Ka, Jean Y. Song, and Juho Kim_\
-SIGCSE TS 2022 Posters | [PDF](){:target="_blank"}
+SIGCSE TS 2022 Posters 
 
 [A Study on the Distribution Analysis of LTE Resource Block Usage from TSME Measurement Data](https://yoonjoolee.com/assets/papers/KICS18_RBUsageAnalysis.pdf){:target="_blank"}  
 _**Yoonjoo Lee**, Yunbae Kim, and Seungken Park_\
@@ -49,15 +49,8 @@ KICS, Jun. 2018 | [PDF](http://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE
 ## Research Experience
 From Jan. 2018 to Dec. 2019, as a Research Assistant at the [Electronics and Telecommunications Research Institute(ETRI)](https://www.etri.re.kr/eng/main/main.etri){:target="_blank"}, I worked on performing analysis of Spectral Efficiency for LTE with probabilistic modeling and Deep Neural Network. I also worked on research to predict future Resource Block Usage with stochastic modeling and Recurrent Neural Network. During the research, I was advised by Yunbae Kim.
 
-## Teaching
-Mentor, Regression Analysis, Ewha Womans University\
-<sup>Sep. 2018 - Dec. 2018</sup>\
-Teaching Assistant, Time Series Analysis, Ewha Womans University\
-<sup>Mar. 2019 - June. 2019</sup>\
-Teaching Assistant, [CS473 Introduction to Social Computing](https://www.kixlab.org/courses/cs473-fall-2020/index.html){:target="_blank"}, KAIST\
-<sup>Sep. 2020 - Dec. 2020</sup>\
-Teaching Assistant, [CS473 Introduction to Social Computing](https://www.kixlab.org/courses/cs473-fall-2020/index.html){:target="_blank"}, KAIST\
-<sup>Sep. 2021 - Dec. 2021</sup> 
+## Services
+Reviewer: CHI 2022, C&C 2022, IEEE TLT
 
 ## Education
 Ph.D. in School of Computing, KAIST\
