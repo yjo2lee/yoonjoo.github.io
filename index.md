@@ -30,6 +30,9 @@ _**Yoonjoo Lee**, Yunbae Kim, Yeongyu Park, and Seungken Park_\
 IEEE Communications Letters, vol. 23, no. 9, Sep. 2019 | [ieee dl](https://ieeexplore.ieee.org/document/8750883){:target="_blank"}
 
 ### Posters, Workshop Papers
+[Interactive Children’s Story Rewriting Through Parent-Children Interaction](https://kixlab.github.io/website-files/2022/acl2022-workshop-childrenstory-paper.pdf)
+_**Yoonjoo Lee**, Tae Soo Kim, Minsuk Chang, and Juho Kim_\
+ACL 2022 workshop on [In2Writing](https://in2writing.glitch.me/) | [PDF](){:target="_blank"}
 
 [XDesign: Integrating Interface Design into Explainable AI Education](https://kixlab.github.io/website-files/2022/sigcse2022-poster-XDesign-paper.pdf)
 _Hyungyu Shin, Nabila Sindi, **Yoonjoo Lee**, Jaeryoung Ka, Jean Y. Song, and Juho Kim_\
