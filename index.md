@@ -11,12 +11,17 @@ My research interest is supporting people to perform tasks ranging from teaching
 ## Publications
 
 ### Conference Papers
+<div style="display: flex; flex-direction: row; gap: 12px;">
+    <div>
+        <a href="https://kixlab.github.io/website-files/2022/chi2022-promptiverse-paper.pdf" target="_blank">
+            Promptiverse: Scalable Generation of Scaffolding Prompts Through Human-AI Hybrid Knowledge Graph Annotation
+        </a>
+        <p style="margin-bottom: 0px"><i><b>Yoonjoo Lee</b>, John Joon Young Chung, Tae Soo Kim, Jean Y. Song, and Juho Kim</i></p>
+        <p>CHI 2022 | <a>acm dl</a></p>
+    </div>
+</div>
 
-[Promptiverse: Scalable Generation of Scaffolding Prompts Through Human-AI Hybrid Knowledge Graph Annotation](https://kixlab.github.io/website-files/2022/chi2022-promptiverse-paper.pdf){:target="_blank"}
-_**Yoonjoo Lee**, John Joon Young Chung, Tae Soo Kim, Jean Y. Song, and Juho Kim_\
-CHI 2022 | [acm dl](){:target="_blank"}
-
-[Personalizing Ambience and Illusionary Presence: How People Use “Study with Me” Videos to Create Effective Studying Environments](https://kixlab.github.io/website-files/2021/chi2021-Studywithme-paper.pdf){:target="_blank"}
+[Personalizing Ambience and Illusionary Presence: How People Use “Study with Me” Videos to Create Effective Studying Environments](https://kixlab.github.io/website-files/2021/chi2021-Studywithme-paper.pdf){:target="_blank"}  
 _**Yoonjoo Lee**, John Joon Young Chung, Jean Y. Song, Minsuk Chang, and Juho Kim_\
 CHI 2021 | [acm dl](https://dl.acm.org/doi/10.1145/3411764.3445222){:target="_blank"} | [video presentation](https://www.youtube.com/watch?v=jm8jTmhHbwI){:target="_blank"}
 
@@ -30,11 +35,11 @@ _**Yoonjoo Lee**, Yunbae Kim, Yeongyu Park, and Seungken Park_\
 IEEE Communications Letters, vol. 23, no. 9, Sep. 2019 | [ieee dl](https://ieeexplore.ieee.org/document/8750883){:target="_blank"}
 
 ### Posters, Workshop Papers
-[Interactive Children’s Story Rewriting Through Parent-Children Interaction](https://kixlab.github.io/website-files/2022/acl2022-workshop-childrenstory-paper.pdf)
+[Interactive Children’s Story Rewriting Through Parent-Children Interaction](https://kixlab.github.io/website-files/2022/acl2022-workshop-childrenstory-paper.pdf){:target="_blank"}  
 _**Yoonjoo Lee**, Tae Soo Kim, Minsuk Chang, and Juho Kim_\
 ACL 2022 workshop on [In2Writing](https://in2writing.glitch.me/)
 
-[XDesign: Integrating Interface Design into Explainable AI Education](https://kixlab.github.io/website-files/2022/sigcse2022-poster-XDesign-paper.pdf)
+[XDesign: Integrating Interface Design into Explainable AI Education](https://kixlab.github.io/website-files/2022/sigcse2022-poster-XDesign-paper.pdf){:target="_blank"}  
 _Hyungyu Shin, Nabila Sindi, **Yoonjoo Lee**, Jaeryoung Ka, Jean Y. Song, and Juho Kim_\
 SIGCSE TS 2022 Posters 
 

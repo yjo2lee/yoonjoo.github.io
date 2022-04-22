@@ -1,7 +1,4 @@
----
----
-
-@import "{{ site.theme }}";
+@import "jekyll-theme-minimal";
 
 .contact {
   display: inline-block;
