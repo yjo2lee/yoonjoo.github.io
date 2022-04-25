@@ -17,7 +17,8 @@ My research interest is supporting people to perform tasks ranging from teaching
             Promptiverse: Scalable Generation of Scaffolding Prompts Through Human-AI Hybrid Knowledge Graph Annotation
         </a>
         <p style="margin-bottom: 0px"><i><b>Yoonjoo Lee</b>, John Joon Young Chung, Tae Soo Kim, Jean Y. Song, and Juho Kim</i></p>
-        <p>CHI 2022 | <a>acm dl</a></p>
+        <p>CHI 2022 | <a>acm dl</a> | <a href="https://promptiverse.kixlab.org" target="_blank">
+            project website</a></p>
     </div>
 </div>
 
