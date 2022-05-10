@@ -57,6 +57,7 @@ From Jan. 2018 to Dec. 2019, as a Research Assistant at the [Electronics and Tel
 
 ## Services
 Reviewer: CHI 2022, C&C 2022, IEEE TLT
+Student Volunteer: CHI 2022
 
 ## Education
 Ph.D. in School of Computing, KAIST\
