@@ -6,7 +6,7 @@ layout: default
 
 I am a Ph.D. student in the [School of Computing](https://cs.kaist.ac.kr/){:target="_blank"} at [KAIST](https://www.kaist.ac.kr/){:target="_blank"}. I work with [Juho Kim](https://juhokim.com/){:target="_blank"} as a member of [KIXLAB](https://www.kixlab.org/){:target="_blank"}.
 
-My research interest is supporting people to perform tasks ranging from teaching, writing, to prototyping effectively by 1) building AI powered systems with humans in the loop and 2) analyzing and adapting large scale data and models. Specifically, one of my research goals is to create computational methods and systems that support scalable teaching and learning using human-AI collaboration.
+My research interest is supporting people to perform tasks ranging from teaching, writing, to prototyping effectively by 1) building AI powered systems with humans in the loop and 2) analyzing and adapting large scale data and models. Specifically, one of my research goals is to create computational methods and systems that support scalable teaching and learning using human-AI collaboration. Currently, I'm starting a research internship at [LG AI Research](https://www.lgresearch.ai/){:target="_blank"}.
 
 ## Publications
 
