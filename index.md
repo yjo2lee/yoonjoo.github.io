@@ -12,6 +12,11 @@ I aim to support tasks with natural language ranging from learning, writing, hav
 ## Publications
 
 ### Conference Papers
+[DAPIE: Interactive Step-by-Step Explanatory Dialogues to Answer Children’s Why and How Questions](https://kixlab.github.io/website-files/2023/chi2023-childQA-paper.pdf){:target="_blank"}  
+_**Yoonjoo Lee**, Tae Soo Kim, Sungdong Kim, Yohan Yun, and Juho Kim_\
+CHI 2023 | [acm dl]{:target="_blank"} | [video presentation](https://www.youtube.com/watch?v=nBdIhI66_vY){:target="_blank"}
+
+
 <div style="display: flex; flex-direction: row; gap: 12px;">
     <div>
         <a href="https://kixlab.github.io/website-files/2022/chi2022-promptiverse-paper.pdf" target="_blank">
@@ -37,6 +42,11 @@ _**Yoonjoo Lee**, Yunbae Kim, Yeongyu Park, and Seungken Park_\
 IEEE Communications Letters, vol. 23, no. 9, Sep. 2019 | [ieee dl](https://ieeexplore.ieee.org/document/8750883){:target="_blank"}
 
 ### Posters, Workshop Papers
+
+[LMCanvas: Object-Oriented Interaction to Personalize Large Language Model-Powered Writing Environments](https://kixlab.github.io/website-files/2023/chi2023-workshop-lmcanvas-paper.pdf){:target="_blank"}  
+_Tae Soo Kim, Arghya Sarkar, **Yoonjoo Lee**, Minsuk Chang, and Juho Kim_\
+CHI 2023 Workshop on Generative AI and HCI
+
 [Interactive Children’s Story Rewriting Through Parent-Children Interaction](https://kixlab.github.io/website-files/2022/acl2022-workshop-childrenstory-paper.pdf){:target="_blank"}  
 _**Yoonjoo Lee**, Tae Soo Kim, Minsuk Chang, and Juho Kim_\
 ACL 2022 workshop on [In2Writing](https://in2writing.glitch.me/)
