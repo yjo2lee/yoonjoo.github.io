@@ -14,7 +14,7 @@ I aim to support tasks with natural language ranging from learning, writing, hav
 ### Conference Papers
 [DAPIE: Interactive Step-by-Step Explanatory Dialogues to Answer Children’s Why and How Questions](https://kixlab.github.io/website-files/2023/chi2023-childQA-paper.pdf){:target="_blank"}  
 _**Yoonjoo Lee**, Tae Soo Kim, Sungdong Kim, Yohan Yun, and Juho Kim_\
-CHI 2023| [video presentation](https://www.youtube.com/watch?v=nBdIhI66_vY){:target="_blank"}
+CHI 2023 | [video presentation](https://www.youtube.com/watch?v=nBdIhI66_vY){:target="_blank"}
 
 
 <div style="display: flex; flex-direction: row; gap: 12px;">
