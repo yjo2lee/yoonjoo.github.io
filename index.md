@@ -6,8 +6,8 @@ layout: default
 
 I am a Ph.D. student in the [School of Computing](https://cs.kaist.ac.kr/){:target="_blank"} at [KAIST](https://www.kaist.ac.kr/){:target="_blank"}. I work with [Juho Kim](https://juhokim.com/){:target="_blank"} as a member of [KIXLAB](https://www.kixlab.org/){:target="_blank"}.
 
-My research interest lies in the intersection of human-computer interaction (HCI) and natural language processing (NLP). 
-I aim to support tasks with natural language ranging from learning, writing, having conversation effectively by 1) building AI powered systems with humans in the loop and 2) analyzing and adapting large scale data and models. Specifically, one of my research goals is to support people to understand information-dense text (e.g., lecture transcript, scientific article) by structuring the information in the context to create conversational questions and answers to scaffold people’s understanding. Currently, I'm starting a research internship at [LG AI Research](https://www.lgresearch.ai/){:target="_blank"}!
+My research interest lies in the intersection of human-computer interaction (HCI), natural language processing (NLP), and Education. I aim to support people to learn from and understand information-dense text (e.g., lecture transcript, scientific article) by structuring the information in the context to create conversational questions and answers to scaffold people’s understanding.   
+
 
 ## Publications
 
@@ -64,10 +64,18 @@ _Yunbae Kim, **Yoonjoo Lee**, and Seungken Park_\
 KICS, Jun. 2018 | [PDF](http://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE07512760){:target="_blank"}
 
 ## Research Experience
-From Jan. 2018 to Dec. 2019, as a Research Assistant at the [Electronics and Telecommunications Research Institute(ETRI)](https://www.etri.re.kr/eng/main/main.etri){:target="_blank"}, I worked on performing analysis of Spectral Efficiency for LTE with probabilistic modeling and Deep Neural Network. I also worked on research to predict future Resource Block Usage with stochastic modeling and Recurrent Neural Network. During the research, I was advised by Yunbae Kim.
+
+[LG AI Research](https://www.etri.re.kr/eng/main/main.etri){:target="_blank"}  
+Research Scientist Intern (Mentor: _Moontae Lee_)
+Nov. 2022 - Mar. 2023
+
+[Electronics and Telecommunications Research Institute(ETRI)](https://www.etri.re.kr/eng/main/main.etri){:target="_blank"}  
+Graduate Research Assistant (Mentor: _Yunbae Kim, and Seungken Park_)
+Jan. 2018 - Dec. 2019
 
 ## Services
-Reviewer: CHI 2022, C&C 2022, IEEE TLT
+Reviewer: CHI 2022-2023, UIST 2022, ACL 2023, CSCW 2023, C&C 2022, IEEE TLT
+Program Committee: CHI LBW 2023
 Student Volunteer: CHI 2022
 
 ## Education
