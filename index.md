@@ -66,16 +66,16 @@ KICS, Jun. 2018 | [PDF](http://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE
 ## Research Experience
 
 [LG AI Research](https://www.lgresearch.ai/){:target="_blank"}  
-Research Scientist Intern (Mentor: _Moontae Lee_)
-Nov. 2022 - Mar. 2023
+Research Scientist Intern (Mentor: _Moontae Lee_)\
+<sup>Nov. 2022 - Mar. 2023</sup>\
 
 [Electronics and Telecommunications Research Institute(ETRI)](https://www.etri.re.kr/eng/main/main.etri){:target="_blank"}  
-Graduate Research Assistant (Mentor: _Yunbae Kim, and Seungken Park_)
-Jan. 2018 - Dec. 2019
+Graduate Research Assistant (Mentor: _Yunbae Kim, and Seungken Park_)\
+<sup>Jan. 2018 - Dec. 2019</sup>\
 
 ## Services
-Reviewer: CHI 2022-2023, UIST 2022, ACL 2023, CSCW 2023, C&C 2022, IEEE TLT
-Program Committee: CHI LBW 2023
+Reviewer: CHI 2022-2023, UIST 2022, ACL 2023, CSCW 2023, C&C 2022, IEEE TLT\
+Program Committee: CHI LBW 2023\
 Student Volunteer: CHI 2022
 
 ## Education
