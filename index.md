@@ -70,7 +70,7 @@ Research Scientist Intern (Mentor: _Moontae Lee_)\
 <sup>Nov. 2022 - Mar. 2023</sup>
 
 [Electronics and Telecommunications Research Institute(ETRI)](https://www.etri.re.kr/eng/main/main.etri){:target="_blank"}  
-Graduate Research Assistant (Mentor: _Yunbae Kim, and Seungken Park_)\
+Graduate Research Assistant (Mentor: _Yunbae Kim and Seungken Park_)\
 <sup>Jan. 2018 - Dec. 2019</sup>
 
 ## Services
