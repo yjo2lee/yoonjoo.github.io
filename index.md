@@ -65,7 +65,7 @@ KICS, Jun. 2018 | [PDF](http://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE
 
 ## Research Experience
 
-[LG AI Research](https://www.etri.re.kr/eng/main/main.etri){:target="_blank"}  
+[LG AI Research](https://www.lgresearch.ai/){:target="_blank"}  
 Research Scientist Intern (Mentor: _Moontae Lee_)
 Nov. 2022 - Mar. 2023
 
