@@ -12,7 +12,7 @@ My research interest lies in the intersection of human-computer interaction (HCI
 ## Publications
 
 ### Conference Papers
-CogQA: Answering Advanced Questions on Scientific Articles (TBD)
+CogQA: Answering Advanced Questions on Scientific Articles (TBD)\
 _**Yoonjoo Lee**\*, Kyungjae Lee\*, Sunghyun Park, Dasol Hwang, Jaehyeon Kim, Hong-in Lee, Moontae Lee_\
 Accepted in ICML 2023
 
