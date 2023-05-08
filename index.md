@@ -12,6 +12,10 @@ My research interest lies in the intersection of human-computer interaction (HCI
 ## Publications
 
 ### Conference Papers
+CogQA: Answering Advanced Questions on Scientific Articles (TBD)
+_**Yoonjoo Lee**\*, Kyungjae Lee\*, Sunghyun Park, Dasol Hwang, Jaehyeon Kim, Hong-in Lee, Moontae Lee_\
+Accepted in ICML 2023
+
 [DAPIE: Interactive Step-by-Step Explanatory Dialogues to Answer Children’s Why and How Questions](https://kixlab.github.io/website-files/2023/chi2023-childQA-paper.pdf){:target="_blank"}  
 _**Yoonjoo Lee**, Tae Soo Kim, Sungdong Kim, Yohan Yun, and Juho Kim_\
 CHI 2023 | [acm dl](https://dl.acm.org/doi/10.1145/3544548.3581369){:target="_blank"} | [video presentation](https://www.youtube.com/watch?v=nBdIhI66_vY){:target="_blank"}
@@ -64,6 +68,9 @@ _Yunbae Kim, **Yoonjoo Lee**, and Seungken Park_\
 KICS, Jun. 2018 | [PDF](http://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE07512760){:target="_blank"}
 
 ## Research Experience
+[Allen Institute for AI (AI2)](https://allenai.org/){:target="_blank"}  
+Research Scientist Intern (Mentor: _Pao Siangliulue_)\
+<sup>May 2023 - </sup>
 
 [LG AI Research](https://www.lgresearch.ai/){:target="_blank"}  
 Research Scientist Intern (Mentor: _Moontae Lee_)\
