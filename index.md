@@ -27,7 +27,7 @@ CHI 2023 | [acm dl](https://dl.acm.org/doi/10.1145/3544548.3581369){:target="_bl
             Promptiverse: Scalable Generation of Scaffolding Prompts Through Human-AI Hybrid Knowledge Graph Annotation
         </a>
         <p style="margin-bottom: 0px"><i><b>Yoonjoo Lee</b>, John Joon Young Chung, Tae Soo Kim, Jean Y. Song, and Juho Kim</i></p>
-        <p>CHI 2022 | <a>acm dl</a> | <a href="https://www.youtube.com/watch?v=jvtsD73-Hqw" target="_blank">
+        <p>CHI 2022 | <a href="https://dl.acm.org/doi/abs/10.1145/3491102.3502087" target="_blank">acm dl</a> | <a href="https://www.youtube.com/watch?v=jvtsD73-Hqw" target="_blank">
             video presentation</a> | <a href="https://promptiverse.kixlab.org" target="_blank">
             project website</a></p>
     </div>
