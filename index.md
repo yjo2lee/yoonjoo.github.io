@@ -6,7 +6,7 @@ layout: default
 
 I am a Ph.D. student in the [School of Computing](https://cs.kaist.ac.kr/){:target="_blank"} at [KAIST](https://www.kaist.ac.kr/){:target="_blank"}. I work with [Juho Kim](https://juhokim.com/){:target="_blank"} as a member of [KIXLAB](https://www.kixlab.org/){:target="_blank"}.
 
-My research interest lies in the intersection of human-computer interaction (HCI), natural language processing (NLP), and Education. I aim to support people to learn from and understand information-dense text (e.g., lecture transcript, scientific article) by structuring the information in the context to create conversational questions and answers to scaffold people’s understanding.   
+My research interest lies in the intersection of human-computer interaction (HCI), natural language processing (NLP), and education. I aim to support people to learn from and understand information-dense text (e.g., lecture transcript, scientific article) by structuring the information in the context to create conversational questions and answers to scaffold people’s understanding.   
 
 
 ## Publications
@@ -18,7 +18,7 @@ Accepted in ICML 2023
 
 [DAPIE: Interactive Step-by-Step Explanatory Dialogues to Answer Children’s Why and How Questions](https://kixlab.github.io/website-files/2023/chi2023-childQA-paper.pdf){:target="_blank"}  
 _**Yoonjoo Lee**, Tae Soo Kim, Sungdong Kim, Yohan Yun, and Juho Kim_\
-CHI 2023 | [acm dl](https://dl.acm.org/doi/10.1145/3544548.3581369){:target="_blank"} | [video presentation](https://www.youtube.com/watch?v=nBdIhI66_vY){:target="_blank"}
+CHI 2023 | [acm dl](https://dl.acm.org/doi/10.1145/3544548.3581369){:target="_blank"} | [video presentation](https://www.youtube.com/watch?v=nBdIhI66_vY){:target="_blank"} | [project website](https://dapie.kixlab.org/){:target="_blank"}
 
 
 <div style="display: flex; flex-direction: row; gap: 12px;">
@@ -27,7 +27,8 @@ CHI 2023 | [acm dl](https://dl.acm.org/doi/10.1145/3544548.3581369){:target="_bl
             Promptiverse: Scalable Generation of Scaffolding Prompts Through Human-AI Hybrid Knowledge Graph Annotation
         </a>
         <p style="margin-bottom: 0px"><i><b>Yoonjoo Lee</b>, John Joon Young Chung, Tae Soo Kim, Jean Y. Song, and Juho Kim</i></p>
-        <p>CHI 2022 | <a>acm dl</a> | <a href="https://promptiverse.kixlab.org" target="_blank">
+        <p>CHI 2022 | <a>acm dl</a> | <a href="https://www.youtube.com/watch?v=jvtsD73-Hqw" target="_blank">
+            video presentation</a> | <a href="https://promptiverse.kixlab.org" target="_blank">
             project website</a></p>
     </div>
 </div>
