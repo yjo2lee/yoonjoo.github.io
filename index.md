@@ -6,8 +6,7 @@ layout: default
 
 I am a Ph.D. student in the [School of Computing](https://cs.kaist.ac.kr/){:target="_blank"} at [KAIST](https://www.kaist.ac.kr/){:target="_blank"}. I work with [Juho Kim](https://juhokim.com/){:target="_blank"} as a member of [KIXLAB](https://www.kixlab.org/){:target="_blank"}.
 
-My research interest lies in the intersection of human-computer interaction (HCI), natural language processing (NLP), and education. I aim to support people to learn from and understand information-dense text (e.g., lecture transcript, scientific article) by structuring the information in the context to create conversational questions and answers to scaffold people’s understanding.   
-
+My research interest lies in the intersection of human-computer interaction (HCI), natural language processing (NLP), and education. I aim to support people to learn from and understand information-dense text (e.g., lecture transcript, scientific article) by structuring the information in the context to create conversational questions and answers to scaffold people’s understanding. 
 
 ## Publications
 
@@ -82,7 +81,7 @@ Graduate Research Assistant (Mentor: _Yunbae Kim and Seungken Park_)\
 <sup>Jan. 2018 - Dec. 2019</sup>
 
 ## Services
-Reviewer: CHI 2022-2023, UIST 2022, ACL 2023, CSCW 2023, C&C 2022, IEEE TLT\
+Reviewer: CHI 2022-2023, UIST 2022-2023, ACL 2023, CSCW 2023, C&C 2022, IEEE TLT\
 Program Committee: CHI LBW 2023\
 Student Volunteer: CHI 2022
 
