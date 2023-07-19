@@ -11,7 +11,7 @@ My research interest lies in the intersection of human-computer interaction (HCI
 ## Publications
 
 ### Conference Papers
-QASA: Answering Advanced Questions on Scientific Articles\
+[QASA: Answering Advanced Questions on Scientific Articles](https://yoonjoolee.com/assets/papers/QASA_ICML2023.pdf){:target="_blank"}
 _**Yoonjoo Lee**\*, Kyungjae Lee\*, Sunghyun Park, Dasol Hwang, Jaehyeon Kim, Hong-in Lee, and Moontae Lee_\
 Accepted in ICML 2023
 
