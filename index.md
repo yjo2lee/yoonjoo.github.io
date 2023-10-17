@@ -11,13 +11,13 @@ My research interest lies in the intersection of human-computer interaction (HCI
 ## Publications
 
 ### Conference Papers
-[Cells, Generators, and Lenses: Design Framework for Object-Oriented Interaction with Large Language Models](https://kixlab.github.io/website-files/2023/uist2023-llmobjects-paper.pdf){:target="_blank"}  
-_Tae Soo Kim, **Yoonjoo Lee**, Minsuk Chang, and Juho Kim_\
-UIST 2023 | [project website](https://llm-objects.kixlab.org/){:target="_blank"}
-
 [QASA: Answering Advanced Questions on Scientific Articles](https://yoonjoolee.com/assets/papers/QASA_ICML2023.pdf){:target="_blank"}\
 _**Yoonjoo Lee**\*, Kyungjae Lee\*, Sunghyun Park, Dasol Hwang, Jaehyeon Kim, Hong-in Lee, and Moontae Lee_\
 ICML 2023 | [data link](https://github.com/lgresearch/QASA){:target="_blank"}
+
+[Cells, Generators, and Lenses: Design Framework for Object-Oriented Interaction with Large Language Models](https://kixlab.github.io/website-files/2023/uist2023-llmobjects-paper.pdf){:target="_blank"}  
+_Tae Soo Kim, **Yoonjoo Lee**, Minsuk Chang, and Juho Kim_\
+UIST 2023 | [project website](https://llm-objects.kixlab.org/){:target="_blank"}
 
 [DAPIE: Interactive Step-by-Step Explanatory Dialogues to Answer Children’s Why and How Questions](https://kixlab.github.io/website-files/2023/chi2023-childQA-paper.pdf){:target="_blank"}  
 _**Yoonjoo Lee**, Tae Soo Kim, Sungdong Kim, Yohan Yun, and Juho Kim_\
