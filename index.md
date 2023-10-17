@@ -44,7 +44,14 @@ CHI 2021 | [acm dl](https://dl.acm.org/doi/10.1145/3411764.3445222){:target="_bl
 _**Yoonjoo Lee**, Yunbae Kim, and Seungken Park_\
 ICTC, Oct. 2019 | [ieee dl](https://ieeexplore.ieee.org/document/8939989){:target="_blank"}
 
+### Preprints
+
+[EvalLM: Interactive Evaluation of Large Language Model Prompts on User-Defined Criteria](https://arxiv.org/pdf/2309.13633.pdf){:target="_blank"}  
+_Tae Soo Kim, **Yoonjoo Lee**, Jamin Shin, Young-Ho Kim, and Juho Kim_\
+arXiv (September 2023) | [arxiv](https://arxiv.org/pdf/2309.13633.pdf){:target="_blank"} | [video](https://www.youtube.com/watch?v=7hvTnhiCO7Y){:target="_blank"}
+
 ### Journal Articles
+
 [Probabilistic Analysis of Spectral Efficiency for LTE based on PDCCH Measurement Data](https://yoonjoolee.com/assets/papers/IEEE-AnalysisofSpectralEfficiency.pdf){:target="_blank"}  
 _**Yoonjoo Lee**, Yunbae Kim, Yeongyu Park, and Seungken Park_\
 IEEE Communications Letters, vol. 23, no. 9, Sep. 2019 | [ieee dl](https://ieeexplore.ieee.org/document/8750883){:target="_blank"}
@@ -73,7 +80,7 @@ KICS, Jun. 2018 | [PDF](http://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE
 
 ## Research Experience
 [Allen Institute for AI (AI2)](https://allenai.org/){:target="_blank"}  
-Research Scientist Intern (Mentor: _Pao Siangliulue_)\
+Research Scientist Intern (Mentor: _Pao Siangliulue, Joseph Chee Chang, Jonathan Bragg, Kyle Lo_)\
 <sup>May 2023 - </sup>
 
 [LG AI Research](https://www.lgresearch.ai/){:target="_blank"}  
@@ -85,7 +92,7 @@ Graduate Research Assistant (Mentor: _Yunbae Kim and Seungken Park_)\
 <sup>Jan. 2018 - Dec. 2019</sup>
 
 ## Services
-Reviewer: CHI 2022-2023, UIST 2022-2023, ACL 2023, CSCW 2023, C&C 2022, IEEE TLT\
+Reviewer: EMNLP 2023, CHI 2022-2023, UIST 2022-2023, ACL 2023, CSCW 2023, C&C 2022, IEEE TLT\
 Program Committee: CHI LBW 2023\
 Student Volunteer: CHI 2022
 
