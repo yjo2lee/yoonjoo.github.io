@@ -40,7 +40,7 @@ p {
 a:hover {
   font-weight: normal;
   color:#88b9dc;
-  fill: #267CB9;
+  fill: #88b9dc;
 }
 
 a {
@@ -57,7 +57,7 @@ section {
 }
 
 .fa-2x {
-    font-size: 2em;
+    font-size: 2.2em;
 }
 
 @media print, screen and (max-width: 1080px) {
