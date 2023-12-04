@@ -39,11 +39,13 @@ p {
 
 a:hover {
   font-weight: normal;
-  color:#88b9dc
+  color:#88b9dc;
+  fill: #267CB9;
 }
 
 a {
   transition: 0.3s;
+  fill: #267CB9;
 }
 
 .wrapper {
@@ -52,6 +54,10 @@ a {
 
 section {
   width: 680px;
+}
+
+.fa-2x {
+    font-size: 2em;
 }
 
 @media print, screen and (max-width: 1080px) {
