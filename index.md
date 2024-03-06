@@ -11,6 +11,23 @@ My research interest lies in the intersection of human-computer interaction (HCI
 ## Publications
 
 ### Conference Papers
+
+One vs. Many: Comprehending Accurate Information from Multiple Erroneous and Inconsistent AI Generations
+_**Yoonjoo Lee**, Kihoon Son, Tae Soo Kim, Jisu Kim, John Joon Young Chung, Eytan Adar, Juho Kim_\
+Under review
+
+[PaperWeaver: Enriching Topical Paper Alerts by Contextualizing Recommended Papers with User-collected Papers](https://arxiv.org/pdf/2403.02939.pdf){:target="_blank"}  
+_**Yoonjoo Lee**, Hyeonsu B Kang, Matt Latzke, Juho Kim, Jonathan Bragg, Joseph Chee Chang, and Pao Siangliulue_\
+Accepted in CHI2024 | [arxiv](https://arxiv.org/pdf/2403.02939.pdf){:target="_blank"}
+
+[EvalLM: Interactive Evaluation of Large Language Model Prompts on User-Defined Criteria](https://arxiv.org/pdf/2309.13633.pdf){:target="_blank"}  
+_Tae Soo Kim, **Yoonjoo Lee**, Jamin Shin, Young-Ho Kim, and Juho Kim_\
+Accepted in CHI2024 | [arxiv](https://arxiv.org/pdf/2309.13633.pdf){:target="_blank"} | [video](https://www.youtube.com/watch?v=7hvTnhiCO7Y){:target="_blank"}
+
+VIVID: Human-AI Collaborative Authoring of Vicarious Dialogues from Lecture Videos
+_Seulgi Choi, Hyewon Lee, **Yoonjoo Lee**, and Juho Kim_\
+Accepted in CHI2024 | [arxiv](https://arxiv.org/pdf/2309.13633.pdf){:target="_blank"} | [video](https://www.youtube.com/watch?v=7hvTnhiCO7Y){:target="_blank"}
+
 [QASA: Answering Advanced Questions on Scientific Articles](https://yoonjoolee.com/assets/papers/QASA_ICML2023.pdf){:target="_blank"}\
 _**Yoonjoo Lee**\*, Kyungjae Lee\*, Sunghyun Park, Dasol Hwang, Jaehyeon Kim, Hong-in Lee, and Moontae Lee_\
 ICML 2023 | [data link](https://github.com/lgresearch/QASA){:target="_blank"}
@@ -51,6 +68,10 @@ _Tae Soo Kim, **Yoonjoo Lee**, Jamin Shin, Young-Ho Kim, and Juho Kim_\
 arXiv (September 2023) | [arxiv](https://arxiv.org/pdf/2309.13633.pdf){:target="_blank"} | [video](https://www.youtube.com/watch?v=7hvTnhiCO7Y){:target="_blank"}
 
 ### Journal Articles
+
+[Forecasting realized volatility using data normalization and recurrent neural network](https://yoonjoolee.com/assets/papers/CSAM_RV_paper.pdf){:target="_blank"}  
+_**Yoonjoo Lee**, Dong Wan Shin, and Ji Eun Choi_\
+Communications for Statistical Applications and Methods, Vol. 31, No. 1, 1–23, 2024
 
 [Probabilistic Analysis of Spectral Efficiency for LTE based on PDCCH Measurement Data](https://yoonjoolee.com/assets/papers/IEEE-AnalysisofSpectralEfficiency.pdf){:target="_blank"}  
 _**Yoonjoo Lee**, Yunbae Kim, Yeongyu Park, and Seungken Park_\
