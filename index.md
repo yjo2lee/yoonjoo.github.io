@@ -12,7 +12,7 @@ My research interest lies in the intersection of human-computer interaction (HCI
 
 ### Conference Papers
 
-One vs. Many: Comprehending Accurate Information from Multiple Erroneous and Inconsistent AI Generations
+One vs. Many: Comprehending Accurate Information from Multiple Erroneous and Inconsistent AI Generations\
 _**Yoonjoo Lee**, Kihoon Son, Tae Soo Kim, Jisu Kim, John Joon Young Chung, Eytan Adar, Juho Kim_\
 Under review
 
