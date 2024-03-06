@@ -61,11 +61,6 @@ CHI 2021 | [acm dl](https://dl.acm.org/doi/10.1145/3411764.3445222){:target="_bl
 _**Yoonjoo Lee**, Yunbae Kim, and Seungken Park_\
 ICTC, Oct. 2019 | [ieee dl](https://ieeexplore.ieee.org/document/8939989){:target="_blank"}
 
-### Preprints
-
-[EvalLM: Interactive Evaluation of Large Language Model Prompts on User-Defined Criteria](https://arxiv.org/pdf/2309.13633.pdf){:target="_blank"}  
-_Tae Soo Kim, **Yoonjoo Lee**, Jamin Shin, Young-Ho Kim, and Juho Kim_\
-arXiv (September 2023) | [arxiv](https://arxiv.org/pdf/2309.13633.pdf){:target="_blank"} | [video](https://www.youtube.com/watch?v=7hvTnhiCO7Y){:target="_blank"}
 
 ### Journal Articles
 
