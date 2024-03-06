@@ -26,7 +26,7 @@ Accepted in CHI2024 | [arxiv](https://arxiv.org/pdf/2309.13633.pdf){:target="_bl
 
 VIVID: Human-AI Collaborative Authoring of Vicarious Dialogues from Lecture Videos\
 _Seulgi Choi, Hyewon Lee, **Yoonjoo Lee**, and Juho Kim_\
-Accepted in CHI2024 | [arxiv](https://arxiv.org/pdf/2309.13633.pdf){:target="_blank"} | [video](https://www.youtube.com/watch?v=7hvTnhiCO7Y){:target="_blank"}
+Accepted in CHI2024 
 
 [QASA: Answering Advanced Questions on Scientific Articles](https://yoonjoolee.com/assets/papers/QASA_ICML2023.pdf){:target="_blank"}\
 _**Yoonjoo Lee**\*, Kyungjae Lee\*, Sunghyun Park, Dasol Hwang, Jaehyeon Kim, Hong-in Lee, and Moontae Lee_\
