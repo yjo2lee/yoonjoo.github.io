@@ -24,7 +24,7 @@ Accepted in CHI2024 | [arxiv](https://arxiv.org/pdf/2403.02939.pdf){:target="_bl
 _Tae Soo Kim, **Yoonjoo Lee**, Jamin Shin, Young-Ho Kim, and Juho Kim_\
 Accepted in CHI2024 | [arxiv](https://arxiv.org/pdf/2309.13633.pdf){:target="_blank"} | [video](https://www.youtube.com/watch?v=7hvTnhiCO7Y){:target="_blank"}
 
-VIVID: Human-AI Collaborative Authoring of Vicarious Dialogues from Lecture Videos
+VIVID: Human-AI Collaborative Authoring of Vicarious Dialogues from Lecture Videos\
 _Seulgi Choi, Hyewon Lee, **Yoonjoo Lee**, and Juho Kim_\
 Accepted in CHI2024 | [arxiv](https://arxiv.org/pdf/2309.13633.pdf){:target="_blank"} | [video](https://www.youtube.com/watch?v=7hvTnhiCO7Y){:target="_blank"}
 
