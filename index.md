@@ -12,9 +12,9 @@ My research interest lies in the intersection of human-computer interaction (HCI
 
 ### Conference Papers
 
-One vs. Many: Comprehending Accurate Information from Multiple Erroneous and Inconsistent AI Generations\
+[One vs. Many: Comprehending Accurate Information from Multiple Erroneous and Inconsistent AI Generations](https://arxiv.org/abs/2405.05581){:target="_blank"}
 _**Yoonjoo Lee**, Kihoon Son, Tae Soo Kim, Jisu Kim, John Joon Young Chung, Eytan Adar, Juho Kim_\
-Under review
+Accepted in FAccT | [arxiv](https://arxiv.org/abs/2405.05581){:target="_blank"}
 
 [PaperWeaver: Enriching Topical Paper Alerts by Contextualizing Recommended Papers with User-collected Papers](https://arxiv.org/pdf/2403.02939.pdf){:target="_blank"}  
 _**Yoonjoo Lee**, Hyeonsu B Kang, Matt Latzke, Juho Kim, Jonathan Bragg, Joseph Chee Chang, and Pao Siangliulue_\
@@ -73,6 +73,10 @@ _**Yoonjoo Lee**, Yunbae Kim, Yeongyu Park, and Seungken Park_\
 IEEE Communications Letters, vol. 23, no. 9, Sep. 2019 | [ieee dl](https://ieeexplore.ieee.org/document/8750883){:target="_blank"}
 
 ### Posters, Workshop Papers
+
+[How to Reflect Diverse People's Perspectives in Large-Scale LLM-based Evaluations?](https://heal-workshop.github.io/papers/34_how_to_reflect_diverse_people_.pdf){:target="_blank"}
+_**Yoonjoo Lee**, Tae Soo Kim, and Juho Kim_\
+CHI 2024 Workshop on Human-centered Evaluation and Auditing of Language Models
 
 [LMCanvas: Object-Oriented Interaction to Personalize Large Language Model-Powered Writing Environments](https://kixlab.github.io/website-files/2023/chi2023-workshop-lmcanvas-paper.pdf){:target="_blank"}  
 _Tae Soo Kim, Arghya Sarkar, **Yoonjoo Lee**, Minsuk Chang, and Juho Kim_\
