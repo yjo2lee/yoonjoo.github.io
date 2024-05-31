@@ -12,7 +12,7 @@ My research interest lies in the intersection of human-computer interaction (HCI
 
 ### Conference Papers
 
-[One vs. Many: Comprehending Accurate Information from Multiple Erroneous and Inconsistent AI Generations](https://arxiv.org/abs/2405.05581){:target="_blank"}
+[One vs. Many: Comprehending Accurate Information from Multiple Erroneous and Inconsistent AI Generations](https://arxiv.org/abs/2405.05581){:target="_blank"}\
 _**Yoonjoo Lee**, Kihoon Son, Tae Soo Kim, Jisu Kim, John Joon Young Chung, Eytan Adar, Juho Kim_\
 Accepted in FAccT | [arxiv](https://arxiv.org/abs/2405.05581){:target="_blank"}
 
@@ -24,7 +24,7 @@ Accepted in CHI2024 | [arxiv](https://arxiv.org/pdf/2403.02939.pdf){:target="_bl
 _Tae Soo Kim, **Yoonjoo Lee**, Jamin Shin, Young-Ho Kim, and Juho Kim_\
 Accepted in CHI2024 | [arxiv](https://arxiv.org/pdf/2309.13633.pdf){:target="_blank"} | [video](https://www.youtube.com/watch?v=7hvTnhiCO7Y){:target="_blank"}
 
-VIVID: Human-AI Collaborative Authoring of Vicarious Dialogues from Lecture Videos\
+[VIVID: Human-AI Collaborative Authoring of Vicarious Dialogues from Lecture Videos\](https://arxiv.org/abs/2403.09168){:target="_blank"}\
 _Seulgi Choi, Hyewon Lee, **Yoonjoo Lee**, and Juho Kim_\
 Accepted in CHI2024 
 
@@ -74,7 +74,7 @@ IEEE Communications Letters, vol. 23, no. 9, Sep. 2019 | [ieee dl](https://ieeex
 
 ### Posters, Workshop Papers
 
-[How to Reflect Diverse People's Perspectives in Large-Scale LLM-based Evaluations?](https://heal-workshop.github.io/papers/34_how_to_reflect_diverse_people_.pdf){:target="_blank"}
+[How to Reflect Diverse People's Perspectives in Large-Scale LLM-based Evaluations?](https://heal-workshop.github.io/papers/34_how_to_reflect_diverse_people_.pdf){:target="_blank"}\
 _**Yoonjoo Lee**, Tae Soo Kim, and Juho Kim_\
 CHI 2024 Workshop on Human-centered Evaluation and Auditing of Language Models
 
