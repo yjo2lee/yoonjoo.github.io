@@ -14,19 +14,19 @@ My research interest lies in the intersection of human-computer interaction (HCI
 
 [One vs. Many: Comprehending Accurate Information from Multiple Erroneous and Inconsistent AI Generations](https://arxiv.org/abs/2405.05581){:target="_blank"}\
 _**Yoonjoo Lee**, Kihoon Son, Tae Soo Kim, Jisu Kim, John Joon Young Chung, Eytan Adar, Juho Kim_\
-Accepted in FAccT | [arxiv](https://arxiv.org/abs/2405.05581){:target="_blank"}
+FAccT 2024 | [arxiv](https://arxiv.org/abs/2405.05581){:target="_blank"}
 
 [PaperWeaver: Enriching Topical Paper Alerts by Contextualizing Recommended Papers with User-collected Papers](https://arxiv.org/pdf/2403.02939.pdf){:target="_blank"}  
 _**Yoonjoo Lee**, Hyeonsu B Kang, Matt Latzke, Juho Kim, Jonathan Bragg, Joseph Chee Chang, and Pao Siangliulue_\
-Accepted in CHI2024 | [arxiv](https://arxiv.org/pdf/2403.02939.pdf){:target="_blank"}
+CHI2024 | [arxiv](https://arxiv.org/pdf/2403.02939.pdf){:target="_blank"}
 
 [EvalLM: Interactive Evaluation of Large Language Model Prompts on User-Defined Criteria](https://arxiv.org/pdf/2309.13633.pdf){:target="_blank"}  
 _Tae Soo Kim, **Yoonjoo Lee**, Jamin Shin, Young-Ho Kim, and Juho Kim_\
-Accepted in CHI2024 | [arxiv](https://arxiv.org/pdf/2309.13633.pdf){:target="_blank"} | [video](https://www.youtube.com/watch?v=7hvTnhiCO7Y){:target="_blank"}
+CHI2024 | [arxiv](https://arxiv.org/pdf/2309.13633.pdf){:target="_blank"} | [video](https://www.youtube.com/watch?v=7hvTnhiCO7Y){:target="_blank"}
 
 [VIVID: Human-AI Collaborative Authoring of Vicarious Dialogues from Lecture Videos](https://arxiv.org/abs/2403.09168){:target="_blank"}\
 _Seulgi Choi, Hyewon Lee, **Yoonjoo Lee**, and Juho Kim_\
-Accepted in CHI2024 
+CHI2024 
 
 [QASA: Answering Advanced Questions on Scientific Articles](https://yoonjoolee.com/assets/papers/QASA_ICML2023.pdf){:target="_blank"}\
 _**Yoonjoo Lee**\*, Kyungjae Lee\*, Sunghyun Park, Dasol Hwang, Jaehyeon Kim, Hong-in Lee, and Moontae Lee_\
@@ -99,12 +99,16 @@ _Yunbae Kim, **Yoonjoo Lee**, and Seungken Park_\
 KICS, Jun. 2018 | [PDF](http://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE07512760){:target="_blank"}
 
 ## Research Experience
+[Adobe Research](https://research.adobe.com/){:target="_blank"}  
+Research Intern (Mentor: _Alexa F Siu, Tong Sun_)\
+<sup>May 2024 - </sup>
+
 [Allen Institute for AI (AI2)](https://allenai.org/){:target="_blank"}  
-Research Scientist Intern (Mentor: _Pao Siangliulue, Joseph Chee Chang, Jonathan Bragg, Kyle Lo_)\
-<sup>May 2023 - </sup>
+Research Intern (Mentor: _Pao Siangliulue, Joseph Chee Chang, Jonathan Bragg, Kyle Lo_)\
+<sup>May 2023 - Oct. 2023</sup>
 
 [LG AI Research](https://www.lgresearch.ai/){:target="_blank"}  
-Research Scientist Intern (Mentor: _Moontae Lee_)\
+Research Intern (Mentor: _Moontae Lee_)\
 <sup>Nov. 2022 - Mar. 2023</sup>
 
 [Electronics and Telecommunications Research Institute(ETRI)](https://www.etri.re.kr/eng/main/main.etri){:target="_blank"}  
