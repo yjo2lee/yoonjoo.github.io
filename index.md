@@ -6,7 +6,7 @@ layout: default
 
 I am a Ph.D. student in the [School of Computing](https://cs.kaist.ac.kr/){:target="_blank"} at [KAIST](https://www.kaist.ac.kr/){:target="_blank"}. I work with [Juho Kim](https://juhokim.com/){:target="_blank"} as a member of [KIXLAB](https://www.kixlab.org/){:target="_blank"}.
 
-My research interest lies in the intersection of human-computer interaction (HCI) and natural language processing (NLP). I aim to support people to learn from and make sense of dense information (e.g., content in lecture videos, scientific articles) by creating diverse scaffoldings (e.g., QAs, dialogues, explanations) using AI models. Recently, I have been interested in generating outputs that align with diverse human characteristics and evaluating how well this alignment is performed.
+My research interest lies in the intersection of human-computer interaction (HCI) and natural language processing (NLP). I aim to help diverse users reach meaningful understanding by connecting new information to what they already know. I’m particularly interested in creating systems that guide AI agents to generate outputs aligned with human knowledge acquisition processes, thereby reducing the gap between the support humans need and the explanations AI agents provide. Recently, I have been interested in generating outputs that align with diverse human characteristics and evaluating how well this alignment is performed.
 
 ## Publications
 
