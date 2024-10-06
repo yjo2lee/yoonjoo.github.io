@@ -12,6 +12,10 @@ My research interest lies in the intersection of human-computer interaction (HCI
 
 ### Conference Papers
 
+ARXIVDIGESTABLES: Synthesizing Scientific Literature into Tables using Language Models\
+_Benjamin Newman\*, **Yoonjoo Lee**\*, Aakanksha Naik, Pao Siangliulue, Raymond Fok, Juho Kim, Daniel S. Weld, Joseph Chee Chang, Kyle Lo_\
+EMNLP 2024 Main Track
+
 [One vs. Many: Comprehending Accurate Information from Multiple Erroneous and Inconsistent AI Generations](https://arxiv.org/abs/2405.05581){:target="_blank"}\
 _**Yoonjoo Lee**, Kihoon Son, Tae Soo Kim, Jisu Kim, John Joon Young Chung, Eytan Adar, Juho Kim_\
 FAccT 2024 | [arxiv](https://arxiv.org/abs/2405.05581){:target="_blank"}
