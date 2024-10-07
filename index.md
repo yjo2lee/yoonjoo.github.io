@@ -12,7 +12,7 @@ My research interest lies in the intersection of human-computer interaction (HCI
 
 ### Conference Papers
 
-ARXIVDIGESTABLES: Synthesizing Scientific Literature into Tables using Language Models\
+[ARXIVDIGESTABLES: Synthesizing Scientific Literature into Tables using Language Models](https://yoonjoolee.com/assets/papers/ARXIVDIGESTABLES_EMNLP_2024.pdf){:target="_blank"}\
 _Benjamin Newman\*, **Yoonjoo Lee**\*, Aakanksha Naik, Pao Siangliulue, Raymond Fok, Juho Kim, Daniel S. Weld, Joseph Chee Chang, Kyle Lo_\
 EMNLP 2024 Main Track
 
