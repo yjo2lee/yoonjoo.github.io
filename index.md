@@ -14,7 +14,7 @@ My research interest lies in the intersection of human-computer interaction (HCI
 
 [ARXIVDIGESTABLES: Synthesizing Scientific Literature into Tables using Language Models](https://yoonjoolee.com/assets/papers/ARXIVDIGESTABLES_EMNLP_2024.pdf){:target="_blank"}\
 _Benjamin Newman\*, **Yoonjoo Lee**\*, Aakanksha Naik, Pao Siangliulue, Raymond Fok, Juho Kim, Daniel S. Weld, Joseph Chee Chang, Kyle Lo_\
-EMNLP 2024 Main Track
+EMNLP 2024 Main Track | [arxiv](https://arxiv.org/pdf/2410.22360){:target="_blank"}
 
 [One vs. Many: Comprehending Accurate Information from Multiple Erroneous and Inconsistent AI Generations](https://arxiv.org/abs/2405.05581){:target="_blank"}\
 _**Yoonjoo Lee**, Kihoon Son, Tae Soo Kim, Jisu Kim, John Joon Young Chung, Eytan Adar, Juho Kim_\
@@ -30,7 +30,7 @@ CHI2024 | [arxiv](https://arxiv.org/pdf/2309.13633.pdf){:target="_blank"} | [vid
 
 [VIVID: Human-AI Collaborative Authoring of Vicarious Dialogues from Lecture Videos](https://arxiv.org/abs/2403.09168){:target="_blank"}\
 _Seulgi Choi, Hyewon Lee, **Yoonjoo Lee**, and Juho Kim_\
-CHI2024 
+CHI2024 | [arxiv](https://arxiv.org/pdf/2403.09168){:target="_blank"}
 
 [QASA: Answering Advanced Questions on Scientific Articles](https://yoonjoolee.com/assets/papers/QASA_ICML2023.pdf){:target="_blank"}\
 _**Yoonjoo Lee**\*, Kyungjae Lee\*, Sunghyun Park, Dasol Hwang, Jaehyeon Kim, Hong-in Lee, and Moontae Lee_\
