@@ -123,11 +123,3 @@ Graduate Research Assistant (Mentor: _Yunbae Kim and Seungken Park_)\
 Reviewer: EMNLP 2023, CHI 2022-2023, UIST 2022-2023, ACL 2023, CSCW 2023, C&C 2022, IEEE TLT\
 Program Committee: CHI LBW 2023\
 Student Volunteer: CHI 2022
-
-## Education
-Ph.D. in School of Computing, KAIST\
-<sup>Sep. 2020 - present</sup>\
-M.S. in Statistics, Ewha Womans University\
-<sup>Mar. 2018 - Feb. 2020</sup>\
-B.S. in Math Education, Ewha Womans University (Minor: Statistics)\
-<sup>Mar. 2014 - Feb. 2018, Magna Cum Laude</sup>
