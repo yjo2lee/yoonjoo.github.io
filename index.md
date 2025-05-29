@@ -6,15 +6,23 @@ layout: default
 
 I am a Ph.D. student in the [School of Computing](https://cs.kaist.ac.kr/){:target="_blank"} at [KAIST](https://www.kaist.ac.kr/){:target="_blank"}. I work with [Juho Kim](https://juhokim.com/){:target="_blank"} as a member of [KIXLAB](https://www.kixlab.org/){:target="_blank"}.
 
-My research interest lies in the intersection of human-computer interaction (HCI) and natural language processing (NLP). I aim to help diverse users reach meaningful understanding by connecting new information to what they already know. I’m particularly interested in creating systems that guide AI agents to generate outputs aligned with human knowledge acquisition processes, thereby reducing the gap between the support humans need and the explanations AI agents provide. Recently, I have been interested in generating outputs that align with diverse human characteristics and evaluating how well this alignment is performed.
+My research interest lies in the intersection of human-computer interaction (HCI) and natural language processing (NLP), with a focus on aligning AI systems with human cognitive processes. I (1) develop AI systems that interactively adapt knowledge delivery by modeling human cognitive processes based on users’ tasks and contexts, and (2) design cognitively grounded evaluation frameworks to assess whether AI outputs are aligned with humans’ goals, knowledge states, and reasoning patterns. 
 
 ## Publications
 
 ### Conference Papers
 
+[Benchmarking Model Ability to Predict Preferences from Interactions (place holder title)]\
+_Tae Soo Kim, **Yoonjoo Lee**, et al._\
+Under review
+
 [ARXIVDIGESTABLES: Synthesizing Scientific Literature into Tables using Language Models](https://yoonjoolee.com/assets/papers/ARXIVDIGESTABLES_EMNLP_2024.pdf){:target="_blank"}\
 _Benjamin Newman\*, **Yoonjoo Lee**\*, Aakanksha Naik, Pao Siangliulue, Raymond Fok, Juho Kim, Daniel S. Weld, Joseph Chee Chang, Kyle Lo_\
 EMNLP 2024 Main Track | [arxiv](https://arxiv.org/pdf/2410.22360){:target="_blank"}
+
+[The BiGGen Bench: A Principled Benchmark for Fine-grained Evaluation of Language Models with Language Models](https://arxiv.org/pdf/2406.05761){:target="_blank"}\
+_Seungone Kim, Juyoung Suk, Ji Yong Cho, [18 authors], **Yoonjoo Lee**, [5 authors], Sean Welleck, Graham Neubig, Moontae Lee, Kyungjae Lee, Minjoon Seo_\
+NAACL 2025 | [arxiv](https://arxiv.org/pdf/2406.05761){:target="_blank"} | Best Paper Award
 
 [One vs. Many: Comprehending Accurate Information from Multiple Erroneous and Inconsistent AI Generations](https://arxiv.org/abs/2405.05581){:target="_blank"}\
 _**Yoonjoo Lee**, Kihoon Son, Tae Soo Kim, Jisu Kim, John Joon Young Chung, Eytan Adar, Juho Kim_\
