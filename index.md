@@ -12,8 +12,12 @@ My research interest lies in the intersection of human-computer interaction (HCI
 
 ### Conference Papers
 
-[Benchmarking Model Ability to Predict Preferences from Interactions (place holder title)]\
+Benchmarking Model Ability to Predict Preferences from Interactions (Placeholder Title)\
 _Tae Soo Kim, **Yoonjoo Lee**, et al._\
+Under review
+
+Mind the Blind Spots: A Focus-Level Evaluation Framework for LLM Reviews\
+_Hyungyu Shin, Jingyu Tang, **Yoonjoo Lee**, Nayoung Kim, Hyunseung Lim, Ji Yong Cho, Hwajung Hong, Moontae Lee, Juho Kim\
 Under review
 
 [ARXIVDIGESTABLES: Synthesizing Scientific Literature into Tables using Language Models](https://yoonjoolee.com/assets/papers/ARXIVDIGESTABLES_EMNLP_2024.pdf){:target="_blank"}\
