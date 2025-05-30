@@ -6,7 +6,8 @@ layout: default
 
 I am a Ph.D. student in the [School of Computing](https://cs.kaist.ac.kr/){:target="_blank"} at [KAIST](https://www.kaist.ac.kr/){:target="_blank"}. I work with [Juho Kim](https://juhokim.com/){:target="_blank"} as a member of [KIXLAB](https://www.kixlab.org/){:target="_blank"}.
 
-My research interest lies in the intersection of human-computer interaction (HCI) and natural language processing (NLP), with a focus on aligning AI systems with human cognitive processes. I (1) develop AI systems that interactively adapt knowledge delivery by modeling human cognitive processes based on users’ tasks and contexts, and (2) design cognitively grounded evaluation frameworks to assess whether AI outputs are aligned with humans’ goals, knowledge states, and reasoning patterns. 
+My research interest lies in the intersection of human-AI interaction (HAI) and natural language processing (NLP), focusing on aligning AI systems with human cognitive processes to make them more adaptive and interpretable, and human-centered AI in real-world settings.
+Specifically, I (1) develop how to develop AI systems that interactively adapt their outputs to individual users by modeling human cognitive processes based on users’ tasks and contexts, and (2) design evaluation methods to assess how effectively AI systems can generate outputs aligned with human cognitive processes.
 
 ## Publications
 
