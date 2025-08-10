@@ -12,9 +12,9 @@ My research interest lies in the intersection of human-AI interaction (HAI) and 
 
 ### Conference Papers
 
-Benchmarking Model Ability to Predict Preferences from Interactions (Placeholder Title)\
-_Tae Soo Kim, **Yoonjoo Lee**, et al._\
-Under review
+[CUPID: Evaluating Personalized and Contextualized Alignment of LLMs from Interactions](https://arxiv.org/abs/2508.01674){:target="_blank"}\
+_Tae Soo Kim, **Yoonjoo Lee**, Yoonah Park, Jiho Kim, Young-Ho Kim, and Juho Kim_\
+COLM 2025 | [arxiv](https://arxiv.org/abs/2508.01674){:target="_blank"}
 
 Mind the Blind Spots: A Focus-Level Evaluation Framework for LLM Reviews\
 _Hyungyu Shin, Jingyu Tang, **Yoonjoo Lee**, Nayoung Kim, Hyunseung Lim, Ji Yong Cho, Hwajung Hong, Moontae Lee, Juho Kim_\
