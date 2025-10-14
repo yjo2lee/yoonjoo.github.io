@@ -19,7 +19,7 @@ COLM 2025 | [arxiv](https://arxiv.org/abs/2508.01674){:target="_blank"}
 
 Mind the Blind Spots: A Focus-Level Evaluation Framework for LLM Reviews\
 _Hyungyu Shin, Jingyu Tang, **Yoonjoo Lee**, Nayoung Kim, Hyunseung Lim, Ji Yong Cho, Hwajung Hong, Moontae Lee, Juho Kim_\
-Under review
+EMNLP 2025 | [arxiv](https://arxiv.org/abs/2502.17086){:target="_blank"}
 
 [ARXIVDIGESTABLES: Synthesizing Scientific Literature into Tables using Language Models](https://yoonjoolee.com/assets/papers/ARXIVDIGESTABLES_EMNLP_2024.pdf){:target="_blank"}\
 _Benjamin Newman\*, **Yoonjoo Lee**\*, Aakanksha Naik, Pao Siangliulue, Raymond Fok, Juho Kim, Daniel S. Weld, Joseph Chee Chang, Kyle Lo_\
