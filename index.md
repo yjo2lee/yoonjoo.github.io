@@ -17,7 +17,7 @@ My research interest lies in the intersection of human-AI interaction (HAI) and 
 _Tae Soo Kim, **Yoonjoo Lee**, Yoonah Park, Jiho Kim, Young-Ho Kim, and Juho Kim_\
 COLM 2025 | [arxiv](https://arxiv.org/abs/2508.01674){:target="_blank"}
 
-Mind the Blind Spots: A Focus-Level Evaluation Framework for LLM Reviews\
+[Mind the Blind Spots: A Focus-Level Evaluation Framework for LLM Reviews](https://arxiv.org/abs/2502.17086){:target="_blank"}\
 _Hyungyu Shin, Jingyu Tang, **Yoonjoo Lee**, Nayoung Kim, Hyunseung Lim, Ji Yong Cho, Hwajung Hong, Moontae Lee, Juho Kim_\
 EMNLP 2025 | [arxiv](https://arxiv.org/abs/2502.17086){:target="_blank"}
 
