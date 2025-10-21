@@ -17,9 +17,13 @@ My research interest lies in the intersection of human-AI interaction (HAI) and 
 _Tae Soo Kim, **Yoonjoo Lee**, Yoonah Park, Jiho Kim, Young-Ho Kim, and Juho Kim_\
 COLM 2025 | [arxiv](https://arxiv.org/abs/2508.01674){:target="_blank"}
 
+PANORAMA: A Dataset and Benchmark Tasks Capturing the Evaluation Trails and Rationales in Patent Examination\
+_Hyunseung Lim, Sooyohn Nam, Sungmin Na, Ji Yong Cho, June Yong Yang, Hyungyu Shin, **Yoonjoo Lee**, Juho Kim, Moontae Lee, Hwajung Hong_\
+NeurIPS 2025 2025
+
 [Mind the Blind Spots: A Focus-Level Evaluation Framework for LLM Reviews](https://arxiv.org/abs/2502.17086){:target="_blank"}\
 _Hyungyu Shin, Jingyu Tang, **Yoonjoo Lee**, Nayoung Kim, Hyunseung Lim, Ji Yong Cho, Hwajung Hong, Moontae Lee, Juho Kim_\
-EMNLP 2025 | [arxiv](https://arxiv.org/abs/2502.17086){:target="_blank"}
+EMNLP 2025 Main Track | [arxiv](https://arxiv.org/abs/2502.17086){:target="_blank"}
 
 [ARXIVDIGESTABLES: Synthesizing Scientific Literature into Tables using Language Models](https://yoonjoolee.com/assets/papers/ARXIVDIGESTABLES_EMNLP_2024.pdf){:target="_blank"}\
 _Benjamin Newman\*, **Yoonjoo Lee**\*, Aakanksha Naik, Pao Siangliulue, Raymond Fok, Juho Kim, Daniel S. Weld, Joseph Chee Chang, Kyle Lo_\
