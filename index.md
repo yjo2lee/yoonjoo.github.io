@@ -4,8 +4,7 @@ layout: default
 
 ## About
 
-I am a Ph.D. student in the [School of Computing](https://cs.kaist.ac.kr/){:target="_blank"} at [KAIST](https://www.kaist.ac.kr/){:target="_blank"}. I work with [Juho Kim](https://juhokim.com/){:target="_blank"} as a member of [KIXLAB](https://www.kixlab.org/){:target="_blank"}. This fall, I will be joining the [University of Michigan CSE](https://cse.engin.umich.edu/){:target="_blank"} as a postdoctoral fellow, working with
-[Q. Vera Liao](https://qveraliao.com/){:target="_blank"} on human-centered AI.
+I am a Postdoctoral Fellow at the [University of Michigan CSE](https://cse.engin.umich.edu/){:target="_blank"}, working with [Q. Vera Liao](https://qveraliao.com/){:target="_blank"} on human-centered AI. I received my Ph.D. in [Computer Science](https://cs.kaist.ac.kr/){:target="_blank"} from [KAIST](https://www.kaist.ac.kr/){:target="_blank"}, where I worked with [Juho Kim](https://juhokim.com/){:target="_blank"} as a member of [KIXLAB](https://www.kixlab.org/){:target="_blank"}.
 
 My research interest lies in the intersection of human-AI interaction (HAI) and natural language processing (NLP), focusing on aligning AI systems with human cognitive processes to make them more adaptive, interpretable, and human-centered. Specifically, I (1) develop how to develop AI systems that interactively adapt their outputs to individual users by modeling human cognitive processes based on users’ tasks and contexts, and (2) design evaluation methods to assess how effectively AI systems can generate outputs aligned with human cognitive processes.
 
@@ -19,11 +18,11 @@ COLM 2025 | [arxiv](https://arxiv.org/abs/2508.01674){:target="_blank"}
 
 PANORAMA: A Dataset and Benchmark Tasks Capturing the Evaluation Trails and Rationales in Patent Examination\
 _Hyunseung Lim, Sooyohn Nam, Sungmin Na, Ji Yong Cho, June Yong Yang, Hyungyu Shin, **Yoonjoo Lee**, Juho Kim, Moontae Lee, Hwajung Hong_\
-NeurIPS 2025 2025
+NeurIPS 2025
 
 [Mind the Blind Spots: A Focus-Level Evaluation Framework for LLM Reviews](https://arxiv.org/abs/2502.17086){:target="_blank"}\
 _Hyungyu Shin, Jingyu Tang, **Yoonjoo Lee**, Nayoung Kim, Hyunseung Lim, Ji Yong Cho, Hwajung Hong, Moontae Lee, Juho Kim_\
-EMNLP 2025 Main Track | [arxiv](https://arxiv.org/abs/2502.17086){:target="_blank"}
+EMNLP 2025 Main Track | [arxiv](https://arxiv.org/abs/2502.17086){:target="_blank"} | SAC Highlight Award
 
 [ARXIVDIGESTABLES: Synthesizing Scientific Literature into Tables using Language Models](https://yoonjoolee.com/assets/papers/ARXIVDIGESTABLES_EMNLP_2024.pdf){:target="_blank"}\
 _Benjamin Newman\*, **Yoonjoo Lee**\*, Aakanksha Naik, Pao Siangliulue, Raymond Fok, Juho Kim, Daniel S. Weld, Joseph Chee Chang, Kyle Lo_\
