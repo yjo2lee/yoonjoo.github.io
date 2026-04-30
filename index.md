@@ -6,19 +6,27 @@ layout: default
 
 I am a Postdoctoral Fellow at the [University of Michigan CSE](https://cse.engin.umich.edu/){:target="_blank"}, working with [Q. Vera Liao](https://qveraliao.com/){:target="_blank"} on human-centered AI. I received my Ph.D. in [Computer Science](https://cs.kaist.ac.kr/){:target="_blank"} from [KAIST](https://www.kaist.ac.kr/){:target="_blank"}, where I worked with [Juho Kim](https://juhokim.com/){:target="_blank"} as a member of [KIXLAB](https://www.kixlab.org/){:target="_blank"}.
 
-My research interest lies in the intersection of human-AI interaction (HAI) and natural language processing (NLP), focusing on aligning AI systems with human cognitive processes to make them more adaptive, interpretable, and human-centered. Specifically, I (1) develop how to develop AI systems that interactively adapt their outputs to individual users by modeling human cognitive processes based on users’ tasks and contexts, and (2) design evaluation methods to assess how effectively AI systems can generate outputs aligned with human cognitive processes.
+My research interest lies in the intersection of human-AI interaction and natural language processing (NLP), focusing on aligning AI systems with human cognitive processes to make them more adaptive, interpretable, and human-centered. Specifically, I (1) develop how to develop AI systems that interactively adapt their outputs to individual users by modeling human cognitive processes based on users’ tasks and contexts, and (2) design evaluation methods to assess how effectively AI systems can generate outputs aligned with human cognitive processes.
 
 ## Publications
 
 ### Conference Papers
 
-[CUPID: Evaluating Personalized and Contextualized Alignment of LLMs from Interactions](https://arxiv.org/abs/2508.01674){:target="_blank"}\
-_Tae Soo Kim, **Yoonjoo Lee**, Yoonah Park, Jiho Kim, Young-Ho Kim, and Juho Kim_\
-COLM 2025 | [arxiv](https://arxiv.org/abs/2508.01674){:target="_blank"}
+[DISCOVERLLM: From Executing Intents to Discovering Them](https://arxiv.org/pdf/2602.03429){:target="_blank"}\
+_Tae Soo Kim, **Yoonjoo Lee**, Jaesang Yu, John Joon Young Chung, and Juho Kim_\
+ICML 2026 | [arxiv](https://arxiv.org/pdf/2602.03429){:target="_blank"}
+
+[Evalet: Evaluating Large Language Models by Fragmenting Outputs into Functions](https://arxiv.org/pdf/2509.11206){:target="_blank"}\
+_Tae Soo Kim, Heechan Lee, **Yoonjoo Lee**, Joseph Seering, and Juho Kim_\
+CHI 2026 | [arxiv](https://arxiv.org/pdf/2509.11206){:target="_blank"} | Honorable Mention Award
 
 PANORAMA: A Dataset and Benchmark Tasks Capturing the Evaluation Trails and Rationales in Patent Examination\
 _Hyunseung Lim, Sooyohn Nam, Sungmin Na, Ji Yong Cho, June Yong Yang, Hyungyu Shin, **Yoonjoo Lee**, Juho Kim, Moontae Lee, Hwajung Hong_\
 NeurIPS 2025
+
+[CUPID: Evaluating Personalized and Contextualized Alignment of LLMs from Interactions](https://arxiv.org/abs/2508.01674){:target="_blank"}\
+_Tae Soo Kim, **Yoonjoo Lee**, Yoonah Park, Jiho Kim, Young-Ho Kim, and Juho Kim_\
+COLM 2025 | [arxiv](https://arxiv.org/abs/2508.01674){:target="_blank"}
 
 [Mind the Blind Spots: A Focus-Level Evaluation Framework for LLM Reviews](https://arxiv.org/abs/2502.17086){:target="_blank"}\
 _Hyungyu Shin, Jingyu Tang, **Yoonjoo Lee**, Nayoung Kim, Hyunseung Lim, Ji Yong Cho, Hwajung Hong, Moontae Lee, Juho Kim_\
