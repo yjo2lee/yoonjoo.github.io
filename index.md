@@ -12,6 +12,10 @@ My research interest lies in the intersection of human-AI interaction and natura
 
 ### Conference Papers
 
+[KNOWSIM: Evaluating Information Calibration in LLM Assistants with User Simulators that Learn](https://drive.google.com/file/d/1t1bh1Jxed4SULXBA0s7FPBZ7nqOwrDAx/view?usp=sharing){:target="_blank"}\
+_**Yoonjoo Lee**, Hyoungwook Jin, Tae Soo Kim, Shaoyang Zhang, Philippe Laban, Q. Vera Liao_\
+[preprint](https://drive.google.com/file/d/1t1bh1Jxed4SULXBA0s7FPBZ7nqOwrDAx/view?usp=sharing){:target="_blank"}
+
 [DISCOVERLLM: From Executing Intents to Discovering Them](https://arxiv.org/pdf/2602.03429){:target="_blank"}\
 _Tae Soo Kim, **Yoonjoo Lee**, Jaesang Yu, John Joon Young Chung, and Juho Kim_\
 ICML 2026 | [arxiv](https://arxiv.org/pdf/2602.03429){:target="_blank"}
