@@ -16,6 +16,10 @@ My research interest lies in the intersection of human-AI interaction and natura
 _**Yoonjoo Lee**, Hyoungwook Jin, Tae Soo Kim, Shaoyang Zhang, Philippe Laban, Q. Vera Liao_\
 [preprint](https://drive.google.com/file/d/1t1bh1Jxed4SULXBA0s7FPBZ7nqOwrDAx/view?usp=sharing){:target="_blank"}
 
+Revibing Code from Papers: Reimplementing HCI Artifacts\
+_Eytan Adar, **Yoonjoo Lee**, Ning-Er Lei, Q.Vera Liao, Weirui Peng_\
+UIST 2026
+
 [DISCOVERLLM: From Executing Intents to Discovering Them](https://arxiv.org/pdf/2602.03429){:target="_blank"}\
 _Tae Soo Kim, **Yoonjoo Lee**, Jaesang Yu, John Joon Young Chung, and Juho Kim_\
 ICML 2026 | [arxiv](https://arxiv.org/pdf/2602.03429){:target="_blank"}
@@ -24,9 +28,9 @@ ICML 2026 | [arxiv](https://arxiv.org/pdf/2602.03429){:target="_blank"}
 _Tae Soo Kim, Heechan Lee, **Yoonjoo Lee**, Joseph Seering, and Juho Kim_\
 CHI 2026 | [arxiv](https://arxiv.org/pdf/2509.11206){:target="_blank"} | Honorable Mention Award
 
-PANORAMA: A Dataset and Benchmark Tasks Capturing the Evaluation Trails and Rationales in Patent Examination\
+[PANORAMA: A Dataset and Benchmark Tasks Capturing the Evaluation Trails and Rationales in Patent Examination](https://arxiv.org/abs/2510.24774){:target="_blank"}\
 _Hyunseung Lim, Sooyohn Nam, Sungmin Na, Ji Yong Cho, June Yong Yang, Hyungyu Shin, **Yoonjoo Lee**, Juho Kim, Moontae Lee, Hwajung Hong_\
-NeurIPS 2025
+NeurIPS 2025 | [arxiv](https://arxiv.org/abs/2510.24774){:target="_blank"}
 
 [CUPID: Evaluating Personalized and Contextualized Alignment of LLMs from Interactions](https://arxiv.org/abs/2508.01674){:target="_blank"}\
 _Tae Soo Kim, **Yoonjoo Lee**, Yoonah Park, Jiho Kim, Young-Ho Kim, and Juho Kim_\
