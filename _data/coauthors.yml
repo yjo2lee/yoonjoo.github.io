@@ -1,14 +1,121 @@
-# Maps co-author surnames to their homepages, so their names link out in the
-# publication list. Keys are lowercase surnames; `firstname` lists every spelling
-# that appears in _bibliography/papers.bib.
+# Maps co-author surnames to their homepages so their names link out in the
+# publication list. Keys are lowercase surnames (asterisks are stripped before
+# lookup); `firstname` must list the exact spelling used in _bibliography/papers.bib.
 #
-# Only entries whose URLs were already linked from the old site are listed here.
-# Add more as you confirm each co-author's homepage.
+# Every URL below was verified against the person's own homepage or their lab's
+# member listing. Co-authors without a findable personal page are intentionally
+# omitted rather than guessed.
 
 "kim":
   - firstname: ["Juho"]
     url: https://juhokim.com/
+  - firstname: ["Tae Soo"]
+    url: https://taesookim.com/
+  - firstname: ["Young-Ho"]
+    url: https://younghokim.net/
+  - firstname: ["Jiho"]
+    url: https://jihokim.dev/
+  - firstname: ["Seungone"]
+    url: https://seungonekim.github.io/
+
+"lee":
+  - firstname: ["Moontae"]
+    url: https://moontae.github.io/
 
 "liao":
-  - firstname: ["Q. Vera", "Q.Vera", "Q. V."]
+  - firstname: ["Q. Vera", "Q.Vera"]
     url: https://qveraliao.com/
+
+"adar":
+  - firstname: ["Eytan"]
+    url: https://www.cond.org/
+
+"lo":
+  - firstname: ["Kyle"]
+    url: https://kyleclo.com/
+
+"weld":
+  - firstname: ["Daniel S.", "Daniel"]
+    url: https://www.cs.washington.edu/people/faculty/weld-daniel-s/
+
+"chang":
+  - firstname: ["Joseph Chee"]
+    url: https://josephcc.com/
+  - firstname: ["Minsuk"]
+    url: https://minsukchang.com/
+
+"chung":
+  - firstname: ["John Joon Young"]
+    url: https://johnr0.github.io/
+
+"hong":
+  - firstname: ["Hwajung"]
+    url: https://dxd-lab.github.io/
+
+"seering":
+  - firstname: ["Joseph"]
+    url: https://joseph.seering.org/
+
+"laban":
+  - firstname: ["Philippe"]
+    url: https://tingofurro.github.io/
+
+"song":
+  - firstname: ["Jean Y."]
+    url: https://jyskwon.github.io/
+
+"bragg":
+  - firstname: ["Jonathan"]
+    url: https://www.jonathanbragg.com/
+
+"siangliulue":
+  - firstname: ["Pao"]
+    url: https://paoponder.com/
+
+"newman":
+  - firstname: ["Benjamin"]
+    url: https://bnewm0609.github.io/
+
+"fok":
+  - firstname: ["Raymond"]
+    url: https://rayfok.github.io/
+
+"kang":
+  - firstname: ["Hyeonsu B.", "Hyeonsu B"]
+    url: http://www.hyeonsukang.com/
+
+"shin":
+  - firstname: ["Hyungyu"]
+    url: https://hyungyu.com/
+
+"son":
+  - firstname: ["Kihoon"]
+    url: https://kihoonson.com/
+
+"jin":
+  - firstname: ["Hyoungwook"]
+    url: https://jhw123.github.io/
+
+"choi":
+  - firstname: ["Seulgi"]
+    url: https://csg17.github.io/cv/index.html
+
+"neubig":
+  - firstname: ["Graham"]
+    url: https://www.phontron.com/
+
+"welleck":
+  - firstname: ["Sean"]
+    url: https://wellecks.com/
+
+"seo":
+  - firstname: ["Minjoon"]
+    url: https://seominjoon.github.io/
+
+"longpre":
+  - firstname: ["Shayne"]
+    url: https://www.shaynelongpre.com/
+
+"lin":
+  - firstname: ["Bill Yuchen"]
+    url: https://yuchenlin.xyz/
