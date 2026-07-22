@@ -1,21 +1,22 @@
 # Research-area tags for the filter pills above "selected publications" on the
 # about page. Keys are bib keys from _bibliography/papers.bib; values are any of
-# HCI, NLP, ML. A paper may carry more than one.
+# the areas listed in `area_order` in _includes/selected_papers.liquid.
+# A paper may carry more than one.
 #
 # Papers not listed here are still shown, but only under "All".
 # The pill bar hides any area that no selected paper uses, so adding or removing
 # an area here is all that's needed -- nothing else to update.
 
-lee2026knowsim: [HCI, NLP]
+lee2026knowsim: [AI/NLP]
 adar2026reviving: [HCI]
-kim2026discoverllm: [ML, HCI]
-kim2025cupid: [NLP, ML]
-newman2024arxivdigestables: [NLP]
+kim2026discoverllm: [AI/NLP]
+kim2025cupid: [AI/NLP]
+newman2024arxivdigestables: [AI/NLP]
 lee2024onevsmany: [HCI]
 lee2024paperweaver: [HCI]
-kim2024evallm: [HCI, NLP]
-lee2023qasa: [NLP, ML]
+kim2024evallm: [HCI, AI/NLP]
+lee2023qasa: [AI/NLP]
 kim2023cells: [HCI]
-lee2023dapie: [HCI, NLP]
+lee2023dapie: [HCI, AI/NLP]
 lee2022promptiverse: [HCI]
 lee2021studywithme: [HCI]
