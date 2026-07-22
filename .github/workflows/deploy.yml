@@ -92,6 +92,11 @@ jobs:
           propertyPath: "giscus.repo"
           value: ${{ github.repository }}
       - name: Install and Build 🔧
+        env:
+          # Without a UTF-8 locale Ruby reads source files as US-ASCII and the
+          # build dies on the first non-ASCII byte (e.g. an emoji in _news/).
+          LANG: C.UTF-8
+          LC_ALL: C.UTF-8
         run: |
           sudo apt-get update && sudo apt-get install -y imagemagick
           pip3 install --upgrade nbconvert
