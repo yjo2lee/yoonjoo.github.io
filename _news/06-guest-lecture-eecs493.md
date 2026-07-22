@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Gave a guest lecture in **EECS 493: User Interface Development** at the University of Michigan, taught by [Q. Vera Liao](https://qveraliao.com/).
+Gave a guest lecture in [Q. Vera Liao](https://qveraliao.com/)'s **EECS 493** class at Michigan.

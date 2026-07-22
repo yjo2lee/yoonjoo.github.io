@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-"Evalet" received a **Best Paper Honorable Mention** at **CHI 2026**. 🎉
+**Evalet** picked up a **Best Paper Honorable Mention** at **CHI 2026**! 🎉

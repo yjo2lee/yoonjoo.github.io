@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-"Mind the Blind Spots" was selected as a **Senior Area Chair Highlight** at **EMNLP 2025**.
+**Mind the Blind Spots** was picked as a **Senior Area Chair Highlight** at **EMNLP 2025**!

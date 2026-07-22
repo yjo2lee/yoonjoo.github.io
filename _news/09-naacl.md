@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-"The BiGGen Bench" received a **Best Paper Award** at **NAACL 2025**. 🎉
+**The BiGGen Bench** won a **Best Paper Award** at **NAACL 2025**! 🎉

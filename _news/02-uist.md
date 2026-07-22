@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-"Reviving Code from Papers: Reimplementing HCI Artifacts" will appear at **UIST 2026**.
+**Reviving Code from Papers** is heading to **UIST 2026**!

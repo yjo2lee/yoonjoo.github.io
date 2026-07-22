@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Gave a talk, "Cognitive Alignment: Building AI Systems That Empower Human Thinking," at **Adobe Research**.
+Gave a talk at **Adobe Research** on *Cognitive Alignment: Building AI Systems That Empower Human Thinking*.

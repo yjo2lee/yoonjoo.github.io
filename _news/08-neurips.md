@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-"PANORAMA", a dataset and benchmark on patent examination, was presented at **NeurIPS 2025**.
+Presented **PANORAMA**, our patent examination dataset and benchmark, at **NeurIPS 2025**.
