@@ -1,0 +1,14 @@
+# Maps co-author surnames to their homepages, so their names link out in the
+# publication list. Keys are lowercase surnames; `firstname` lists every spelling
+# that appears in _bibliography/papers.bib.
+#
+# Only entries whose URLs were already linked from the old site are listed here.
+# Add more as you confirm each co-author's homepage.
+
+"kim":
+  - firstname: ["Juho"]
+    url: https://juhokim.com/
+
+"liao":
+  - firstname: ["Q. Vera", "Q.Vera", "Q. V."]
+    url: https://qveraliao.com/

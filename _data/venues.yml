@@ -1,0 +1,64 @@
+# Maps the `abbr` field of a bib entry to a link and a badge color.
+
+"CHI":
+  url: https://chi.acm.org/
+  color: "#0b5394"
+
+"UIST":
+  url: https://uist.acm.org/
+  color: "#38761d"
+
+"FAccT":
+  url: https://facctconference.org/
+  color: "#7f6000"
+
+"ICML":
+  url: https://icml.cc/
+  color: "#990000"
+
+"NeurIPS":
+  url: https://neurips.cc/
+  color: "#674ea7"
+
+"COLM":
+  url: https://colmweb.org/
+  color: "#a64d79"
+
+"EMNLP":
+  url: https://aclanthology.org/venues/emnlp/
+  color: "#134f5c"
+
+"NAACL":
+  url: https://aclanthology.org/venues/naacl/
+  color: "#134f5c"
+
+"ACL":
+  url: https://aclanthology.org/venues/acl/
+  color: "#134f5c"
+
+"SIGCSE":
+  url: https://sigcse.org/
+  color: "#b45f06"
+
+"IEEE":
+  color: "#00629b"
+
+"CSAM":
+  color: "#3d85c6"
+
+"ICTC":
+  color: "#666666"
+
+"KICS":
+  color: "#666666"
+
+"preprint":
+  color: "#666666"
+
+"CHI-W":
+  url: https://chi.acm.org/
+  color: "#6fa8dc"
+
+"ACL-W":
+  url: https://aclanthology.org/venues/acl/
+  color: "#76a5af"
