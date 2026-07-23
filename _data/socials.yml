@@ -1,11 +1,16 @@
 # this file contains the social media links and usernames of the author
 # the socials will be displayed in the order they are defined here
 # for more information, please refer to the documentation of jekyll-socials plugin: https://github.com/george-gca/jekyll-socials
+#
+# NOTE: a key that is present but empty still renders an icon, pointing at a
+# broken URL (e.g. `scholar_userid:` with no value links to
+# https://scholar.google.com/citations?user=). To hide an icon, delete or
+# comment out its line rather than leaving it blank.
 email: lyoonjoo@umich.edu # your email address
 cv_pdf: /assets/papers/CV_YoonjooLee_June_2026.pdf # path to your CV PDF file
-scholar_userid: # TODO: your Google Scholar ID (the `user=` value in your Scholar profile URL)
-orcid_id: # TODO: your ORCID iD, e.g. 0000-0002-1825-0097
+scholar_userid: VpkNR9EAAAAJ # your Google Scholar ID
 github_username: yjo2lee
-linkedin_username: # TODO: the slug in linkedin.com/in/<slug>
+linkedin_username: yoonjoo-lee-1294a7318 # the slug in linkedin.com/in/<slug>
 x_username: yoonjoo_le2
-rss_icon: false # comment this line to hide the RSS icon
+# orcid_id: # uncomment and fill in to show an ORCID icon
+# rss_icon: # the site has no blog, so the feed is empty -- icon intentionally hidden
