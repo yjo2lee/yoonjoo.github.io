@@ -23,6 +23,6 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am a Postdoctoral Fellow at the [University of Michigan CSE](https://cse.engin.umich.edu/), working with [Q. Vera Liao](https://qveraliao.com/) on human-centered AI. I received my Ph.D. in [Computer Science](https://cs.kaist.ac.kr/) from [KAIST](https://www.kaist.ac.kr/), where I worked with [Juho Kim](https://juhokim.com/) as a member of [KIXLAB](https://www.kixlab.org/).
+I am a Postdoctoral Fellow at the [University of Michigan CSE](https://cse.engin.umich.edu/), working with [Q. Vera Liao](https://qveraliao.com/) on human-centered AI. I received my Ph.D. in [Computer Science](https://cs.kaist.ac.kr/) from [KAIST](https://www.kaist.ac.kr/), where I worked with [Juho Kim](https://juhokim.com/) as a member of [KIXLAB](https://www.kixlab.org/). During my Ph.D., I interned at [Adobe Research](https://research.adobe.com/), the [Allen Institute for AI](https://allenai.org/), and [LG AI Research](https://www.lgresearch.ai/).
 
 My research lies at the intersection of human-AI interaction and natural language processing (NLP), focusing on aligning AI systems with human cognitive processes to make them more adaptive, interpretable, and human-centered. Specifically, I (1) develop AI systems that interactively adapt their outputs to individual users by modeling human cognitive processes based on users' tasks and contexts, and (2) design evaluation methods to assess how effectively AI systems can generate outputs aligned with human cognitive processes.
