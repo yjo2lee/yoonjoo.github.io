@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Postdoctoral Fellow, <a href="https://cse.engin.umich.edu/">University of Michigan CSE</a>
+subtitle:
 
 profile:
   align: right
