@@ -94,10 +94,8 @@ function renderSignAgreementCharts() {
       const y = pad.top + plotH - barH;
 
       svg += `<rect x="${x}" y="${y}" width="${barW}" height="${barH}" rx="4" fill="${colors[i]}" opacity="0.85"/>`;
-      // Value label
-      svg += `<text x="${x + barW/2}" y="${y - 8}" text-anchor="middle" font-size="11" font-weight="700" fill="${colors[i]}">${d.values[i]}%</text>`;
-      // Count label
-      svg += `<text x="${x + barW/2}" y="${y - 20}" text-anchor="middle" font-size="9" fill="#94a3b8">${d.counts[i]}</text>`;
+      // Value label (percentage only)
+      svg += `<text x="${x + barW/2}" y="${y - 8}" text-anchor="middle" font-size="12" font-weight="700" fill="${colors[i]}">${d.values[i]}%</text>`;
       // X label
       svg += `<text x="${x + barW/2}" y="${pad.top + plotH + 16}" text-anchor="middle" font-size="10" fill="#64748b">${label}</text>`;
     });
