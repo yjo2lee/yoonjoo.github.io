@@ -32,7 +32,7 @@ const SAMPLE_QUESTIONS = [
             },
             {
               "role": "assistant",
-              "content": "Exactly right! You’ve applied the recursive rule perfectly: <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>1</mn><mi>&#x00023;</mi><mn>5</mn><mo>&#x0003D;</mo><mo stretchy=\"false\">&#x00028;</mo><mn>0</mn><mi>&#x00023;</mi><mn>5</mn><mo stretchy=\"false\">&#x00029;</mo><mo>&#x0002B;</mo><mn>5</mn><mo>&#x0002B;</mo><mn>1</mn><mo>&#x0003D;</mo><mn>11</mn></mrow></math>. This step-by-step process is called recursion, and it’s a powerful way to define operations or sequences.</p><p>Let’s connect this to a broader idea: this recursion is similar to how you might define addition or multiplication from repeated operations. For example, addition can be defined recursively as <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>a</mi><mo>&#x0002B;</mo><mn>1</mn><mo>&#x0003D;</mo><mo stretchy=\"false\">&#x00028;</mo><mi>a</mi><mo stretchy=\"false\">&#x00029;</mo><mo>&#x0002B;</mo><mn>1</mn></mrow></math>, and multiplication as <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>a</mi><mo>&#x000D7;</mo><mo stretchy=\"false\">&#x00028;</mo><mi>b</mi><mo>&#x0002B;</mo><mn>1</mn><mo stretchy=\"false\">&#x00029;</mo><mo>&#x0003D;</mo><mo stretchy=\"false\">&#x00028;</mo><mi>a</mi><mo>&#x000D7;</mo><mi>b</mi><mo stretchy=\"false\">&#x00029;</mo><mo>&#x0002B;</mo><mi>a</mi></mrow></math>. Here, each time you increase <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>r</mi></mrow></math> by <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>1</mn></mrow></math>, you add <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>s</mi><mo>&#x0002B;</mo><mn>1</mn></mrow></math> to the previous result.</p><p>Would you like to try calculating <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>2</mn><mi>&#x00023;</mi><mn>5</mn></mrow></math> next, or would you like to see if there’s a pattern forming?"
+              "content": "Exactly right! You’ve applied the recursive rule perfectly: <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>1</mn><mi>&#x00023;</mi><mn>5</mn><mo>&#x0003D;</mo><mo stretchy=\"false\">&#x00028;</mo><mn>0</mn><mi>&#x00023;</mi><mn>5</mn><mo stretchy=\"false\">&#x00029;</mo><mo>&#x0002B;</mo><mn>5</mn><mo>&#x0002B;</mo><mn>1</mn><mo>&#x0003D;</mo><mn>11</mn></mrow></math>. This step-by-step process is called recursion, and it’s a powerful way to define operations or sequences.</p><p>Let’s connect this to a broader idea: this recursion is similar to how you might define addition or multiplication from repeated operations. For example, addition can be defined recursively as <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>a</mi><mo>&#x0002B;</mo><mn>1</mn><mo>&#x0003D;</mo><mo stretchy=\"false\">&#x00028;</mo><mi>a</mi><mo stretchy=\"false\">&#x00029;</mo><mo>&#x0002B;</mo><mn>1</mn></mrow></math>, and multiplication as <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>a</mi><mi>&#x000D7;</mi><mo stretchy=\"false\">&#x00028;</mo><mi>b</mi><mo>&#x0002B;</mo><mn>1</mn><mo stretchy=\"false\">&#x00029;</mo><mo>&#x0003D;</mo><mo stretchy=\"false\">&#x00028;</mo><mi>a</mi><mi>&#x000D7;</mi><mi>b</mi><mo stretchy=\"false\">&#x00029;</mo><mo>&#x0002B;</mo><mi>a</mi></mrow></math>. Here, each time you increase <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>r</mi></mrow></math> by <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>1</mn></mrow></math>, you add <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>s</mi><mo>&#x0002B;</mo><mn>1</mn></mrow></math> to the previous result.</p><p>Would you like to try calculating <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>2</mn><mi>&#x00023;</mi><mn>5</mn></mrow></math> next, or would you like to see if there’s a pattern forming?"
             },
             {
               "role": "user",
@@ -48,7 +48,7 @@ const SAMPLE_QUESTIONS = [
             },
             {
               "role": "assistant",
-              "content": "Great observation! You’re very close. Since <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>0</mn><mi>&#x00023;</mi><mn>5</mn><mo>&#x0003D;</mo><mn>5</mn></mrow></math>, and each increment in <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>r</mi></mrow></math> adds <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>6</mn></mrow></math> (because <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>s</mi><mo>&#x0002B;</mo><mn>1</mn><mo>&#x0003D;</mo><mn>5</mn><mo>&#x0002B;</mo><mn>1</mn><mo>&#x0003D;</mo><mn>6</mn></mrow></math>), you want to add <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>6</mn></mrow></math> for each step from <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>r</mi><mo>&#x0003D;</mo><mn>0</mn></mrow></math> up to <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>r</mi><mo>&#x0003D;</mo><mn>11</mn></mrow></math>. </p><p>But notice: to get from <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>0</mn><mi>&#x00023;</mi><mn>5</mn></mrow></math> to <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>11</mn><mi>&#x00023;</mi><mn>5</mn></mrow></math>, you need to add <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>6</mn></mrow></math> a total of <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>11</mn></mrow></math> times (once for each increase from <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>0</mn></mrow></math> to <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>11</mn></mrow></math>). So the formula is:<br><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mrow><mn>11</mn><mi>&#x00023;</mi><mn>5</mn><mo>&#x0003D;</mo><mn>0</mn><mi>&#x00023;</mi><mn>5</mn><mo>&#x0002B;</mo><mn>11</mn><mo>&#x000D7;</mo><mn>6</mn><mo>&#x0003D;</mo><mn>5</mn><mo>&#x0002B;</mo><mn>66</mn><mo>&#x0003D;</mo><mn>71</mn><mo>&#x0002E;</mo></mrow></math></p><p>This is a classic example of an arithmetic sequence, where each term increases by a constant difference. In general, for this operation, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>r</mi><mi>&#x00023;</mi><mi>s</mi><mo>&#x0003D;</mo><mi>r</mi><mo>&#x000D7;</mo><mo stretchy=\"false\">&#x00028;</mo><mi>s</mi><mo>&#x0002B;</mo><mn>1</mn><mo stretchy=\"false\">&#x00029;</mo><mo>&#x0002B;</mo><mi>s</mi></mrow></math>. Would you like to see how this formula connects to the recursive rule, or how it works for other values?"
+              "content": "Great observation! You’re very close. Since <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>0</mn><mi>&#x00023;</mi><mn>5</mn><mo>&#x0003D;</mo><mn>5</mn></mrow></math>, and each increment in <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>r</mi></mrow></math> adds <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>6</mn></mrow></math> (because <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>s</mi><mo>&#x0002B;</mo><mn>1</mn><mo>&#x0003D;</mo><mn>5</mn><mo>&#x0002B;</mo><mn>1</mn><mo>&#x0003D;</mo><mn>6</mn></mrow></math>), you want to add <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>6</mn></mrow></math> for each step from <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>r</mi><mo>&#x0003D;</mo><mn>0</mn></mrow></math> up to <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>r</mi><mo>&#x0003D;</mo><mn>11</mn></mrow></math>. </p><p>But notice: to get from <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>0</mn><mi>&#x00023;</mi><mn>5</mn></mrow></math> to <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>11</mn><mi>&#x00023;</mi><mn>5</mn></mrow></math>, you need to add <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>6</mn></mrow></math> a total of <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>11</mn></mrow></math> times (once for each increase from <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>0</mn></mrow></math> to <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>11</mn></mrow></math>). So the formula is:<br><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mrow><mn>11</mn><mi>&#x00023;</mi><mn>5</mn><mo>&#x0003D;</mo><mn>0</mn><mi>&#x00023;</mi><mn>5</mn><mo>&#x0002B;</mo><mn>11</mn><mi>&#x000D7;</mi><mn>6</mn><mo>&#x0003D;</mo><mn>5</mn><mo>&#x0002B;</mo><mn>66</mn><mo>&#x0003D;</mo><mn>71</mn><mo>&#x0002E;</mo></mrow></math></p><p>This is a classic example of an arithmetic sequence, where each term increases by a constant difference. In general, for this operation, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>r</mi><mi>&#x00023;</mi><mi>s</mi><mo>&#x0003D;</mo><mi>r</mi><mi>&#x000D7;</mi><mo stretchy=\"false\">&#x00028;</mo><mi>s</mi><mo>&#x0002B;</mo><mn>1</mn><mo stretchy=\"false\">&#x00029;</mo><mo>&#x0002B;</mo><mi>s</mi></mrow></math>. Would you like to see how this formula connects to the recursive rule, or how it works for other values?"
             },
             {
               "role": "user",
@@ -64,7 +64,7 @@ const SAMPLE_QUESTIONS = [
             },
             {
               "role": "assistant",
-              "content": "Yes, that's exactly right—<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>11</mn><mi>&#x00023;</mi><mn>5</mn><mo>&#x0003D;</mo><mn>71</mn></mrow></math>. You’ve correctly counted all eleven steps, starting from <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>0</mn><mi>&#x00023;</mi><mn>5</mn><mo>&#x0003D;</mo><mn>5</mn></mrow></math> and adding <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>6</mn></mrow></math> each time.</p><p>Let’s expand on this idea: this process is a specific example of a linear (arithmetic) sequence, where each term increases by a fixed amount. In general, for any <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>r</mi></mrow></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>s</mi></mrow></math>, you can use the formula:<br><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mrow><mi>r</mi><mi>&#x00023;</mi><mi>s</mi><mo>&#x0003D;</mo><mi>r</mi><mo>&#x000D7;</mo><mo stretchy=\"false\">&#x00028;</mo><mi>s</mi><mo>&#x0002B;</mo><mn>1</mn><mo stretchy=\"false\">&#x00029;</mo><mo>&#x0002B;</mo><mi>s</mi></mrow></math><br>This formula comes from applying the recursive rule repeatedly. Notice how the symmetry property (<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>r</mi><mi>&#x00023;</mi><mi>s</mi><mo>&#x0003D;</mo><mi>s</mi><mi>&#x00023;</mi><mi>r</mi></mrow></math>) means you could also write <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>s</mi><mi>&#x00023;</mi><mi>r</mi><mo>&#x0003D;</mo><mi>s</mi><mo>&#x000D7;</mo><mo stretchy=\"false\">&#x00028;</mo><mi>r</mi><mo>&#x0002B;</mo><mn>1</mn><mo stretchy=\"false\">&#x00029;</mo><mo>&#x0002B;</mo><mi>r</mi></mrow></math>, and both will give the same result.</p><p>Would you like to see how this formula is derived from the recursion, or how it works for other values?"
+              "content": "Yes, that's exactly right—<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>11</mn><mi>&#x00023;</mi><mn>5</mn><mo>&#x0003D;</mo><mn>71</mn></mrow></math>. You’ve correctly counted all eleven steps, starting from <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>0</mn><mi>&#x00023;</mi><mn>5</mn><mo>&#x0003D;</mo><mn>5</mn></mrow></math> and adding <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>6</mn></mrow></math> each time.</p><p>Let’s expand on this idea: this process is a specific example of a linear (arithmetic) sequence, where each term increases by a fixed amount. In general, for any <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>r</mi></mrow></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>s</mi></mrow></math>, you can use the formula:<br><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mrow><mi>r</mi><mi>&#x00023;</mi><mi>s</mi><mo>&#x0003D;</mo><mi>r</mi><mi>&#x000D7;</mi><mo stretchy=\"false\">&#x00028;</mo><mi>s</mi><mo>&#x0002B;</mo><mn>1</mn><mo stretchy=\"false\">&#x00029;</mo><mo>&#x0002B;</mo><mi>s</mi></mrow></math><br>This formula comes from applying the recursive rule repeatedly. Notice how the symmetry property (<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>r</mi><mi>&#x00023;</mi><mi>s</mi><mo>&#x0003D;</mo><mi>s</mi><mi>&#x00023;</mi><mi>r</mi></mrow></math>) means you could also write <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>s</mi><mi>&#x00023;</mi><mi>r</mi><mo>&#x0003D;</mo><mi>s</mi><mi>&#x000D7;</mi><mo stretchy=\"false\">&#x00028;</mo><mi>r</mi><mo>&#x0002B;</mo><mn>1</mn><mo stretchy=\"false\">&#x00029;</mo><mo>&#x0002B;</mo><mi>r</mi></mrow></math>, and both will give the same result.</p><p>Would you like to see how this formula is derived from the recursion, or how it works for other values?"
             }
           ],
           "num_turns": 7,
@@ -78,7 +78,7 @@ const SAMPLE_QUESTIONS = [
           "knowledge_progression": [
             {
               "turn": 0,
-              "label": "Initial",
+              "label": "Init",
               "states": {
                 "IU1: Definition of \\# operation": "knows_well",
                 "IU4: Recursive property of \\#": "partial_understanding",
@@ -93,7 +93,7 @@ const SAMPLE_QUESTIONS = [
             },
             {
               "turn": 1,
-              "label": "After Turn 1",
+              "label": "Turn 1",
               "states": {
                 "IU1: Definition of \\# operation": "knows_well",
                 "IU4: Recursive property of \\#": "knows_well",
@@ -164,7 +164,7 @@ const SAMPLE_QUESTIONS = [
             },
             {
               "turn": 2,
-              "label": "After Turn 2",
+              "label": "Turn 2",
               "states": {
                 "IU1: Definition of \\# operation": "knows_well",
                 "IU4: Recursive property of \\#": "knows_well",
@@ -235,7 +235,7 @@ const SAMPLE_QUESTIONS = [
             },
             {
               "turn": 3,
-              "label": "After Turn 3",
+              "label": "Turn 3",
               "states": {
                 "IU1: Definition of \\# operation": "knows_well",
                 "IU4: Recursive property of \\#": "knows_well",
@@ -306,7 +306,7 @@ const SAMPLE_QUESTIONS = [
             },
             {
               "turn": 4,
-              "label": "After Turn 4",
+              "label": "Turn 4",
               "states": {
                 "IU1: Definition of \\# operation": "knows_well",
                 "IU4: Recursive property of \\#": "knows_well",
@@ -377,7 +377,7 @@ const SAMPLE_QUESTIONS = [
             },
             {
               "turn": 5,
-              "label": "After Turn 5",
+              "label": "Turn 5",
               "states": {
                 "IU1: Definition of \\# operation": "knows_well",
                 "IU4: Recursive property of \\#": "knows_well",
@@ -448,7 +448,7 @@ const SAMPLE_QUESTIONS = [
             },
             {
               "turn": 6,
-              "label": "After Turn 6",
+              "label": "Turn 6",
               "states": {
                 "IU1: Definition of \\# operation": "knows_well",
                 "IU4: Recursive property of \\#": "knows_well",
@@ -519,7 +519,7 @@ const SAMPLE_QUESTIONS = [
             },
             {
               "turn": 7,
-              "label": "After Turn 7",
+              "label": "Turn 7",
               "states": {
                 "IU1: Definition of \\# operation": "knows_well",
                 "IU4: Recursive property of \\#": "knows_well",
@@ -602,11 +602,11 @@ const SAMPLE_QUESTIONS = [
             },
             {
               "role": "user",
-              "content": "Okay, I think I see what you mean. Since the rule is <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>r</mi><mtext>&#x000A0;</mtext><mi>&#x00023;</mi><mtext>&#x000A0;</mtext><mn>0</mn><mo>&#x0003D;</mo><mi>r</mi></mrow></math>, and we know <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>r</mi><mtext>&#x000A0;</mtext><mi>&#x00023;</mi><mtext>&#x000A0;</mtext><mi>s</mi><mo>&#x0003D;</mo><mi>s</mi><mtext>&#x000A0;</mtext><mi>&#x00023;</mi><mtext>&#x000A0;</mtext><mi>r</mi></mrow></math>, then <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>0</mn><mtext>&#x000A0;</mtext><mi>&#x00023;</mi><mtext>&#x000A0;</mtext><mn>5</mn></mrow></math> should just be the same as <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>5</mn><mtext>&#x000A0;</mtext><mi>&#x00023;</mi><mtext>&#x000A0;</mtext><mn>0</mn></mrow></math>, which is <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>5</mn></mrow></math>. </p><p>So, if I start at <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>0</mn><mtext>&#x000A0;</mtext><mi>&#x00023;</mi><mtext>&#x000A0;</mtext><mn>5</mn><mo>&#x0003D;</mo><mn>5</mn></mrow></math>, and every time I increase the first number by 1, I have to add <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>s</mi><mo>&#x0002B;</mo><mn>1</mn></mrow></math> (which is <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>5</mn><mo>&#x0002B;</mo><mn>1</mn><mo>&#x0003D;</mo><mn>6</mn></mrow></math>), then for <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>1</mn><mtext>&#x000A0;</mtext><mi>&#x00023;</mi><mtext>&#x000A0;</mtext><mn>5</mn></mrow></math>, I would do <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>5</mn><mo>&#x0002B;</mo><mn>6</mn><mo>&#x0003D;</mo><mn>11</mn></mrow></math>. For <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>2</mn><mtext>&#x000A0;</mtext><mi>&#x00023;</mi><mtext>&#x000A0;</mtext><mn>5</mn></mrow></math>, I would add another 6 to get 17. </p><p>Since I need to get to <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>11</mn><mtext>&#x000A0;</mtext><mi>&#x00023;</mi><mtext>&#x000A0;</mtext><mn>5</mn></mrow></math>, does that mean I have to add 6 to the starting value of five a total of 11 times? It feels like there might be a faster way to calculate that than just adding 6 over and over. Is it just <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>5</mn><mo>&#x0002B;</mo><mo stretchy=\"false\">&#x00028;</mo><mn>11</mn><mo>&#x000D7;</mo><mn>6</mn><mo stretchy=\"false\">&#x00029;</mo></mrow></math>?"
+              "content": "Okay, I think I see what you mean. Since the rule is <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>r</mi><mtext>&#x000A0;</mtext><mi>&#x00023;</mi><mtext>&#x000A0;</mtext><mn>0</mn><mo>&#x0003D;</mo><mi>r</mi></mrow></math>, and we know <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>r</mi><mtext>&#x000A0;</mtext><mi>&#x00023;</mi><mtext>&#x000A0;</mtext><mi>s</mi><mo>&#x0003D;</mo><mi>s</mi><mtext>&#x000A0;</mtext><mi>&#x00023;</mi><mtext>&#x000A0;</mtext><mi>r</mi></mrow></math>, then <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>0</mn><mtext>&#x000A0;</mtext><mi>&#x00023;</mi><mtext>&#x000A0;</mtext><mn>5</mn></mrow></math> should just be the same as <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>5</mn><mtext>&#x000A0;</mtext><mi>&#x00023;</mi><mtext>&#x000A0;</mtext><mn>0</mn></mrow></math>, which is <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>5</mn></mrow></math>. </p><p>So, if I start at <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>0</mn><mtext>&#x000A0;</mtext><mi>&#x00023;</mi><mtext>&#x000A0;</mtext><mn>5</mn><mo>&#x0003D;</mo><mn>5</mn></mrow></math>, and every time I increase the first number by 1, I have to add <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>s</mi><mo>&#x0002B;</mo><mn>1</mn></mrow></math> (which is <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>5</mn><mo>&#x0002B;</mo><mn>1</mn><mo>&#x0003D;</mo><mn>6</mn></mrow></math>), then for <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>1</mn><mtext>&#x000A0;</mtext><mi>&#x00023;</mi><mtext>&#x000A0;</mtext><mn>5</mn></mrow></math>, I would do <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>5</mn><mo>&#x0002B;</mo><mn>6</mn><mo>&#x0003D;</mo><mn>11</mn></mrow></math>. For <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>2</mn><mtext>&#x000A0;</mtext><mi>&#x00023;</mi><mtext>&#x000A0;</mtext><mn>5</mn></mrow></math>, I would add another 6 to get 17. </p><p>Since I need to get to <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>11</mn><mtext>&#x000A0;</mtext><mi>&#x00023;</mi><mtext>&#x000A0;</mtext><mn>5</mn></mrow></math>, does that mean I have to add 6 to the starting value of five a total of 11 times? It feels like there might be a faster way to calculate that than just adding 6 over and over. Is it just <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>5</mn><mo>&#x0002B;</mo><mo stretchy=\"false\">&#x00028;</mo><mn>11</mn><mi>&#x000D7;</mi><mn>6</mn><mo stretchy=\"false\">&#x00029;</mo></mrow></math>?"
             },
             {
               "role": "assistant",
-              "content": "Excellent reasoning! You’ve spotted the key shortcut: since each step adds <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>6</mn></mrow></math>, and you start at <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>0</mn><mtext>&#x000A0;</mtext><mi>&#x00023;</mi><mtext>&#x000A0;</mtext><mn>5</mn><mo>&#x0003D;</mo><mn>5</mn></mrow></math>, reaching <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>11</mn><mtext>&#x000A0;</mtext><mi>&#x00023;</mi><mtext>&#x000A0;</mtext><mn>5</mn></mrow></math> means adding <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>6</mn></mrow></math> a total of <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>11</mn></mrow></math> times. So, yes, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>11</mn><mtext>&#x000A0;</mtext><mi>&#x00023;</mi><mtext>&#x000A0;</mtext><mn>5</mn><mo>&#x0003D;</mo><mn>5</mn><mo>&#x0002B;</mo><mn>11</mn><mo>&#x000D7;</mo><mn>6</mn><mo>&#x0003D;</mo><mn>5</mn><mo>&#x0002B;</mo><mn>66</mn><mo>&#x0003D;</mo><mn>71</mn></mrow></math>.</p><p>Let’s generalize this pattern: for any <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>r</mi></mrow></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>r</mi><mtext>&#x000A0;</mtext><mi>&#x00023;</mi><mtext>&#x000A0;</mtext><mi>s</mi><mo>&#x0003D;</mo><mo stretchy=\"false\">&#x00028;</mo><mn>0</mn><mtext>&#x000A0;</mtext><mi>&#x00023;</mi><mtext>&#x000A0;</mtext><mi>s</mi><mo stretchy=\"false\">&#x00029;</mo><mo>&#x0002B;</mo><mi>r</mi><mo stretchy=\"false\">&#x00028;</mo><mi>s</mi><mo>&#x0002B;</mo><mn>1</mn><mo stretchy=\"false\">&#x00029;</mo></mrow></math>. Since <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>0</mn><mtext>&#x000A0;</mtext><mi>&#x00023;</mi><mtext>&#x000A0;</mtext><mi>s</mi><mo>&#x0003D;</mo><mi>s</mi></mrow></math>, this simplifies to <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>r</mi><mtext>&#x000A0;</mtext><mi>&#x00023;</mi><mtext>&#x000A0;</mtext><mi>s</mi><mo>&#x0003D;</mo><mi>s</mi><mo>&#x0002B;</mo><mi>r</mi><mo stretchy=\"false\">&#x00028;</mo><mi>s</mi><mo>&#x0002B;</mo><mn>1</mn><mo stretchy=\"false\">&#x00029;</mo><mo>&#x0003D;</mo><mi>r</mi><mi>s</mi><mo>&#x0002B;</mo><mi>r</mi><mo>&#x0002B;</mo><mi>s</mi></mrow></math>. Notice how this formula is symmetric in <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>r</mi></mrow></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>s</mi></mrow></math>, matching the rule <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>r</mi><mtext>&#x000A0;</mtext><mi>&#x00023;</mi><mtext>&#x000A0;</mtext><mi>s</mi><mo>&#x0003D;</mo><mi>s</mi><mtext>&#x000A0;</mtext><mi>&#x00023;</mi><mtext>&#x000A0;</mtext><mi>r</mi></mrow></math>.</p><p>This kind of recursive definition is a classic example of a linear recurrence, and recognizing the pattern lets you jump straight to a formula instead of repeated addition. Would you like to see how this connects to other operations, or how to prove the formula by induction?"
+              "content": "Excellent reasoning! You’ve spotted the key shortcut: since each step adds <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>6</mn></mrow></math>, and you start at <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>0</mn><mtext>&#x000A0;</mtext><mi>&#x00023;</mi><mtext>&#x000A0;</mtext><mn>5</mn><mo>&#x0003D;</mo><mn>5</mn></mrow></math>, reaching <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>11</mn><mtext>&#x000A0;</mtext><mi>&#x00023;</mi><mtext>&#x000A0;</mtext><mn>5</mn></mrow></math> means adding <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>6</mn></mrow></math> a total of <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>11</mn></mrow></math> times. So, yes, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>11</mn><mtext>&#x000A0;</mtext><mi>&#x00023;</mi><mtext>&#x000A0;</mtext><mn>5</mn><mo>&#x0003D;</mo><mn>5</mn><mo>&#x0002B;</mo><mn>11</mn><mi>&#x000D7;</mi><mn>6</mn><mo>&#x0003D;</mo><mn>5</mn><mo>&#x0002B;</mo><mn>66</mn><mo>&#x0003D;</mo><mn>71</mn></mrow></math>.</p><p>Let’s generalize this pattern: for any <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>r</mi></mrow></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>r</mi><mtext>&#x000A0;</mtext><mi>&#x00023;</mi><mtext>&#x000A0;</mtext><mi>s</mi><mo>&#x0003D;</mo><mo stretchy=\"false\">&#x00028;</mo><mn>0</mn><mtext>&#x000A0;</mtext><mi>&#x00023;</mi><mtext>&#x000A0;</mtext><mi>s</mi><mo stretchy=\"false\">&#x00029;</mo><mo>&#x0002B;</mo><mi>r</mi><mo stretchy=\"false\">&#x00028;</mo><mi>s</mi><mo>&#x0002B;</mo><mn>1</mn><mo stretchy=\"false\">&#x00029;</mo></mrow></math>. Since <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>0</mn><mtext>&#x000A0;</mtext><mi>&#x00023;</mi><mtext>&#x000A0;</mtext><mi>s</mi><mo>&#x0003D;</mo><mi>s</mi></mrow></math>, this simplifies to <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>r</mi><mtext>&#x000A0;</mtext><mi>&#x00023;</mi><mtext>&#x000A0;</mtext><mi>s</mi><mo>&#x0003D;</mo><mi>s</mi><mo>&#x0002B;</mo><mi>r</mi><mo stretchy=\"false\">&#x00028;</mo><mi>s</mi><mo>&#x0002B;</mo><mn>1</mn><mo stretchy=\"false\">&#x00029;</mo><mo>&#x0003D;</mo><mi>r</mi><mi>s</mi><mo>&#x0002B;</mo><mi>r</mi><mo>&#x0002B;</mo><mi>s</mi></mrow></math>. Notice how this formula is symmetric in <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>r</mi></mrow></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>s</mi></mrow></math>, matching the rule <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>r</mi><mtext>&#x000A0;</mtext><mi>&#x00023;</mi><mtext>&#x000A0;</mtext><mi>s</mi><mo>&#x0003D;</mo><mi>s</mi><mtext>&#x000A0;</mtext><mi>&#x00023;</mi><mtext>&#x000A0;</mtext><mi>r</mi></mrow></math>.</p><p>This kind of recursive definition is a classic example of a linear recurrence, and recognizing the pattern lets you jump straight to a formula instead of repeated addition. Would you like to see how this connects to other operations, or how to prove the formula by induction?"
             }
           ],
           "num_turns": 2,
@@ -635,7 +635,7 @@ const SAMPLE_QUESTIONS = [
             },
             {
               "role": "user",
-              "content": "That makes so much sense now! The \"product plus sum\" idea is way easier to remember than that recursive rule. So, to find <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>11</mn><mi>&#x00023;</mi><mn>5</mn></mrow></math>, I just need to plug the numbers into that simplified formula: <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>11</mn><mi>&#x00023;</mi><mn>5</mn><mo>&#x0003D;</mo><mo stretchy=\"false\">&#x00028;</mo><mn>11</mn><mo>&#x000D7;</mo><mn>5</mn><mo stretchy=\"false\">&#x00029;</mo><mo>&#x0002B;</mo><mn>11</mn><mo>&#x0002B;</mo><mn>5</mn></mrow></math>. That would be <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>55</mn><mo>&#x0002B;</mo><mn>11</mn><mo>&#x0002B;</mo><mn>5</mn></mrow></math>, which is <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>71</mn></mrow></math>. I'm really glad I checked the symmetry earlier because it made me feel a lot more confident that the formula was right. I think I've got it now! Thank you for helping me see the pattern!"
+              "content": "That makes so much sense now! The \"product plus sum\" idea is way easier to remember than that recursive rule. So, to find <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>11</mn><mi>&#x00023;</mi><mn>5</mn></mrow></math>, I just need to plug the numbers into that simplified formula: <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>11</mn><mi>&#x00023;</mi><mn>5</mn><mo>&#x0003D;</mo><mo stretchy=\"false\">&#x00028;</mo><mn>11</mn><mi>&#x000D7;</mi><mn>5</mn><mo stretchy=\"false\">&#x00029;</mo><mo>&#x0002B;</mo><mn>11</mn><mo>&#x0002B;</mo><mn>5</mn></mrow></math>. That would be <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>55</mn><mo>&#x0002B;</mo><mn>11</mn><mo>&#x0002B;</mo><mn>5</mn></mrow></math>, which is <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>71</mn></mrow></math>. I'm really glad I checked the symmetry earlier because it made me feel a lot more confident that the formula was right. I think I've got it now! Thank you for helping me see the pattern!"
             },
             {
               "role": "assistant",
@@ -668,11 +668,11 @@ const SAMPLE_QUESTIONS = [
             },
             {
               "role": "assistant",
-              "content": "Great job! Yes, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>1</mn><mi>&#x00023;</mi><mn>5</mn><mo>&#x0003D;</mo><mo stretchy=\"false\">&#x00028;</mo><mn>0</mn><mi>&#x00023;</mi><mn>5</mn><mo stretchy=\"false\">&#x00029;</mo><mo>&#x0002B;</mo><mn>5</mn><mo>&#x0002B;</mo><mn>1</mn><mo>&#x0003D;</mo><mn>5</mn><mo>&#x0002B;</mo><mn>5</mn><mo>&#x0002B;</mo><mn>1</mn><mo>&#x0003D;</mo><mn>11</mn></mrow></math>.</p><p>Now, each time you increase the first number by 1, you add <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>5</mn><mo>&#x0002B;</mo><mn>1</mn><mo>&#x0003D;</mo><mn>6</mn></mrow></math> to the previous result. So:<br>- <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>2</mn><mi>&#x00023;</mi><mn>5</mn><mo>&#x0003D;</mo><mo stretchy=\"false\">&#x00028;</mo><mn>1</mn><mi>&#x00023;</mi><mn>5</mn><mo stretchy=\"false\">&#x00029;</mo><mo>&#x0002B;</mo><mn>6</mn><mo>&#x0003D;</mo><mn>11</mn><mo>&#x0002B;</mo><mn>6</mn><mo>&#x0003D;</mo><mn>17</mn></mrow></math><br>- <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>3</mn><mi>&#x00023;</mi><mn>5</mn><mo>&#x0003D;</mo><mo stretchy=\"false\">&#x00028;</mo><mn>2</mn><mi>&#x00023;</mi><mn>5</mn><mo stretchy=\"false\">&#x00029;</mo><mo>&#x0002B;</mo><mn>6</mn><mo>&#x0003D;</mo><mn>17</mn><mo>&#x0002B;</mo><mn>6</mn><mo>&#x0003D;</mo><mn>23</mn></mrow></math><br>- and so on.</p><p>Since you started at <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>0</mn><mi>&#x00023;</mi><mn>5</mn></mrow></math> and want <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>11</mn><mi>&#x00023;</mi><mn>5</mn></mrow></math>, you need to add <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>6</mn></mrow></math> a total of 11 times (from <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>0</mn></mrow></math> up to <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>11</mn></mrow></math> is 11 steps). So, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>11</mn><mi>&#x00023;</mi><mn>5</mn><mo>&#x0003D;</mo><mn>5</mn><mo>&#x0002B;</mo><mn>11</mn><mo>&#x000D7;</mo><mn>6</mn></mrow></math>.</p><p>This is a classic example of using recursion to build up a value, and it’s closely related to arithmetic sequences, where each term increases by a constant amount. Would you like to see how to generalize this pattern for any <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>r</mi><mi>&#x00023;</mi><mi>s</mi></mrow></math>?"
+              "content": "Great job! Yes, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>1</mn><mi>&#x00023;</mi><mn>5</mn><mo>&#x0003D;</mo><mo stretchy=\"false\">&#x00028;</mo><mn>0</mn><mi>&#x00023;</mi><mn>5</mn><mo stretchy=\"false\">&#x00029;</mo><mo>&#x0002B;</mo><mn>5</mn><mo>&#x0002B;</mo><mn>1</mn><mo>&#x0003D;</mo><mn>5</mn><mo>&#x0002B;</mo><mn>5</mn><mo>&#x0002B;</mo><mn>1</mn><mo>&#x0003D;</mo><mn>11</mn></mrow></math>.</p><p>Now, each time you increase the first number by 1, you add <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>5</mn><mo>&#x0002B;</mo><mn>1</mn><mo>&#x0003D;</mo><mn>6</mn></mrow></math> to the previous result. So:<br>- <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>2</mn><mi>&#x00023;</mi><mn>5</mn><mo>&#x0003D;</mo><mo stretchy=\"false\">&#x00028;</mo><mn>1</mn><mi>&#x00023;</mi><mn>5</mn><mo stretchy=\"false\">&#x00029;</mo><mo>&#x0002B;</mo><mn>6</mn><mo>&#x0003D;</mo><mn>11</mn><mo>&#x0002B;</mo><mn>6</mn><mo>&#x0003D;</mo><mn>17</mn></mrow></math><br>- <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>3</mn><mi>&#x00023;</mi><mn>5</mn><mo>&#x0003D;</mo><mo stretchy=\"false\">&#x00028;</mo><mn>2</mn><mi>&#x00023;</mi><mn>5</mn><mo stretchy=\"false\">&#x00029;</mo><mo>&#x0002B;</mo><mn>6</mn><mo>&#x0003D;</mo><mn>17</mn><mo>&#x0002B;</mo><mn>6</mn><mo>&#x0003D;</mo><mn>23</mn></mrow></math><br>- and so on.</p><p>Since you started at <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>0</mn><mi>&#x00023;</mi><mn>5</mn></mrow></math> and want <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>11</mn><mi>&#x00023;</mi><mn>5</mn></mrow></math>, you need to add <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>6</mn></mrow></math> a total of 11 times (from <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>0</mn></mrow></math> up to <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>11</mn></mrow></math> is 11 steps). So, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>11</mn><mi>&#x00023;</mi><mn>5</mn><mo>&#x0003D;</mo><mn>5</mn><mo>&#x0002B;</mo><mn>11</mn><mi>&#x000D7;</mi><mn>6</mn></mrow></math>.</p><p>This is a classic example of using recursion to build up a value, and it’s closely related to arithmetic sequences, where each term increases by a constant amount. Would you like to see how to generalize this pattern for any <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>r</mi><mi>&#x00023;</mi><mi>s</mi></mrow></math>?"
             },
             {
               "role": "user",
-              "content": "So <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>11</mn><mo>&#x000D7;</mo><mn>6</mn></mrow></math> is 66, and <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>66</mn><mo>&#x0002B;</mo><mn>5</mn></mrow></math> is 71. Is 71 the final answer for <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>11</mn><mi>&#x00023;</mi><mn>5</mn></mrow></math> then?"
+              "content": "So <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>11</mn><mi>&#x000D7;</mi><mn>6</mn></mrow></math> is 66, and <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>66</mn><mo>&#x0002B;</mo><mn>5</mn></mrow></math> is 71. Is 71 the final answer for <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>11</mn><mi>&#x00023;</mi><mn>5</mn></mrow></math> then?"
             },
             {
               "role": "assistant",
@@ -735,7 +735,7 @@ const SAMPLE_QUESTIONS = [
             },
             {
               "role": "user",
-              "content": "<thought><br>That makes sense! Since we both agree the answer is 71, I'm curious about that general formula you mentioned. I remember you wrote <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>n</mi><mtext>&#x000A0;</mtext><mi>&#x00023;</mi><mtext>&#x000A0;</mtext><mi>s</mi><mo>&#x0003D;</mo><mo stretchy=\"false\">&#x00028;</mo><mi>n</mi><mo>&#x0002B;</mo><mn>1</mn><mo stretchy=\"false\">&#x00029;</mo><mi>s</mi><mo>&#x0002B;</mo><mi>n</mi></mrow></math> earlier—if I try to use that for <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>11</mn><mtext>&#x000A0;</mtext><mi>&#x00023;</mi><mtext>&#x000A0;</mtext><mn>5</mn></mrow></math>, would it be <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mo stretchy=\"false\">&#x00028;</mo><mn>11</mn><mo>&#x0002B;</mo><mn>1</mn><mo stretchy=\"false\">&#x00029;</mo><mn>5</mn><mo>&#x0002B;</mo><mn>11</mn></mrow></math>, which is <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>12</mn><mo>&#x000D7;</mo><mn>5</mn><mo>&#x0002B;</mo><mn>11</mn><mo>&#x0003D;</mo><mn>71</mn></mrow></math>?</p><p>TERMINATE: TRUE"
+              "content": "<thought><br>That makes sense! Since we both agree the answer is 71, I'm curious about that general formula you mentioned. I remember you wrote <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>n</mi><mtext>&#x000A0;</mtext><mi>&#x00023;</mi><mtext>&#x000A0;</mtext><mi>s</mi><mo>&#x0003D;</mo><mo stretchy=\"false\">&#x00028;</mo><mi>n</mi><mo>&#x0002B;</mo><mn>1</mn><mo stretchy=\"false\">&#x00029;</mo><mi>s</mi><mo>&#x0002B;</mo><mi>n</mi></mrow></math> earlier—if I try to use that for <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>11</mn><mtext>&#x000A0;</mtext><mi>&#x00023;</mi><mtext>&#x000A0;</mtext><mn>5</mn></mrow></math>, would it be <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mo stretchy=\"false\">&#x00028;</mo><mn>11</mn><mo>&#x0002B;</mo><mn>1</mn><mo stretchy=\"false\">&#x00029;</mo><mn>5</mn><mo>&#x0002B;</mo><mn>11</mn></mrow></math>, which is <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>12</mn><mi>&#x000D7;</mi><mn>5</mn><mo>&#x0002B;</mo><mn>11</mn><mo>&#x0003D;</mo><mn>71</mn></mrow></math>?</p><p>TERMINATE: TRUE"
             }
           ],
           "num_turns": 5,
@@ -749,7 +749,7 @@ const SAMPLE_QUESTIONS = [
           "knowledge_progression": [
             {
               "turn": 0,
-              "label": "Initial",
+              "label": "Init",
               "states": {
                 "IU4: Recursive property of \\#": "knows_well",
                 "IU3: Base case for \\#": "knows_well",
@@ -764,7 +764,7 @@ const SAMPLE_QUESTIONS = [
             },
             {
               "turn": 1,
-              "label": "After Turn 1",
+              "label": "Turn 1",
               "states": {
                 "IU4: Recursive property of \\#": "knows_well",
                 "IU3: Base case for \\#": "knows_well",
@@ -835,7 +835,7 @@ const SAMPLE_QUESTIONS = [
             },
             {
               "turn": 2,
-              "label": "After Turn 2",
+              "label": "Turn 2",
               "states": {
                 "IU4: Recursive property of \\#": "knows_well",
                 "IU3: Base case for \\#": "knows_well",
@@ -906,7 +906,7 @@ const SAMPLE_QUESTIONS = [
             },
             {
               "turn": 3,
-              "label": "After Turn 3",
+              "label": "Turn 3",
               "states": {
                 "IU4: Recursive property of \\#": "knows_well",
                 "IU3: Base case for \\#": "knows_well",
@@ -977,7 +977,7 @@ const SAMPLE_QUESTIONS = [
             },
             {
               "turn": 4,
-              "label": "After Turn 4",
+              "label": "Turn 4",
               "states": {
                 "IU4: Recursive property of \\#": "knows_well",
                 "IU3: Base case for \\#": "knows_well",
@@ -1048,7 +1048,7 @@ const SAMPLE_QUESTIONS = [
             },
             {
               "turn": 5,
-              "label": "After Turn 5",
+              "label": "Turn 5",
               "states": {
                 "IU4: Recursive property of \\#": "knows_well",
                 "IU3: Base case for \\#": "knows_well",
@@ -1131,7 +1131,7 @@ const SAMPLE_QUESTIONS = [
             },
             {
               "role": "user",
-              "content": "Okay, let me try to list a few more values for <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>r</mi><mi>&#x00023;</mi><mn>5</mn></mrow></math> and see if I can see it.</p><p>We already found <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>0</mn><mi>&#x00023;</mi><mn>5</mn><mo>&#x0003D;</mo><mn>5</mn></mrow></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>1</mn><mi>&#x00023;</mi><mn>5</mn><mo>&#x0003D;</mo><mn>11</mn></mrow></math>.<br>Using the rule <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mo stretchy=\"false\">&#x00028;</mo><mi>r</mi><mo>&#x0002B;</mo><mn>1</mn><mo stretchy=\"false\">&#x00029;</mo><mi>&#x00023;</mi><mn>5</mn><mo>&#x0003D;</mo><mo stretchy=\"false\">&#x00028;</mo><mi>r</mi><mi>&#x00023;</mi><mn>5</mn><mo stretchy=\"false\">&#x00029;</mo><mo>&#x0002B;</mo><mn>5</mn><mo>&#x0002B;</mo><mn>1</mn></mrow></math>:<br>For <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>2</mn><mi>&#x00023;</mi><mn>5</mn></mrow></math>, it would be <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mo stretchy=\"false\">&#x00028;</mo><mn>1</mn><mi>&#x00023;</mi><mn>5</mn><mo stretchy=\"false\">&#x00029;</mo><mo>&#x0002B;</mo><mn>5</mn><mo>&#x0002B;</mo><mn>1</mn><mo>&#x0003D;</mo><mn>11</mn><mo>&#x0002B;</mo><mn>6</mn><mo>&#x0003D;</mo><mn>17</mn></mrow></math>.<br>For <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>3</mn><mi>&#x00023;</mi><mn>5</mn></mrow></math>, it would be <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mo stretchy=\"false\">&#x00028;</mo><mn>2</mn><mi>&#x00023;</mi><mn>5</mn><mo stretchy=\"false\">&#x00029;</mo><mo>&#x0002B;</mo><mn>5</mn><mo>&#x0002B;</mo><mn>1</mn><mo>&#x0003D;</mo><mn>17</mn><mo>&#x0002B;</mo><mn>6</mn><mo>&#x0003D;</mo><mn>23</mn></mrow></math>.</p><p>So the sequence for <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>r</mi><mo>&#x0003D;</mo><mn>0</mn><mo>&#x0002C;</mo><mn>1</mn><mo>&#x0002C;</mo><mn>2</mn><mo>&#x0002C;</mo><mn>3</mn></mrow></math> is <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>5</mn><mo>&#x0002C;</mo><mn>11</mn><mo>&#x0002C;</mo><mn>17</mn><mo>&#x0002C;</mo><mn>23</mn><mo>&#x0002E;</mo><mo>&#x0002E;</mo><mo>&#x0002E;</mo></mrow></math><br>It looks like it's just adding <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>6</mn></mrow></math> each time? Since <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>6</mn></mrow></math> is <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>5</mn><mo>&#x0002B;</mo><mn>1</mn></mrow></math>, I guess that makes sense.</p><p>If I follow that pattern, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>r</mi><mi>&#x00023;</mi><mn>5</mn></mrow></math> seems to be <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>5</mn><mo>&#x0002B;</mo><mi>r</mi><mo stretchy=\"false\">&#x00028;</mo><mn>5</mn><mo>&#x0002B;</mo><mn>1</mn><mo stretchy=\"false\">&#x00029;</mo></mrow></math>, or <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>5</mn><mo>&#x0002B;</mo><mn>6</mn><mi>r</mi></mrow></math>. <br>Wait, let me check if that works for the general case. If <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>r</mi><mi>&#x00023;</mi><mi>s</mi><mo>&#x0003D;</mo><mi>s</mi><mo>&#x0002B;</mo><mi>r</mi><mo stretchy=\"false\">&#x00028;</mo><mi>s</mi><mo>&#x0002B;</mo><mn>1</mn><mo stretchy=\"false\">&#x00029;</mo></mrow></math>, then:<br><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>r</mi><mi>&#x00023;</mi><mi>s</mi><mo>&#x0003D;</mo><mi>s</mi><mo>&#x0002B;</mo><mi>r</mi><mi>s</mi><mo>&#x0002B;</mo><mi>r</mi></mrow></math><br><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>r</mi><mi>&#x00023;</mi><mi>s</mi><mo>&#x0003D;</mo><mi>r</mi><mi>s</mi><mo>&#x0002B;</mo><mi>r</mi><mo>&#x0002B;</mo><mi>s</mi></mrow></math></p><p>Is the formula just <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>r</mi><mi>s</mi><mo>&#x0002B;</mo><mi>r</mi><mo>&#x0002B;</mo><mi>s</mi></mrow></math>? If I test that with <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>11</mn><mi>&#x00023;</mi><mn>5</mn></mrow></math>, it would be <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mo stretchy=\"false\">&#x00028;</mo><mn>11</mn><mo>&#x000D7;</mo><mn>5</mn><mo stretchy=\"false\">&#x00029;</mo><mo>&#x0002B;</mo><mn>11</mn><mo>&#x0002B;</mo><mn>5</mn></mrow></math>. That would be <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>55</mn><mo>&#x0002B;</mo><mn>16</mn><mo>&#x0003D;</mo><mn>71</mn></mrow></math>. Does that formula seem right based on the rules? It definitely works for <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>r</mi><mi>&#x00023;</mi><mn>0</mn><mo>&#x0003D;</mo><mi>r</mi></mrow></math> and it's symmetric."
+              "content": "Okay, let me try to list a few more values for <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>r</mi><mi>&#x00023;</mi><mn>5</mn></mrow></math> and see if I can see it.</p><p>We already found <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>0</mn><mi>&#x00023;</mi><mn>5</mn><mo>&#x0003D;</mo><mn>5</mn></mrow></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>1</mn><mi>&#x00023;</mi><mn>5</mn><mo>&#x0003D;</mo><mn>11</mn></mrow></math>.<br>Using the rule <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mo stretchy=\"false\">&#x00028;</mo><mi>r</mi><mo>&#x0002B;</mo><mn>1</mn><mo stretchy=\"false\">&#x00029;</mo><mi>&#x00023;</mi><mn>5</mn><mo>&#x0003D;</mo><mo stretchy=\"false\">&#x00028;</mo><mi>r</mi><mi>&#x00023;</mi><mn>5</mn><mo stretchy=\"false\">&#x00029;</mo><mo>&#x0002B;</mo><mn>5</mn><mo>&#x0002B;</mo><mn>1</mn></mrow></math>:<br>For <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>2</mn><mi>&#x00023;</mi><mn>5</mn></mrow></math>, it would be <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mo stretchy=\"false\">&#x00028;</mo><mn>1</mn><mi>&#x00023;</mi><mn>5</mn><mo stretchy=\"false\">&#x00029;</mo><mo>&#x0002B;</mo><mn>5</mn><mo>&#x0002B;</mo><mn>1</mn><mo>&#x0003D;</mo><mn>11</mn><mo>&#x0002B;</mo><mn>6</mn><mo>&#x0003D;</mo><mn>17</mn></mrow></math>.<br>For <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>3</mn><mi>&#x00023;</mi><mn>5</mn></mrow></math>, it would be <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mo stretchy=\"false\">&#x00028;</mo><mn>2</mn><mi>&#x00023;</mi><mn>5</mn><mo stretchy=\"false\">&#x00029;</mo><mo>&#x0002B;</mo><mn>5</mn><mo>&#x0002B;</mo><mn>1</mn><mo>&#x0003D;</mo><mn>17</mn><mo>&#x0002B;</mo><mn>6</mn><mo>&#x0003D;</mo><mn>23</mn></mrow></math>.</p><p>So the sequence for <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>r</mi><mo>&#x0003D;</mo><mn>0</mn><mo>&#x0002C;</mo><mn>1</mn><mo>&#x0002C;</mo><mn>2</mn><mo>&#x0002C;</mo><mn>3</mn></mrow></math> is <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>5</mn><mo>&#x0002C;</mo><mn>11</mn><mo>&#x0002C;</mo><mn>17</mn><mo>&#x0002C;</mo><mn>23</mn><mo>&#x0002E;</mo><mo>&#x0002E;</mo><mo>&#x0002E;</mo></mrow></math><br>It looks like it's just adding <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>6</mn></mrow></math> each time? Since <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>6</mn></mrow></math> is <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>5</mn><mo>&#x0002B;</mo><mn>1</mn></mrow></math>, I guess that makes sense.</p><p>If I follow that pattern, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>r</mi><mi>&#x00023;</mi><mn>5</mn></mrow></math> seems to be <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>5</mn><mo>&#x0002B;</mo><mi>r</mi><mo stretchy=\"false\">&#x00028;</mo><mn>5</mn><mo>&#x0002B;</mo><mn>1</mn><mo stretchy=\"false\">&#x00029;</mo></mrow></math>, or <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>5</mn><mo>&#x0002B;</mo><mn>6</mn><mi>r</mi></mrow></math>. <br>Wait, let me check if that works for the general case. If <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>r</mi><mi>&#x00023;</mi><mi>s</mi><mo>&#x0003D;</mo><mi>s</mi><mo>&#x0002B;</mo><mi>r</mi><mo stretchy=\"false\">&#x00028;</mo><mi>s</mi><mo>&#x0002B;</mo><mn>1</mn><mo stretchy=\"false\">&#x00029;</mo></mrow></math>, then:<br><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>r</mi><mi>&#x00023;</mi><mi>s</mi><mo>&#x0003D;</mo><mi>s</mi><mo>&#x0002B;</mo><mi>r</mi><mi>s</mi><mo>&#x0002B;</mo><mi>r</mi></mrow></math><br><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>r</mi><mi>&#x00023;</mi><mi>s</mi><mo>&#x0003D;</mo><mi>r</mi><mi>s</mi><mo>&#x0002B;</mo><mi>r</mi><mo>&#x0002B;</mo><mi>s</mi></mrow></math></p><p>Is the formula just <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>r</mi><mi>s</mi><mo>&#x0002B;</mo><mi>r</mi><mo>&#x0002B;</mo><mi>s</mi></mrow></math>? If I test that with <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>11</mn><mi>&#x00023;</mi><mn>5</mn></mrow></math>, it would be <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mo stretchy=\"false\">&#x00028;</mo><mn>11</mn><mi>&#x000D7;</mi><mn>5</mn><mo stretchy=\"false\">&#x00029;</mo><mo>&#x0002B;</mo><mn>11</mn><mo>&#x0002B;</mo><mn>5</mn></mrow></math>. That would be <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>55</mn><mo>&#x0002B;</mo><mn>16</mn><mo>&#x0003D;</mo><mn>71</mn></mrow></math>. Does that formula seem right based on the rules? It definitely works for <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>r</mi><mi>&#x00023;</mi><mn>0</mn><mo>&#x0003D;</mo><mi>r</mi></mrow></math> and it's symmetric."
             },
             {
               "role": "assistant",
@@ -1164,7 +1164,7 @@ const SAMPLE_QUESTIONS = [
             },
             {
               "role": "user",
-              "content": "Oh, let me check that. If I use my formula <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>r</mi><mi>&#x00023;</mi><mi>s</mi><mo>&#x0003D;</mo><mi>s</mi><mo>&#x0002B;</mo><mi>r</mi><mo stretchy=\"false\">&#x00028;</mo><mi>s</mi><mo>&#x0002B;</mo><mn>1</mn><mo stretchy=\"false\">&#x00029;</mo></mrow></math> for <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>5</mn><mi>&#x00023;</mi><mn>11</mn></mrow></math>:<br><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>r</mi><mo>&#x0003D;</mo><mn>5</mn><mo>&#x0002C;</mo><mi>s</mi><mo>&#x0003D;</mo><mn>11</mn></mrow></math><br><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>5</mn><mi>&#x00023;</mi><mn>11</mn><mo>&#x0003D;</mo><mn>11</mn><mo>&#x0002B;</mo><mn>5</mn><mo stretchy=\"false\">&#x00028;</mo><mn>11</mn><mo>&#x0002B;</mo><mn>1</mn><mo stretchy=\"false\">&#x00029;</mo><mo>&#x0003D;</mo><mn>11</mn><mo>&#x0002B;</mo><mn>5</mn><mo stretchy=\"false\">&#x00028;</mo><mn>12</mn><mo stretchy=\"false\">&#x00029;</mo><mo>&#x0003D;</mo><mn>11</mn><mo>&#x0002B;</mo><mn>60</mn><mo>&#x0003D;</mo><mn>71</mn></mrow></math>.</p><p>It does give the same answer! But looking at the formula <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>s</mi><mo>&#x0002B;</mo><mi>r</mi><mo stretchy=\"false\">&#x00028;</mo><mi>s</mi><mo>&#x0002B;</mo><mn>1</mn><mo stretchy=\"false\">&#x00029;</mo></mrow></math>, if I expand it, it's <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>s</mi><mo>&#x0002B;</mo><mi>r</mi><mi>s</mi><mo>&#x0002B;</mo><mi>r</mi></mrow></math>. That's just <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>r</mi><mo>&#x0002B;</mo><mi>s</mi><mo>&#x0002B;</mo><mi>r</mi><mi>s</mi></mrow></math>. That looks way more symmetric! If <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>r</mi><mi>&#x00023;</mi><mi>s</mi><mo>&#x0003D;</mo><mi>r</mi><mo>&#x0002B;</mo><mi>s</mi><mo>&#x0002B;</mo><mi>r</mi><mi>s</mi></mrow></math>, then <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>11</mn><mi>&#x00023;</mi><mn>5</mn><mo>&#x0003D;</mo><mn>11</mn><mo>&#x0002B;</mo><mn>5</mn><mo>&#x0002B;</mo><mo stretchy=\"false\">&#x00028;</mo><mn>11</mn><mo>&#x000D7;</mo><mn>5</mn><mo stretchy=\"false\">&#x00029;</mo><mo>&#x0003D;</mo><mn>16</mn><mo>&#x0002B;</mo><mn>55</mn><mo>&#x0003D;</mo><mn>71</mn></mrow></math>. </p><p>This version makes it much clearer why it doesn't matter which number is <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>r</mi></mrow></math> or <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>s</mi></mrow></math>. Since <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>71</mn></mrow></math> came out the same both ways and matches my manual steps, I'm confident that's the answer. I think I've got it now!"
+              "content": "Oh, let me check that. If I use my formula <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>r</mi><mi>&#x00023;</mi><mi>s</mi><mo>&#x0003D;</mo><mi>s</mi><mo>&#x0002B;</mo><mi>r</mi><mo stretchy=\"false\">&#x00028;</mo><mi>s</mi><mo>&#x0002B;</mo><mn>1</mn><mo stretchy=\"false\">&#x00029;</mo></mrow></math> for <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>5</mn><mi>&#x00023;</mi><mn>11</mn></mrow></math>:<br><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>r</mi><mo>&#x0003D;</mo><mn>5</mn><mo>&#x0002C;</mo><mi>s</mi><mo>&#x0003D;</mo><mn>11</mn></mrow></math><br><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>5</mn><mi>&#x00023;</mi><mn>11</mn><mo>&#x0003D;</mo><mn>11</mn><mo>&#x0002B;</mo><mn>5</mn><mo stretchy=\"false\">&#x00028;</mo><mn>11</mn><mo>&#x0002B;</mo><mn>1</mn><mo stretchy=\"false\">&#x00029;</mo><mo>&#x0003D;</mo><mn>11</mn><mo>&#x0002B;</mo><mn>5</mn><mo stretchy=\"false\">&#x00028;</mo><mn>12</mn><mo stretchy=\"false\">&#x00029;</mo><mo>&#x0003D;</mo><mn>11</mn><mo>&#x0002B;</mo><mn>60</mn><mo>&#x0003D;</mo><mn>71</mn></mrow></math>.</p><p>It does give the same answer! But looking at the formula <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>s</mi><mo>&#x0002B;</mo><mi>r</mi><mo stretchy=\"false\">&#x00028;</mo><mi>s</mi><mo>&#x0002B;</mo><mn>1</mn><mo stretchy=\"false\">&#x00029;</mo></mrow></math>, if I expand it, it's <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>s</mi><mo>&#x0002B;</mo><mi>r</mi><mi>s</mi><mo>&#x0002B;</mo><mi>r</mi></mrow></math>. That's just <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>r</mi><mo>&#x0002B;</mo><mi>s</mi><mo>&#x0002B;</mo><mi>r</mi><mi>s</mi></mrow></math>. That looks way more symmetric! If <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>r</mi><mi>&#x00023;</mi><mi>s</mi><mo>&#x0003D;</mo><mi>r</mi><mo>&#x0002B;</mo><mi>s</mi><mo>&#x0002B;</mo><mi>r</mi><mi>s</mi></mrow></math>, then <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>11</mn><mi>&#x00023;</mi><mn>5</mn><mo>&#x0003D;</mo><mn>11</mn><mo>&#x0002B;</mo><mn>5</mn><mo>&#x0002B;</mo><mo stretchy=\"false\">&#x00028;</mo><mn>11</mn><mi>&#x000D7;</mi><mn>5</mn><mo stretchy=\"false\">&#x00029;</mo><mo>&#x0003D;</mo><mn>16</mn><mo>&#x0002B;</mo><mn>55</mn><mo>&#x0003D;</mo><mn>71</mn></mrow></math>. </p><p>This version makes it much clearer why it doesn't matter which number is <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>r</mi></mrow></math> or <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>s</mi></mrow></math>. Since <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>71</mn></mrow></math> came out the same both ways and matches my manual steps, I'm confident that's the answer. I think I've got it now!"
             },
             {
               "role": "assistant",
@@ -1201,7 +1201,7 @@ const SAMPLE_QUESTIONS = [
             },
             {
               "role": "user",
-              "content": "For <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>11</mn><mi>&#x00023;</mi><mn>5</mn></mrow></math>, I get <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mo stretchy=\"false\">&#x00028;</mo><mn>11</mn><mo>&#x0002B;</mo><mn>1</mn><mo stretchy=\"false\">&#x00029;</mo><mn>5</mn><mo>&#x0002B;</mo><mn>11</mn></mrow></math>, which is <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>12</mn><mo>&#x000D7;</mo><mn>5</mn><mo>&#x0002B;</mo><mn>11</mn><mo>&#x0003D;</mo><mn>71</mn></mrow></math>. Is <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>71</mn></mrow></math> the correct answer?"
+              "content": "For <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>11</mn><mi>&#x00023;</mi><mn>5</mn></mrow></math>, I get <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mo stretchy=\"false\">&#x00028;</mo><mn>11</mn><mo>&#x0002B;</mo><mn>1</mn><mo stretchy=\"false\">&#x00029;</mo><mn>5</mn><mo>&#x0002B;</mo><mn>11</mn></mrow></math>, which is <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>12</mn><mi>&#x000D7;</mi><mn>5</mn><mo>&#x0002B;</mo><mn>11</mn><mo>&#x0003D;</mo><mn>71</mn></mrow></math>. Is <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>71</mn></mrow></math> the correct answer?"
             },
             {
               "role": "assistant",
@@ -1232,15 +1232,15 @@ const SAMPLE_QUESTIONS = [
             },
             {
               "role": "user",
-              "content": "That step-by-step breakdown makes sense, but I'm trying to see if there's a faster way than doing all eleven steps. Since we add 6 every time, I thought I could just do <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>11</mn><mo>&#x000D7;</mo><mn>6</mn><mo>&#x0003D;</mo><mn>66</mn></mrow></math>, but that doesn't match your answer of 71—am I missing the starting value in my head?"
+              "content": "That step-by-step breakdown makes sense, but I'm trying to see if there's a faster way than doing all eleven steps. Since we add 6 every time, I thought I could just do <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>11</mn><mi>&#x000D7;</mi><mn>6</mn><mo>&#x0003D;</mo><mn>66</mn></mrow></math>, but that doesn't match your answer of 71—am I missing the starting value in my head?"
             },
             {
               "role": "assistant",
-              "content": "Great observation! You're absolutely on the right track—this is a classic case of an arithmetic sequence, where each step adds a constant (<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>s</mi><mo>&#x0002B;</mo><mn>1</mn></mrow></math>) to the previous value. The key detail is the <strong>starting value</strong>: you begin with <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>0</mn><mi>&#x00023;</mi><mn>5</mn><mo>&#x0003D;</mo><mn>5</mn></mrow></math>, not <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>0</mn></mrow></math>.</p><p>So, to get from <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>0</mn><mi>&#x00023;</mi><mn>5</mn></mrow></math> up to <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>11</mn><mi>&#x00023;</mi><mn>5</mn></mrow></math>, you add <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>6</mn></mrow></math> (since <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>s</mi><mo>&#x0002B;</mo><mn>1</mn><mo>&#x0003D;</mo><mn>5</mn><mo>&#x0002B;</mo><mn>1</mn><mo>&#x0003D;</mo><mn>6</mn></mrow></math>) a total of <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>11</mn></mrow></math> times:<br><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mrow><mn>11</mn><mi>&#x00023;</mi><mn>5</mn><mo>&#x0003D;</mo><mo stretchy=\"false\">&#x00028;</mo><mn>0</mn><mi>&#x00023;</mi><mn>5</mn><mo stretchy=\"false\">&#x00029;</mo><mo>&#x0002B;</mo><mn>11</mn><mo>&#x000D7;</mo><mn>6</mn><mo>&#x0003D;</mo><mn>5</mn><mo>&#x0002B;</mo><mn>66</mn><mo>&#x0003D;</mo><mn>71</mn></mrow></math></p><p>This matches the step-by-step calculation. The general principle here is that recursive definitions like this often translate into arithmetic sequences, where the <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>n</mi></mrow></math>th term is the starting value plus <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>n</mi></mrow></math> times the increment. Recognizing this pattern lets you jump straight to the answer without computing every intermediate step.</p><p>If you're interested, we can generalize this to a formula for any <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>r</mi><mi>&#x00023;</mi><mi>s</mi></mrow></math>—would you like to see how that works?"
+              "content": "Great observation! You're absolutely on the right track—this is a classic case of an arithmetic sequence, where each step adds a constant (<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>s</mi><mo>&#x0002B;</mo><mn>1</mn></mrow></math>) to the previous value. The key detail is the <strong>starting value</strong>: you begin with <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>0</mn><mi>&#x00023;</mi><mn>5</mn><mo>&#x0003D;</mo><mn>5</mn></mrow></math>, not <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>0</mn></mrow></math>.</p><p>So, to get from <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>0</mn><mi>&#x00023;</mi><mn>5</mn></mrow></math> up to <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>11</mn><mi>&#x00023;</mi><mn>5</mn></mrow></math>, you add <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>6</mn></mrow></math> (since <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>s</mi><mo>&#x0002B;</mo><mn>1</mn><mo>&#x0003D;</mo><mn>5</mn><mo>&#x0002B;</mo><mn>1</mn><mo>&#x0003D;</mo><mn>6</mn></mrow></math>) a total of <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>11</mn></mrow></math> times:<br><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mrow><mn>11</mn><mi>&#x00023;</mi><mn>5</mn><mo>&#x0003D;</mo><mo stretchy=\"false\">&#x00028;</mo><mn>0</mn><mi>&#x00023;</mi><mn>5</mn><mo stretchy=\"false\">&#x00029;</mo><mo>&#x0002B;</mo><mn>11</mn><mi>&#x000D7;</mi><mn>6</mn><mo>&#x0003D;</mo><mn>5</mn><mo>&#x0002B;</mo><mn>66</mn><mo>&#x0003D;</mo><mn>71</mn></mrow></math></p><p>This matches the step-by-step calculation. The general principle here is that recursive definitions like this often translate into arithmetic sequences, where the <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>n</mi></mrow></math>th term is the starting value plus <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>n</mi></mrow></math> times the increment. Recognizing this pattern lets you jump straight to the answer without computing every intermediate step.</p><p>If you're interested, we can generalize this to a formula for any <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>r</mi><mi>&#x00023;</mi><mi>s</mi></mrow></math>—would you like to see how that works?"
             },
             {
               "role": "user",
-              "content": "That makes it so much clearer—I was forgetting that the sequence starts at 5, not 0! Since the logic for <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>11</mn><mi>&#x00023;</mi><mn>5</mn><mo>&#x0003D;</mo><mn>5</mn><mo>&#x0002B;</mo><mo stretchy=\"false\">&#x00028;</mo><mn>11</mn><mo>&#x000D7;</mo><mn>6</mn><mo stretchy=\"false\">&#x00029;</mo><mo>&#x0003D;</mo><mn>71</mn></mrow></math> seems solid now, I'm curious to see how you'd turn this into a general formula for any <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>r</mi></mrow></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>s</mi></mrow></math>."
+              "content": "That makes it so much clearer—I was forgetting that the sequence starts at 5, not 0! Since the logic for <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>11</mn><mi>&#x00023;</mi><mn>5</mn><mo>&#x0003D;</mo><mn>5</mn><mo>&#x0002B;</mo><mo stretchy=\"false\">&#x00028;</mo><mn>11</mn><mi>&#x000D7;</mi><mn>6</mn><mo stretchy=\"false\">&#x00029;</mo><mo>&#x0003D;</mo><mn>71</mn></mrow></math> seems solid now, I'm curious to see how you'd turn this into a general formula for any <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>r</mi></mrow></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>s</mi></mrow></math>."
             },
             {
               "role": "assistant",
@@ -1252,11 +1252,11 @@ const SAMPLE_QUESTIONS = [
             },
             {
               "role": "assistant",
-              "content": "Excellent! Yes, your formula <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>r</mi><mi>&#x00023;</mi><mi>s</mi><mo>&#x0003D;</mo><mi>s</mi><mo>&#x0002B;</mo><mi>r</mi><mo stretchy=\"false\">&#x00028;</mo><mi>s</mi><mo>&#x0002B;</mo><mn>1</mn><mo stretchy=\"false\">&#x00029;</mo></mrow></math> is exactly right. Here’s why it works:</p><p>- The starting value is <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>s</mi></mrow></math> (from <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>0</mn><mi>&#x00023;</mi><mi>s</mi><mo>&#x0003D;</mo><mi>s</mi></mrow></math>).<br>- For each increment in <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>r</mi></mrow></math>, you add <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>s</mi><mo>&#x0002B;</mo><mn>1</mn></mrow></math> (from the recursive rule).<br>- So after <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>r</mi></mrow></math> steps, you’ve added <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>r</mi><mo>&#x000D7;</mo><mo stretchy=\"false\">&#x00028;</mo><mi>s</mi><mo>&#x0002B;</mo><mn>1</mn><mo stretchy=\"false\">&#x00029;</mo></mrow></math> to the starting value.</p><p>This formula also respects the symmetry property (<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>r</mi><mi>&#x00023;</mi><mi>s</mi><mo>&#x0003D;</mo><mi>s</mi><mi>&#x00023;</mi><mi>r</mi></mrow></math>), since if you expand <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>s</mi><mo>&#x0002B;</mo><mi>r</mi><mo stretchy=\"false\">&#x00028;</mo><mi>s</mi><mo>&#x0002B;</mo><mn>1</mn><mo stretchy=\"false\">&#x00029;</mo></mrow></math>, you get <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>r</mi><mi>s</mi><mo>&#x0002B;</mo><mi>r</mi><mo>&#x0002B;</mo><mi>s</mi></mrow></math>, which is the same as <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>r</mi><mo>&#x0002B;</mo><mi>s</mi><mo>&#x0002B;</mo><mi>r</mi><mi>s</mi></mrow></math>—and swapping <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>r</mi></mrow></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>s</mi></mrow></math> doesn’t change the result.</p><p>A common extension is to notice that <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>r</mi><mi>&#x00023;</mi><mi>s</mi><mo>&#x0003D;</mo><mi>r</mi><mi>s</mi><mo>&#x0002B;</mo><mi>r</mi><mo>&#x0002B;</mo><mi>s</mi></mrow></math>, which is symmetric in <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>r</mi></mrow></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>s</mi></mrow></math>. This is a nice example of how recursive definitions can often be “unwound” into closed-form expressions.</p><p>Would you like to see how this formula connects to familiar operations, or perhaps how to prove it by induction?"
+              "content": "Excellent! Yes, your formula <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>r</mi><mi>&#x00023;</mi><mi>s</mi><mo>&#x0003D;</mo><mi>s</mi><mo>&#x0002B;</mo><mi>r</mi><mo stretchy=\"false\">&#x00028;</mo><mi>s</mi><mo>&#x0002B;</mo><mn>1</mn><mo stretchy=\"false\">&#x00029;</mo></mrow></math> is exactly right. Here’s why it works:</p><p>- The starting value is <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>s</mi></mrow></math> (from <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>0</mn><mi>&#x00023;</mi><mi>s</mi><mo>&#x0003D;</mo><mi>s</mi></mrow></math>).<br>- For each increment in <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>r</mi></mrow></math>, you add <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>s</mi><mo>&#x0002B;</mo><mn>1</mn></mrow></math> (from the recursive rule).<br>- So after <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>r</mi></mrow></math> steps, you’ve added <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>r</mi><mi>&#x000D7;</mi><mo stretchy=\"false\">&#x00028;</mo><mi>s</mi><mo>&#x0002B;</mo><mn>1</mn><mo stretchy=\"false\">&#x00029;</mo></mrow></math> to the starting value.</p><p>This formula also respects the symmetry property (<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>r</mi><mi>&#x00023;</mi><mi>s</mi><mo>&#x0003D;</mo><mi>s</mi><mi>&#x00023;</mi><mi>r</mi></mrow></math>), since if you expand <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>s</mi><mo>&#x0002B;</mo><mi>r</mi><mo stretchy=\"false\">&#x00028;</mo><mi>s</mi><mo>&#x0002B;</mo><mn>1</mn><mo stretchy=\"false\">&#x00029;</mo></mrow></math>, you get <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>r</mi><mi>s</mi><mo>&#x0002B;</mo><mi>r</mi><mo>&#x0002B;</mo><mi>s</mi></mrow></math>, which is the same as <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>r</mi><mo>&#x0002B;</mo><mi>s</mi><mo>&#x0002B;</mo><mi>r</mi><mi>s</mi></mrow></math>—and swapping <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>r</mi></mrow></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>s</mi></mrow></math> doesn’t change the result.</p><p>A common extension is to notice that <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>r</mi><mi>&#x00023;</mi><mi>s</mi><mo>&#x0003D;</mo><mi>r</mi><mi>s</mi><mo>&#x0002B;</mo><mi>r</mi><mo>&#x0002B;</mo><mi>s</mi></mrow></math>, which is symmetric in <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>r</mi></mrow></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>s</mi></mrow></math>. This is a nice example of how recursive definitions can often be “unwound” into closed-form expressions.</p><p>Would you like to see how this formula connects to familiar operations, or perhaps how to prove it by induction?"
             },
             {
               "role": "user",
-              "content": "I can see how <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>r</mi><mi>&#x00023;</mi><mi>s</mi><mo>&#x0003D;</mo><mi>r</mi><mi>s</mi><mo>&#x0002B;</mo><mi>r</mi><mo>&#x0002B;</mo><mi>s</mi></mrow></math> works now, especially since <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>11</mn><mo>&#x000D7;</mo><mn>5</mn><mo>&#x0002B;</mo><mn>11</mn><mo>&#x0002B;</mo><mn>5</mn></mrow></math> gives me 71 as well! It's cool how that simplifies down—I'd definitely like to see how you'd prove that this formula holds true for every case using induction."
+              "content": "I can see how <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>r</mi><mi>&#x00023;</mi><mi>s</mi><mo>&#x0003D;</mo><mi>r</mi><mi>s</mi><mo>&#x0002B;</mo><mi>r</mi><mo>&#x0002B;</mo><mi>s</mi></mrow></math> works now, especially since <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>11</mn><mi>&#x000D7;</mi><mn>5</mn><mo>&#x0002B;</mo><mn>11</mn><mo>&#x0002B;</mo><mn>5</mn></mrow></math> gives me 71 as well! It's cool how that simplifies down—I'd definitely like to see how you'd prove that this formula holds true for every case using induction."
             },
             {
               "role": "assistant",
@@ -1268,7 +1268,7 @@ const SAMPLE_QUESTIONS = [
             },
             {
               "role": "assistant",
-              "content": "That’s exactly the right approach! What you’ve done is verify that the formula satisfies the recursive rule:</p><p>- <strong>Assume</strong> <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>r</mi><mi>&#x00023;</mi><mi>s</mi><mo>&#x0003D;</mo><mi>r</mi><mi>s</mi><mo>&#x0002B;</mo><mi>r</mi><mo>&#x0002B;</mo><mi>s</mi></mrow></math> (the induction hypothesis).<br>- Then, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mo stretchy=\"false\">&#x00028;</mo><mi>r</mi><mo>&#x0002B;</mo><mn>1</mn><mo stretchy=\"false\">&#x00029;</mo><mi>&#x00023;</mi><mi>s</mi><mo>&#x0003D;</mo><mo stretchy=\"false\">&#x00028;</mo><mi>r</mi><mo>&#x0002B;</mo><mn>1</mn><mo stretchy=\"false\">&#x00029;</mo><mi>s</mi><mo>&#x0002B;</mo><mo stretchy=\"false\">&#x00028;</mo><mi>r</mi><mo>&#x0002B;</mo><mn>1</mn><mo stretchy=\"false\">&#x00029;</mo><mo>&#x0002B;</mo><mi>s</mi><mo>&#x0003D;</mo><mi>r</mi><mi>s</mi><mo>&#x0002B;</mo><mi>s</mi><mo>&#x0002B;</mo><mi>r</mi><mo>&#x0002B;</mo><mn>1</mn><mo>&#x0002B;</mo><mi>s</mi><mo>&#x0003D;</mo><mo stretchy=\"false\">&#x00028;</mo><mi>r</mi><mi>s</mi><mo>&#x0002B;</mo><mi>r</mi><mo>&#x0002B;</mo><mi>s</mi><mo stretchy=\"false\">&#x00029;</mo><mo>&#x0002B;</mo><mi>s</mi><mo>&#x0002B;</mo><mn>1</mn><mo>&#x0003D;</mo><mo stretchy=\"false\">&#x00028;</mo><mi>r</mi><mi>&#x00023;</mi><mi>s</mi><mo stretchy=\"false\">&#x00029;</mo><mo>&#x0002B;</mo><mi>s</mi><mo>&#x0002B;</mo><mn>1</mn></mrow></math>.</p><p>This matches the recursive definition, so the formula works for <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>r</mi><mo>&#x0002B;</mo><mn>1</mn></mrow></math> if it works for <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>r</mi></mrow></math>.</p><p>To complete the induction, you also need a <strong>base case</strong>. For <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>r</mi><mo>&#x0003D;</mo><mn>0</mn></mrow></math>:<br>- <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>0</mn><mi>&#x00023;</mi><mi>s</mi><mo>&#x0003D;</mo><mn>0</mn><mo>&#x000D7;</mo><mi>s</mi><mo>&#x0002B;</mo><mn>0</mn><mo>&#x0002B;</mo><mi>s</mi><mo>&#x0003D;</mo><mi>s</mi></mrow></math>, which matches the given rule <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>0</mn><mi>&#x00023;</mi><mi>s</mi><mo>&#x0003D;</mo><mi>s</mi></mrow></math>.</p><p>So, by induction, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>r</mi><mi>&#x00023;</mi><mi>s</mi><mo>&#x0003D;</mo><mi>r</mi><mi>s</mi><mo>&#x0002B;</mo><mi>r</mi><mo>&#x0002B;</mo><mi>s</mi></mrow></math> holds for all real <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>r</mi></mrow></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>s</mi></mrow></math>.</p><p>This technique—proving a closed formula matches both the base case and the recursion—is a standard and powerful way to “unwind” recursive definitions. Would you like to see how this kind of operation relates to familiar algebraic structures, or perhaps how to generalize this approach to other recursive operations?"
+              "content": "That’s exactly the right approach! What you’ve done is verify that the formula satisfies the recursive rule:</p><p>- <strong>Assume</strong> <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>r</mi><mi>&#x00023;</mi><mi>s</mi><mo>&#x0003D;</mo><mi>r</mi><mi>s</mi><mo>&#x0002B;</mo><mi>r</mi><mo>&#x0002B;</mo><mi>s</mi></mrow></math> (the induction hypothesis).<br>- Then, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mo stretchy=\"false\">&#x00028;</mo><mi>r</mi><mo>&#x0002B;</mo><mn>1</mn><mo stretchy=\"false\">&#x00029;</mo><mi>&#x00023;</mi><mi>s</mi><mo>&#x0003D;</mo><mo stretchy=\"false\">&#x00028;</mo><mi>r</mi><mo>&#x0002B;</mo><mn>1</mn><mo stretchy=\"false\">&#x00029;</mo><mi>s</mi><mo>&#x0002B;</mo><mo stretchy=\"false\">&#x00028;</mo><mi>r</mi><mo>&#x0002B;</mo><mn>1</mn><mo stretchy=\"false\">&#x00029;</mo><mo>&#x0002B;</mo><mi>s</mi><mo>&#x0003D;</mo><mi>r</mi><mi>s</mi><mo>&#x0002B;</mo><mi>s</mi><mo>&#x0002B;</mo><mi>r</mi><mo>&#x0002B;</mo><mn>1</mn><mo>&#x0002B;</mo><mi>s</mi><mo>&#x0003D;</mo><mo stretchy=\"false\">&#x00028;</mo><mi>r</mi><mi>s</mi><mo>&#x0002B;</mo><mi>r</mi><mo>&#x0002B;</mo><mi>s</mi><mo stretchy=\"false\">&#x00029;</mo><mo>&#x0002B;</mo><mi>s</mi><mo>&#x0002B;</mo><mn>1</mn><mo>&#x0003D;</mo><mo stretchy=\"false\">&#x00028;</mo><mi>r</mi><mi>&#x00023;</mi><mi>s</mi><mo stretchy=\"false\">&#x00029;</mo><mo>&#x0002B;</mo><mi>s</mi><mo>&#x0002B;</mo><mn>1</mn></mrow></math>.</p><p>This matches the recursive definition, so the formula works for <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>r</mi><mo>&#x0002B;</mo><mn>1</mn></mrow></math> if it works for <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>r</mi></mrow></math>.</p><p>To complete the induction, you also need a <strong>base case</strong>. For <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>r</mi><mo>&#x0003D;</mo><mn>0</mn></mrow></math>:<br>- <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>0</mn><mi>&#x00023;</mi><mi>s</mi><mo>&#x0003D;</mo><mn>0</mn><mi>&#x000D7;</mi><mi>s</mi><mo>&#x0002B;</mo><mn>0</mn><mo>&#x0002B;</mo><mi>s</mi><mo>&#x0003D;</mo><mi>s</mi></mrow></math>, which matches the given rule <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>0</mn><mi>&#x00023;</mi><mi>s</mi><mo>&#x0003D;</mo><mi>s</mi></mrow></math>.</p><p>So, by induction, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>r</mi><mi>&#x00023;</mi><mi>s</mi><mo>&#x0003D;</mo><mi>r</mi><mi>s</mi><mo>&#x0002B;</mo><mi>r</mi><mo>&#x0002B;</mo><mi>s</mi></mrow></math> holds for all real <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>r</mi></mrow></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>s</mi></mrow></math>.</p><p>This technique—proving a closed formula matches both the base case and the recursion—is a standard and powerful way to “unwind” recursive definitions. Would you like to see how this kind of operation relates to familiar algebraic structures, or perhaps how to generalize this approach to other recursive operations?"
             },
             {
               "role": "user",
@@ -1286,7 +1286,7 @@ const SAMPLE_QUESTIONS = [
           "knowledge_progression": [
             {
               "turn": 0,
-              "label": "Initial",
+              "label": "Init",
               "states": {
                 "IU5: Application of base case": "knows_well",
                 "IU4: Recursive property of \\#": "knows_well",
@@ -1301,7 +1301,7 @@ const SAMPLE_QUESTIONS = [
             },
             {
               "turn": 1,
-              "label": "After Turn 1",
+              "label": "Turn 1",
               "states": {
                 "IU5: Application of base case": "knows_well",
                 "IU4: Recursive property of \\#": "knows_well",
@@ -1372,7 +1372,7 @@ const SAMPLE_QUESTIONS = [
             },
             {
               "turn": 2,
-              "label": "After Turn 2",
+              "label": "Turn 2",
               "states": {
                 "IU5: Application of base case": "knows_well",
                 "IU4: Recursive property of \\#": "knows_well",
@@ -1443,7 +1443,7 @@ const SAMPLE_QUESTIONS = [
             },
             {
               "turn": 3,
-              "label": "After Turn 3",
+              "label": "Turn 3",
               "states": {
                 "IU5: Application of base case": "knows_well",
                 "IU4: Recursive property of \\#": "knows_well",
@@ -1514,7 +1514,7 @@ const SAMPLE_QUESTIONS = [
             },
             {
               "turn": 4,
-              "label": "After Turn 4",
+              "label": "Turn 4",
               "states": {
                 "IU5: Application of base case": "knows_well",
                 "IU4: Recursive property of \\#": "knows_well",
@@ -1585,7 +1585,7 @@ const SAMPLE_QUESTIONS = [
             },
             {
               "turn": 5,
-              "label": "After Turn 5",
+              "label": "Turn 5",
               "states": {
                 "IU5: Application of base case": "knows_well",
                 "IU4: Recursive property of \\#": "knows_well",
@@ -1656,7 +1656,7 @@ const SAMPLE_QUESTIONS = [
             },
             {
               "turn": 6,
-              "label": "After Turn 6",
+              "label": "Turn 6",
               "states": {
                 "IU5: Application of base case": "knows_well",
                 "IU4: Recursive property of \\#": "knows_well",
@@ -1739,7 +1739,7 @@ const SAMPLE_QUESTIONS = [
             },
             {
               "role": "user",
-              "content": "Okay, that makes sense. If I treat <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>s</mi></mrow></math> as a constant and apply the rule <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mo stretchy=\"false\">&#x00028;</mo><mi>r</mi><mo>&#x0002B;</mo><mn>1</mn><mo stretchy=\"false\">&#x00029;</mo><mi>&#x00023;</mi><mi>s</mi><mo>&#x0003D;</mo><mo stretchy=\"false\">&#x00028;</mo><mi>r</mi><mi>&#x00023;</mi><mi>s</mi><mo stretchy=\"false\">&#x00029;</mo><mo>&#x0002B;</mo><mo stretchy=\"false\">&#x00028;</mo><mi>s</mi><mo>&#x0002B;</mo><mn>1</mn><mo stretchy=\"false\">&#x00029;</mo></mrow></math> repeatedly starting from <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>r</mi><mo>&#x0003D;</mo><mn>0</mn></mrow></math>, I can see the progression.</p><p>Starting with <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>0</mn><mi>&#x00023;</mi><mi>s</mi></mrow></math>:<br>Since <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>r</mi><mi>&#x00023;</mi><mi>s</mi><mo>&#x0003D;</mo><mi>s</mi><mi>&#x00023;</mi><mi>r</mi></mrow></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>r</mi><mi>&#x00023;</mi><mn>0</mn><mo>&#x0003D;</mo><mi>r</mi></mrow></math>, then <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>0</mn><mi>&#x00023;</mi><mi>s</mi><mo>&#x0003D;</mo><mi>s</mi><mi>&#x00023;</mi><mn>0</mn><mo>&#x0003D;</mo><mi>s</mi></mrow></math>.<br>Then:<br><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>1</mn><mi>&#x00023;</mi><mi>s</mi><mo>&#x0003D;</mo><mo stretchy=\"false\">&#x00028;</mo><mn>0</mn><mi>&#x00023;</mi><mi>s</mi><mo stretchy=\"false\">&#x00029;</mo><mo>&#x0002B;</mo><mi>s</mi><mo>&#x0002B;</mo><mn>1</mn><mo>&#x0003D;</mo><mi>s</mi><mo>&#x0002B;</mo><mi>s</mi><mo>&#x0002B;</mo><mn>1</mn><mo>&#x0003D;</mo><mn>2</mn><mi>s</mi><mo>&#x0002B;</mo><mn>1</mn></mrow></math><br><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>2</mn><mi>&#x00023;</mi><mi>s</mi><mo>&#x0003D;</mo><mo stretchy=\"false\">&#x00028;</mo><mn>1</mn><mi>&#x00023;</mi><mi>s</mi><mo stretchy=\"false\">&#x00029;</mo><mo>&#x0002B;</mo><mi>s</mi><mo>&#x0002B;</mo><mn>1</mn><mo>&#x0003D;</mo><mo stretchy=\"false\">&#x00028;</mo><mn>2</mn><mi>s</mi><mo>&#x0002B;</mo><mn>1</mn><mo stretchy=\"false\">&#x00029;</mo><mo>&#x0002B;</mo><mi>s</mi><mo>&#x0002B;</mo><mn>1</mn><mo>&#x0003D;</mo><mn>3</mn><mi>s</mi><mo>&#x0002B;</mo><mn>2</mn></mrow></math><br><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>3</mn><mi>&#x00023;</mi><mi>s</mi><mo>&#x0003D;</mo><mo stretchy=\"false\">&#x00028;</mo><mn>2</mn><mi>&#x00023;</mi><mi>s</mi><mo stretchy=\"false\">&#x00029;</mo><mo>&#x0002B;</mo><mi>s</mi><mo>&#x0002B;</mo><mn>1</mn><mo>&#x0003D;</mo><mo stretchy=\"false\">&#x00028;</mo><mn>3</mn><mi>s</mi><mo>&#x0002B;</mo><mn>2</mn><mo stretchy=\"false\">&#x00029;</mo><mo>&#x0002B;</mo><mi>s</mi><mo>&#x0002B;</mo><mn>1</mn><mo>&#x0003D;</mo><mn>4</mn><mi>s</mi><mo>&#x0002B;</mo><mn>3</mn></mrow></math></p><p>Following this pattern, it looks like <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>r</mi><mi>&#x00023;</mi><mi>s</mi><mo>&#x0003D;</mo><mo stretchy=\"false\">&#x00028;</mo><mi>r</mi><mo>&#x0002B;</mo><mn>1</mn><mo stretchy=\"false\">&#x00029;</mo><mi>s</mi><mo>&#x0002B;</mo><mi>r</mi></mrow></math>. <br>Expanding that gives <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>r</mi><mi>s</mi><mo>&#x0002B;</mo><mi>s</mi><mo>&#x0002B;</mo><mi>r</mi></mrow></math>, which is exactly <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>r</mi><mo>&#x0002B;</mo><mi>s</mi><mo>&#x0002B;</mo><mi>r</mi><mi>s</mi></mrow></math>.</p><p>Let me double-check that with the third rule:<br><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mo stretchy=\"false\">&#x00028;</mo><mi>r</mi><mo>&#x0002B;</mo><mn>1</mn><mo stretchy=\"false\">&#x00029;</mo><mo>&#x0002B;</mo><mi>s</mi><mo>&#x0002B;</mo><mo stretchy=\"false\">&#x00028;</mo><mi>r</mi><mo>&#x0002B;</mo><mn>1</mn><mo stretchy=\"false\">&#x00029;</mo><mi>s</mi><mo>&#x0003D;</mo><mi>r</mi><mo>&#x0002B;</mo><mn>1</mn><mo>&#x0002B;</mo><mi>s</mi><mo>&#x0002B;</mo><mi>r</mi><mi>s</mi><mo>&#x0002B;</mo><mi>s</mi><mo>&#x0003D;</mo><mo stretchy=\"false\">&#x00028;</mo><mi>r</mi><mo>&#x0002B;</mo><mi>s</mi><mo>&#x0002B;</mo><mi>r</mi><mi>s</mi><mo stretchy=\"false\">&#x00029;</mo><mo>&#x0002B;</mo><mi>s</mi><mo>&#x0002B;</mo><mn>1</mn></mrow></math>. It works!</p><p>So, for <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>11</mn><mi>&#x00023;</mi><mn>5</mn></mrow></math>:<br><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>11</mn><mi>&#x00023;</mi><mn>5</mn><mo>&#x0003D;</mo><mn>11</mn><mo>&#x0002B;</mo><mn>5</mn><mo>&#x0002B;</mo><mo stretchy=\"false\">&#x00028;</mo><mn>11</mn><mo>&#x000D7;</mo><mn>5</mn><mo stretchy=\"false\">&#x00029;</mo><mo>&#x0003D;</mo><mn>16</mn><mo>&#x0002B;</mo><mn>55</mn><mo>&#x0003D;</mo><mn>71</mn></mrow></math>.</p><p>Does that look right to you?"
+              "content": "Okay, that makes sense. If I treat <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>s</mi></mrow></math> as a constant and apply the rule <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mo stretchy=\"false\">&#x00028;</mo><mi>r</mi><mo>&#x0002B;</mo><mn>1</mn><mo stretchy=\"false\">&#x00029;</mo><mi>&#x00023;</mi><mi>s</mi><mo>&#x0003D;</mo><mo stretchy=\"false\">&#x00028;</mo><mi>r</mi><mi>&#x00023;</mi><mi>s</mi><mo stretchy=\"false\">&#x00029;</mo><mo>&#x0002B;</mo><mo stretchy=\"false\">&#x00028;</mo><mi>s</mi><mo>&#x0002B;</mo><mn>1</mn><mo stretchy=\"false\">&#x00029;</mo></mrow></math> repeatedly starting from <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>r</mi><mo>&#x0003D;</mo><mn>0</mn></mrow></math>, I can see the progression.</p><p>Starting with <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>0</mn><mi>&#x00023;</mi><mi>s</mi></mrow></math>:<br>Since <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>r</mi><mi>&#x00023;</mi><mi>s</mi><mo>&#x0003D;</mo><mi>s</mi><mi>&#x00023;</mi><mi>r</mi></mrow></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>r</mi><mi>&#x00023;</mi><mn>0</mn><mo>&#x0003D;</mo><mi>r</mi></mrow></math>, then <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>0</mn><mi>&#x00023;</mi><mi>s</mi><mo>&#x0003D;</mo><mi>s</mi><mi>&#x00023;</mi><mn>0</mn><mo>&#x0003D;</mo><mi>s</mi></mrow></math>.<br>Then:<br><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>1</mn><mi>&#x00023;</mi><mi>s</mi><mo>&#x0003D;</mo><mo stretchy=\"false\">&#x00028;</mo><mn>0</mn><mi>&#x00023;</mi><mi>s</mi><mo stretchy=\"false\">&#x00029;</mo><mo>&#x0002B;</mo><mi>s</mi><mo>&#x0002B;</mo><mn>1</mn><mo>&#x0003D;</mo><mi>s</mi><mo>&#x0002B;</mo><mi>s</mi><mo>&#x0002B;</mo><mn>1</mn><mo>&#x0003D;</mo><mn>2</mn><mi>s</mi><mo>&#x0002B;</mo><mn>1</mn></mrow></math><br><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>2</mn><mi>&#x00023;</mi><mi>s</mi><mo>&#x0003D;</mo><mo stretchy=\"false\">&#x00028;</mo><mn>1</mn><mi>&#x00023;</mi><mi>s</mi><mo stretchy=\"false\">&#x00029;</mo><mo>&#x0002B;</mo><mi>s</mi><mo>&#x0002B;</mo><mn>1</mn><mo>&#x0003D;</mo><mo stretchy=\"false\">&#x00028;</mo><mn>2</mn><mi>s</mi><mo>&#x0002B;</mo><mn>1</mn><mo stretchy=\"false\">&#x00029;</mo><mo>&#x0002B;</mo><mi>s</mi><mo>&#x0002B;</mo><mn>1</mn><mo>&#x0003D;</mo><mn>3</mn><mi>s</mi><mo>&#x0002B;</mo><mn>2</mn></mrow></math><br><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>3</mn><mi>&#x00023;</mi><mi>s</mi><mo>&#x0003D;</mo><mo stretchy=\"false\">&#x00028;</mo><mn>2</mn><mi>&#x00023;</mi><mi>s</mi><mo stretchy=\"false\">&#x00029;</mo><mo>&#x0002B;</mo><mi>s</mi><mo>&#x0002B;</mo><mn>1</mn><mo>&#x0003D;</mo><mo stretchy=\"false\">&#x00028;</mo><mn>3</mn><mi>s</mi><mo>&#x0002B;</mo><mn>2</mn><mo stretchy=\"false\">&#x00029;</mo><mo>&#x0002B;</mo><mi>s</mi><mo>&#x0002B;</mo><mn>1</mn><mo>&#x0003D;</mo><mn>4</mn><mi>s</mi><mo>&#x0002B;</mo><mn>3</mn></mrow></math></p><p>Following this pattern, it looks like <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>r</mi><mi>&#x00023;</mi><mi>s</mi><mo>&#x0003D;</mo><mo stretchy=\"false\">&#x00028;</mo><mi>r</mi><mo>&#x0002B;</mo><mn>1</mn><mo stretchy=\"false\">&#x00029;</mo><mi>s</mi><mo>&#x0002B;</mo><mi>r</mi></mrow></math>. <br>Expanding that gives <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>r</mi><mi>s</mi><mo>&#x0002B;</mo><mi>s</mi><mo>&#x0002B;</mo><mi>r</mi></mrow></math>, which is exactly <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>r</mi><mo>&#x0002B;</mo><mi>s</mi><mo>&#x0002B;</mo><mi>r</mi><mi>s</mi></mrow></math>.</p><p>Let me double-check that with the third rule:<br><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mo stretchy=\"false\">&#x00028;</mo><mi>r</mi><mo>&#x0002B;</mo><mn>1</mn><mo stretchy=\"false\">&#x00029;</mo><mo>&#x0002B;</mo><mi>s</mi><mo>&#x0002B;</mo><mo stretchy=\"false\">&#x00028;</mo><mi>r</mi><mo>&#x0002B;</mo><mn>1</mn><mo stretchy=\"false\">&#x00029;</mo><mi>s</mi><mo>&#x0003D;</mo><mi>r</mi><mo>&#x0002B;</mo><mn>1</mn><mo>&#x0002B;</mo><mi>s</mi><mo>&#x0002B;</mo><mi>r</mi><mi>s</mi><mo>&#x0002B;</mo><mi>s</mi><mo>&#x0003D;</mo><mo stretchy=\"false\">&#x00028;</mo><mi>r</mi><mo>&#x0002B;</mo><mi>s</mi><mo>&#x0002B;</mo><mi>r</mi><mi>s</mi><mo stretchy=\"false\">&#x00029;</mo><mo>&#x0002B;</mo><mi>s</mi><mo>&#x0002B;</mo><mn>1</mn></mrow></math>. It works!</p><p>So, for <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>11</mn><mi>&#x00023;</mi><mn>5</mn></mrow></math>:<br><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>11</mn><mi>&#x00023;</mi><mn>5</mn><mo>&#x0003D;</mo><mn>11</mn><mo>&#x0002B;</mo><mn>5</mn><mo>&#x0002B;</mo><mo stretchy=\"false\">&#x00028;</mo><mn>11</mn><mi>&#x000D7;</mi><mn>5</mn><mo stretchy=\"false\">&#x00029;</mo><mo>&#x0003D;</mo><mn>16</mn><mo>&#x0002B;</mo><mn>55</mn><mo>&#x0003D;</mo><mn>71</mn></mrow></math>.</p><p>Does that look right to you?"
             },
             {
               "role": "assistant",
@@ -1764,7 +1764,7 @@ const SAMPLE_QUESTIONS = [
             },
             {
               "role": "user",
-              "content": "That makes sense. If I test my formula <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>r</mi><mi>&#x00023;</mi><mi>s</mi><mo>&#x0003D;</mo><mi>r</mi><mo>&#x0002B;</mo><mi>s</mi><mo>&#x0002B;</mo><mi>r</mi><mi>s</mi></mrow></math> against the recursive rule <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mo stretchy=\"false\">&#x00028;</mo><mi>r</mi><mo>&#x0002B;</mo><mn>1</mn><mo stretchy=\"false\">&#x00029;</mo><mi>&#x00023;</mi><mi>s</mi><mo>&#x0003D;</mo><mo stretchy=\"false\">&#x00028;</mo><mi>r</mi><mi>&#x00023;</mi><mi>s</mi><mo stretchy=\"false\">&#x00029;</mo><mo>&#x0002B;</mo><mi>s</mi><mo>&#x0002B;</mo><mn>1</mn></mrow></math>, it seems to hold up: <br>Left side: <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mo stretchy=\"false\">&#x00028;</mo><mi>r</mi><mo>&#x0002B;</mo><mn>1</mn><mo stretchy=\"false\">&#x00029;</mo><mo>&#x0002B;</mo><mi>s</mi><mo>&#x0002B;</mo><mo stretchy=\"false\">&#x00028;</mo><mi>r</mi><mo>&#x0002B;</mo><mn>1</mn><mo stretchy=\"false\">&#x00029;</mo><mi>s</mi><mo>&#x0003D;</mo><mi>r</mi><mo>&#x0002B;</mo><mn>1</mn><mo>&#x0002B;</mo><mi>s</mi><mo>&#x0002B;</mo><mi>r</mi><mi>s</mi><mo>&#x0002B;</mo><mi>s</mi><mo>&#x0003D;</mo><mi>r</mi><mo>&#x0002B;</mo><mn>2</mn><mi>s</mi><mo>&#x0002B;</mo><mi>r</mi><mi>s</mi><mo>&#x0002B;</mo><mn>1</mn></mrow></math>.<br>Right side: <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mo stretchy=\"false\">&#x00028;</mo><mi>r</mi><mo>&#x0002B;</mo><mi>s</mi><mo>&#x0002B;</mo><mi>r</mi><mi>s</mi><mo stretchy=\"false\">&#x00029;</mo><mo>&#x0002B;</mo><mi>s</mi><mo>&#x0002B;</mo><mn>1</mn><mo>&#x0003D;</mo><mi>r</mi><mo>&#x0002B;</mo><mn>2</mn><mi>s</mi><mo>&#x0002B;</mo><mi>r</mi><mi>s</mi><mo>&#x0002B;</mo><mn>1</mn></mrow></math>.<br>They match! Since the base case <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>r</mi><mi>&#x00023;</mi><mn>0</mn><mo>&#x0003D;</mo><mi>r</mi><mo>&#x0002B;</mo><mn>0</mn><mo>&#x0002B;</mo><mn>0</mn><mo>&#x0003D;</mo><mi>r</mi></mrow></math> also works and the operation is clearly symmetric (<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>r</mi><mo>&#x0002B;</mo><mi>s</mi><mo>&#x0002B;</mo><mi>r</mi><mi>s</mi><mo>&#x0003D;</mo><mi>s</mi><mo>&#x0002B;</mo><mi>r</mi><mo>&#x0002B;</mo><mi>s</mi><mi>r</mi></mrow></math>), the formula must be correct.</p><p>So, to find <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>11</mn><mi>&#x00023;</mi><mn>5</mn></mrow></math>, I just need to calculate <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>11</mn><mo>&#x0002B;</mo><mn>5</mn><mo>&#x0002B;</mo><mo stretchy=\"false\">&#x00028;</mo><mn>11</mn><mo>&#x000D7;</mo><mn>5</mn><mo stretchy=\"false\">&#x00029;</mo></mrow></math>.<br><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>16</mn><mo>&#x0002B;</mo><mn>55</mn><mo>&#x0003D;</mo><mn>71</mn></mrow></math>. </p><p>I'm pretty confident in this now. Is there any reason to worry about the domain being \"all real numbers\" for this induction-like logic, or does the recursion define it uniquely enough for the reals?"
+              "content": "That makes sense. If I test my formula <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>r</mi><mi>&#x00023;</mi><mi>s</mi><mo>&#x0003D;</mo><mi>r</mi><mo>&#x0002B;</mo><mi>s</mi><mo>&#x0002B;</mo><mi>r</mi><mi>s</mi></mrow></math> against the recursive rule <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mo stretchy=\"false\">&#x00028;</mo><mi>r</mi><mo>&#x0002B;</mo><mn>1</mn><mo stretchy=\"false\">&#x00029;</mo><mi>&#x00023;</mi><mi>s</mi><mo>&#x0003D;</mo><mo stretchy=\"false\">&#x00028;</mo><mi>r</mi><mi>&#x00023;</mi><mi>s</mi><mo stretchy=\"false\">&#x00029;</mo><mo>&#x0002B;</mo><mi>s</mi><mo>&#x0002B;</mo><mn>1</mn></mrow></math>, it seems to hold up: <br>Left side: <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mo stretchy=\"false\">&#x00028;</mo><mi>r</mi><mo>&#x0002B;</mo><mn>1</mn><mo stretchy=\"false\">&#x00029;</mo><mo>&#x0002B;</mo><mi>s</mi><mo>&#x0002B;</mo><mo stretchy=\"false\">&#x00028;</mo><mi>r</mi><mo>&#x0002B;</mo><mn>1</mn><mo stretchy=\"false\">&#x00029;</mo><mi>s</mi><mo>&#x0003D;</mo><mi>r</mi><mo>&#x0002B;</mo><mn>1</mn><mo>&#x0002B;</mo><mi>s</mi><mo>&#x0002B;</mo><mi>r</mi><mi>s</mi><mo>&#x0002B;</mo><mi>s</mi><mo>&#x0003D;</mo><mi>r</mi><mo>&#x0002B;</mo><mn>2</mn><mi>s</mi><mo>&#x0002B;</mo><mi>r</mi><mi>s</mi><mo>&#x0002B;</mo><mn>1</mn></mrow></math>.<br>Right side: <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mo stretchy=\"false\">&#x00028;</mo><mi>r</mi><mo>&#x0002B;</mo><mi>s</mi><mo>&#x0002B;</mo><mi>r</mi><mi>s</mi><mo stretchy=\"false\">&#x00029;</mo><mo>&#x0002B;</mo><mi>s</mi><mo>&#x0002B;</mo><mn>1</mn><mo>&#x0003D;</mo><mi>r</mi><mo>&#x0002B;</mo><mn>2</mn><mi>s</mi><mo>&#x0002B;</mo><mi>r</mi><mi>s</mi><mo>&#x0002B;</mo><mn>1</mn></mrow></math>.<br>They match! Since the base case <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>r</mi><mi>&#x00023;</mi><mn>0</mn><mo>&#x0003D;</mo><mi>r</mi><mo>&#x0002B;</mo><mn>0</mn><mo>&#x0002B;</mo><mn>0</mn><mo>&#x0003D;</mo><mi>r</mi></mrow></math> also works and the operation is clearly symmetric (<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>r</mi><mo>&#x0002B;</mo><mi>s</mi><mo>&#x0002B;</mo><mi>r</mi><mi>s</mi><mo>&#x0003D;</mo><mi>s</mi><mo>&#x0002B;</mo><mi>r</mi><mo>&#x0002B;</mo><mi>s</mi><mi>r</mi></mrow></math>), the formula must be correct.</p><p>So, to find <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>11</mn><mi>&#x00023;</mi><mn>5</mn></mrow></math>, I just need to calculate <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>11</mn><mo>&#x0002B;</mo><mn>5</mn><mo>&#x0002B;</mo><mo stretchy=\"false\">&#x00028;</mo><mn>11</mn><mi>&#x000D7;</mi><mn>5</mn><mo stretchy=\"false\">&#x00029;</mo></mrow></math>.<br><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>16</mn><mo>&#x0002B;</mo><mn>55</mn><mo>&#x0003D;</mo><mn>71</mn></mrow></math>. </p><p>I'm pretty confident in this now. Is there any reason to worry about the domain being \"all real numbers\" for this induction-like logic, or does the recursion define it uniquely enough for the reals?"
             },
             {
               "role": "assistant",
@@ -1797,7 +1797,7 @@ const SAMPLE_QUESTIONS = [
             },
             {
               "role": "assistant",
-              "content": "Great work! Your reasoning is almost perfect, but let's clarify the counting: since you start at <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>0</mn><mi>&#x00023;</mi><mn>5</mn><mo>&#x0003D;</mo><mn>5</mn></mrow></math>, you need to add <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>6</mn></mrow></math> a total of <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>11</mn></mrow></math> times to reach <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>11</mn><mi>&#x00023;</mi><mn>5</mn></mrow></math>. That is, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>11</mn><mi>&#x00023;</mi><mn>5</mn><mo>&#x0003D;</mo><mn>0</mn><mi>&#x00023;</mi><mn>5</mn><mo>&#x0002B;</mo><mn>11</mn><mo>&#x000D7;</mo><mn>6</mn><mo>&#x0003D;</mo><mn>5</mn><mo>&#x0002B;</mo><mn>66</mn><mo>&#x0003D;</mo><mn>71</mn></mrow></math>, just as you found.</p><p>This process is an example of using recursion to build up a value step by step. More generally, this kind of recursion often leads to a closed formula. In this case, notice that each time you increase <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>r</mi></mrow></math> by <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>1</mn></mrow></math>, you add <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>s</mi><mo>&#x0002B;</mo><mn>1</mn></mrow></math>, so after <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>r</mi></mrow></math> steps, you’ve added <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>r</mi><mo stretchy=\"false\">&#x00028;</mo><mi>s</mi><mo>&#x0002B;</mo><mn>1</mn><mo stretchy=\"false\">&#x00029;</mo></mrow></math> to the starting value <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>0</mn><mi>&#x00023;</mi><mi>s</mi><mo>&#x0003D;</mo><mi>s</mi></mrow></math>. That gives the general formula:<br><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mrow><mi>r</mi><mi>&#x00023;</mi><mi>s</mi><mo>&#x0003D;</mo><mi>s</mi><mo>&#x0002B;</mo><mi>r</mi><mo stretchy=\"false\">&#x00028;</mo><mi>s</mi><mo>&#x0002B;</mo><mn>1</mn><mo stretchy=\"false\">&#x00029;</mo><mo>&#x0003D;</mo><mi>r</mi><mi>s</mi><mo>&#x0002B;</mo><mi>r</mi><mo>&#x0002B;</mo><mi>s</mi><mo>&#x0002E;</mo></mrow></math><br>Would you like to see how this formula connects to the symmetry property <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>r</mi><mi>&#x00023;</mi><mi>s</mi><mo>&#x0003D;</mo><mi>s</mi><mi>&#x00023;</mi><mi>r</mi></mrow></math>, or explore how to derive it directly?"
+              "content": "Great work! Your reasoning is almost perfect, but let's clarify the counting: since you start at <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>0</mn><mi>&#x00023;</mi><mn>5</mn><mo>&#x0003D;</mo><mn>5</mn></mrow></math>, you need to add <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>6</mn></mrow></math> a total of <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>11</mn></mrow></math> times to reach <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>11</mn><mi>&#x00023;</mi><mn>5</mn></mrow></math>. That is, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>11</mn><mi>&#x00023;</mi><mn>5</mn><mo>&#x0003D;</mo><mn>0</mn><mi>&#x00023;</mi><mn>5</mn><mo>&#x0002B;</mo><mn>11</mn><mi>&#x000D7;</mi><mn>6</mn><mo>&#x0003D;</mo><mn>5</mn><mo>&#x0002B;</mo><mn>66</mn><mo>&#x0003D;</mo><mn>71</mn></mrow></math>, just as you found.</p><p>This process is an example of using recursion to build up a value step by step. More generally, this kind of recursion often leads to a closed formula. In this case, notice that each time you increase <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>r</mi></mrow></math> by <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>1</mn></mrow></math>, you add <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>s</mi><mo>&#x0002B;</mo><mn>1</mn></mrow></math>, so after <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>r</mi></mrow></math> steps, you’ve added <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>r</mi><mo stretchy=\"false\">&#x00028;</mo><mi>s</mi><mo>&#x0002B;</mo><mn>1</mn><mo stretchy=\"false\">&#x00029;</mo></mrow></math> to the starting value <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>0</mn><mi>&#x00023;</mi><mi>s</mi><mo>&#x0003D;</mo><mi>s</mi></mrow></math>. That gives the general formula:<br><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mrow><mi>r</mi><mi>&#x00023;</mi><mi>s</mi><mo>&#x0003D;</mo><mi>s</mi><mo>&#x0002B;</mo><mi>r</mi><mo stretchy=\"false\">&#x00028;</mo><mi>s</mi><mo>&#x0002B;</mo><mn>1</mn><mo stretchy=\"false\">&#x00029;</mo><mo>&#x0003D;</mo><mi>r</mi><mi>s</mi><mo>&#x0002B;</mo><mi>r</mi><mo>&#x0002B;</mo><mi>s</mi><mo>&#x0002E;</mo></mrow></math><br>Would you like to see how this formula connects to the symmetry property <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>r</mi><mi>&#x00023;</mi><mi>s</mi><mo>&#x0003D;</mo><mi>s</mi><mi>&#x00023;</mi><mi>r</mi></mrow></math>, or explore how to derive it directly?"
             },
             {
               "role": "user",
@@ -1969,7 +1969,7 @@ const SAMPLE_QUESTIONS = [
           "knowledge_progression": [
             {
               "turn": 0,
-              "label": "Initial",
+              "label": "Init",
               "states": {
                 "IU1: Distance formula": "knows_well",
                 "IU2: Square properties": "struggling",
@@ -1984,7 +1984,7 @@ const SAMPLE_QUESTIONS = [
             },
             {
               "turn": 1,
-              "label": "After Turn 1",
+              "label": "Turn 1",
               "states": {
                 "IU1: Distance formula": "knows_well",
                 "IU2: Square properties": "knows_well",
@@ -2055,7 +2055,7 @@ const SAMPLE_QUESTIONS = [
             },
             {
               "turn": 2,
-              "label": "After Turn 2",
+              "label": "Turn 2",
               "states": {
                 "IU1: Distance formula": "knows_well",
                 "IU2: Square properties": "knows_well",
@@ -2126,7 +2126,7 @@ const SAMPLE_QUESTIONS = [
             },
             {
               "turn": 3,
-              "label": "After Turn 3",
+              "label": "Turn 3",
               "states": {
                 "IU1: Distance formula": "knows_well",
                 "IU2: Square properties": "knows_well",
@@ -2197,7 +2197,7 @@ const SAMPLE_QUESTIONS = [
             },
             {
               "turn": 4,
-              "label": "After Turn 4",
+              "label": "Turn 4",
               "states": {
                 "IU1: Distance formula": "knows_well",
                 "IU2: Square properties": "knows_well",
@@ -2268,7 +2268,7 @@ const SAMPLE_QUESTIONS = [
             },
             {
               "turn": 5,
-              "label": "After Turn 5",
+              "label": "Turn 5",
               "states": {
                 "IU1: Distance formula": "knows_well",
                 "IU2: Square properties": "knows_well",
@@ -2339,7 +2339,7 @@ const SAMPLE_QUESTIONS = [
             },
             {
               "turn": 6,
-              "label": "After Turn 6",
+              "label": "Turn 6",
               "states": {
                 "IU1: Distance formula": "knows_well",
                 "IU2: Square properties": "knows_well",
@@ -2410,7 +2410,7 @@ const SAMPLE_QUESTIONS = [
             },
             {
               "turn": 7,
-              "label": "After Turn 7",
+              "label": "Turn 7",
               "states": {
                 "IU1: Distance formula": "knows_well",
                 "IU2: Square properties": "knows_well",
@@ -2497,7 +2497,7 @@ const SAMPLE_QUESTIONS = [
             },
             {
               "role": "assistant",
-              "content": "Excellent work breaking down the steps! You’re absolutely right about the first part: <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>2</mn><mo>&#x02212;</mo><mo stretchy=\"false\">&#x00028;</mo><mo>&#x02212;</mo><mn>1</mn><mo stretchy=\"false\">&#x00029;</mo><mo>&#x0003D;</mo><mn>3</mn></mrow></math>, and <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><msup><mn>3</mn><mn>2</mn></msup><mo>&#x0003D;</mo><mn>9</mn></mrow></math>.</p><p>For the second part, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mo>&#x02212;</mo><mn>3</mn><mo>&#x02212;</mo><mn>4</mn></mrow></math> is indeed <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mo>&#x02212;</mo><mn>7</mn></mrow></math>. When you square a negative number, the result is always positive, because multiplying two negatives gives a positive:<br><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mrow><mo stretchy=\"false\">&#x00028;</mo><mo>&#x02212;</mo><mn>7</mn><msup><mo stretchy=\"false\">&#x00029;</mo><mn>2</mn></msup><mo>&#x0003D;</mo><mo stretchy=\"false\">&#x00028;</mo><mo>&#x02212;</mo><mn>7</mn><mo stretchy=\"false\">&#x00029;</mo><mo>&#x000D7;</mo><mo stretchy=\"false\">&#x00028;</mo><mo>&#x02212;</mo><mn>7</mn><mo stretchy=\"false\">&#x00029;</mo><mo>&#x0003D;</mo><mn>49</mn></mrow></math><br>This is a common point of confusion! In the distance formula, both squared terms will always be non-negative, so you never have to worry about getting a negative distance.</p><p>So, your two squared differences are <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>9</mn></mrow></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>49</mn></mrow></math>. The next step is to add them and take the square root. Would you like to finish the calculation, or talk more about why squaring negatives always gives a positive?"
+              "content": "Excellent work breaking down the steps! You’re absolutely right about the first part: <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>2</mn><mo>&#x02212;</mo><mo stretchy=\"false\">&#x00028;</mo><mo>&#x02212;</mo><mn>1</mn><mo stretchy=\"false\">&#x00029;</mo><mo>&#x0003D;</mo><mn>3</mn></mrow></math>, and <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><msup><mn>3</mn><mn>2</mn></msup><mo>&#x0003D;</mo><mn>9</mn></mrow></math>.</p><p>For the second part, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mo>&#x02212;</mo><mn>3</mn><mo>&#x02212;</mo><mn>4</mn></mrow></math> is indeed <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mo>&#x02212;</mo><mn>7</mn></mrow></math>. When you square a negative number, the result is always positive, because multiplying two negatives gives a positive:<br><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mrow><mo stretchy=\"false\">&#x00028;</mo><mo>&#x02212;</mo><mn>7</mn><msup><mo stretchy=\"false\">&#x00029;</mo><mn>2</mn></msup><mo>&#x0003D;</mo><mo stretchy=\"false\">&#x00028;</mo><mo>&#x02212;</mo><mn>7</mn><mo stretchy=\"false\">&#x00029;</mo><mi>&#x000D7;</mi><mo stretchy=\"false\">&#x00028;</mo><mo>&#x02212;</mo><mn>7</mn><mo stretchy=\"false\">&#x00029;</mo><mo>&#x0003D;</mo><mn>49</mn></mrow></math><br>This is a common point of confusion! In the distance formula, both squared terms will always be non-negative, so you never have to worry about getting a negative distance.</p><p>So, your two squared differences are <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>9</mn></mrow></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>49</mn></mrow></math>. The next step is to add them and take the square root. Would you like to finish the calculation, or talk more about why squaring negatives always gives a positive?"
             },
             {
               "role": "user",
@@ -2676,7 +2676,7 @@ const SAMPLE_QUESTIONS = [
           "knowledge_progression": [
             {
               "turn": 0,
-              "label": "Initial",
+              "label": "Init",
               "states": {
                 "IU2: Square properties": "knows_well",
                 "IU3: Area of a square": "knows_well",
@@ -2691,7 +2691,7 @@ const SAMPLE_QUESTIONS = [
             },
             {
               "turn": 1,
-              "label": "After Turn 1",
+              "label": "Turn 1",
               "states": {
                 "IU2: Square properties": "knows_well",
                 "IU3: Area of a square": "knows_well",
@@ -2762,7 +2762,7 @@ const SAMPLE_QUESTIONS = [
             },
             {
               "turn": 2,
-              "label": "After Turn 2",
+              "label": "Turn 2",
               "states": {
                 "IU2: Square properties": "knows_well",
                 "IU3: Area of a square": "knows_well",
@@ -2833,7 +2833,7 @@ const SAMPLE_QUESTIONS = [
             },
             {
               "turn": 3,
-              "label": "After Turn 3",
+              "label": "Turn 3",
               "states": {
                 "IU2: Square properties": "knows_well",
                 "IU3: Area of a square": "knows_well",
@@ -2904,7 +2904,7 @@ const SAMPLE_QUESTIONS = [
             },
             {
               "turn": 4,
-              "label": "After Turn 4",
+              "label": "Turn 4",
               "states": {
                 "IU2: Square properties": "knows_well",
                 "IU3: Area of a square": "knows_well",
@@ -2975,7 +2975,7 @@ const SAMPLE_QUESTIONS = [
             },
             {
               "turn": 5,
-              "label": "After Turn 5",
+              "label": "Turn 5",
               "states": {
                 "IU2: Square properties": "knows_well",
                 "IU3: Area of a square": "knows_well",
@@ -3046,7 +3046,7 @@ const SAMPLE_QUESTIONS = [
             },
             {
               "turn": 6,
-              "label": "After Turn 6",
+              "label": "Turn 6",
               "states": {
                 "IU2: Square properties": "knows_well",
                 "IU3: Area of a square": "knows_well",
@@ -3117,7 +3117,7 @@ const SAMPLE_QUESTIONS = [
             },
             {
               "turn": 7,
-              "label": "After Turn 7",
+              "label": "Turn 7",
               "states": {
                 "IU2: Square properties": "knows_well",
                 "IU3: Area of a square": "knows_well",
@@ -3290,7 +3290,7 @@ const SAMPLE_QUESTIONS = [
             },
             {
               "role": "assistant",
-              "content": "You’re very welcome! I’m glad the explanation helped clarify both the distance formula and the concept of squaring a square root. Just to note: the factorial symbol (<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>n</mi><mo>&#x00021;</mo></mrow></math>) is unrelated to this problem, but it’s great you’re curious—factorials are used in counting and probability, and mean multiplying all positive integers up to <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>n</mi></mrow></math> (for example, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>4</mn><mo>&#x00021;</mo><mo>&#x0003D;</mo><mn>4</mn><mo>&#x000D7;</mo><mn>3</mn><mo>&#x000D7;</mo><mn>2</mn><mo>&#x000D7;</mo><mn>1</mn><mo>&#x0003D;</mo><mn>24</mn></mrow></math>).</p><p>If you’d like, we can explore how factorials are used in combinatorics, or look at more geometry problems involving distance and area. Is there a particular topic you’d like to dive into next?"
+              "content": "You’re very welcome! I’m glad the explanation helped clarify both the distance formula and the concept of squaring a square root. Just to note: the factorial symbol (<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>n</mi><mo>&#x00021;</mo></mrow></math>) is unrelated to this problem, but it’s great you’re curious—factorials are used in counting and probability, and mean multiplying all positive integers up to <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>n</mi></mrow></math> (for example, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>4</mn><mo>&#x00021;</mo><mo>&#x0003D;</mo><mn>4</mn><mi>&#x000D7;</mi><mn>3</mn><mi>&#x000D7;</mi><mn>2</mn><mi>&#x000D7;</mi><mn>1</mn><mo>&#x0003D;</mo><mn>24</mn></mrow></math>).</p><p>If you’d like, we can explore how factorials are used in combinatorics, or look at more geometry problems involving distance and area. Is there a particular topic you’d like to dive into next?"
             },
             {
               "role": "user",
@@ -3363,7 +3363,7 @@ const SAMPLE_QUESTIONS = [
           "knowledge_progression": [
             {
               "turn": 0,
-              "label": "Initial",
+              "label": "Init",
               "states": {
                 "IU5: Calculate squared differences": "knows_well",
                 "IU4: Substitute coordinates into distance formula": "knows_well",
@@ -3378,7 +3378,7 @@ const SAMPLE_QUESTIONS = [
             },
             {
               "turn": 1,
-              "label": "After Turn 1",
+              "label": "Turn 1",
               "states": {
                 "IU5: Calculate squared differences": "knows_well",
                 "IU4: Substitute coordinates into distance formula": "knows_well",
@@ -3449,7 +3449,7 @@ const SAMPLE_QUESTIONS = [
             },
             {
               "turn": 2,
-              "label": "After Turn 2",
+              "label": "Turn 2",
               "states": {
                 "IU5: Calculate squared differences": "knows_well",
                 "IU4: Substitute coordinates into distance formula": "knows_well",
@@ -3520,7 +3520,7 @@ const SAMPLE_QUESTIONS = [
             },
             {
               "turn": 3,
-              "label": "After Turn 3",
+              "label": "Turn 3",
               "states": {
                 "IU5: Calculate squared differences": "knows_well",
                 "IU4: Substitute coordinates into distance formula": "knows_well",
@@ -3591,7 +3591,7 @@ const SAMPLE_QUESTIONS = [
             },
             {
               "turn": 4,
-              "label": "After Turn 4",
+              "label": "Turn 4",
               "states": {
                 "IU5: Calculate squared differences": "knows_well",
                 "IU4: Substitute coordinates into distance formula": "knows_well",
@@ -3716,7 +3716,7 @@ const SAMPLE_QUESTIONS = [
             },
             {
               "role": "assistant",
-              "content": "Great question! In mathematics, the exclamation point symbol “!” is called a <strong>factorial</strong>. For a positive integer <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>n</mi></mrow></math>, the factorial <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>n</mi><mo>&#x00021;</mo></mrow></math> means the product of all positive integers from <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>n</mi></mrow></math> down to <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>1</mn></mrow></math>. For example:<br>- <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>4</mn><mo>&#x00021;</mo><mo>&#x0003D;</mo><mn>4</mn><mo>&#x000D7;</mo><mn>3</mn><mo>&#x000D7;</mo><mn>2</mn><mo>&#x000D7;</mo><mn>1</mn><mo>&#x0003D;</mo><mn>24</mn></mrow></math><br>- <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>6</mn><mo>&#x00021;</mo><mo>&#x0003D;</mo><mn>6</mn><mo>&#x000D7;</mo><mn>5</mn><mo>&#x000D7;</mo><mn>4</mn><mo>&#x000D7;</mo><mn>3</mn><mo>&#x000D7;</mo><mn>2</mn><mo>&#x000D7;</mo><mn>1</mn><mo>&#x0003D;</mo><mn>720</mn></mrow></math></p><p>Factorials are commonly used in combinatorics (like counting arrangements or combinations), probability, and some algebraic formulas.</p><p>However, in the context of your problem, the exclamation point does <strong>not</strong> appear in the formula for distance or area. If you see it in another context, it likely refers to factorial, but for finding the distance between points or the area of a square, you won’t need to use factorials.</p><p>Would you like to see how the distance formula works, or do you have another question about symbols?"
+              "content": "Great question! In mathematics, the exclamation point symbol “!” is called a <strong>factorial</strong>. For a positive integer <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>n</mi></mrow></math>, the factorial <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>n</mi><mo>&#x00021;</mo></mrow></math> means the product of all positive integers from <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>n</mi></mrow></math> down to <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>1</mn></mrow></math>. For example:<br>- <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>4</mn><mo>&#x00021;</mo><mo>&#x0003D;</mo><mn>4</mn><mi>&#x000D7;</mi><mn>3</mn><mi>&#x000D7;</mi><mn>2</mn><mi>&#x000D7;</mi><mn>1</mn><mo>&#x0003D;</mo><mn>24</mn></mrow></math><br>- <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>6</mn><mo>&#x00021;</mo><mo>&#x0003D;</mo><mn>6</mn><mi>&#x000D7;</mi><mn>5</mn><mi>&#x000D7;</mi><mn>4</mn><mi>&#x000D7;</mi><mn>3</mn><mi>&#x000D7;</mi><mn>2</mn><mi>&#x000D7;</mi><mn>1</mn><mo>&#x0003D;</mo><mn>720</mn></mrow></math></p><p>Factorials are commonly used in combinatorics (like counting arrangements or combinations), probability, and some algebraic formulas.</p><p>However, in the context of your problem, the exclamation point does <strong>not</strong> appear in the formula for distance or area. If you see it in another context, it likely refers to factorial, but for finding the distance between points or the area of a square, you won’t need to use factorials.</p><p>Would you like to see how the distance formula works, or do you have another question about symbols?"
             },
             {
               "role": "user",
@@ -3924,7 +3924,7 @@ const SAMPLE_QUESTIONS = [
           "knowledge_progression": [
             {
               "turn": 0,
-              "label": "Initial",
+              "label": "Init",
               "states": {
                 "IU2: Completing the Square": "knows_well",
                 "IU3: Equation Transformation": "partial_understanding",
@@ -3940,7 +3940,7 @@ const SAMPLE_QUESTIONS = [
             },
             {
               "turn": 1,
-              "label": "After Turn 1",
+              "label": "Turn 1",
               "states": {
                 "IU2: Completing the Square": "knows_well",
                 "IU3: Equation Transformation": "partial_understanding",
@@ -4018,7 +4018,7 @@ const SAMPLE_QUESTIONS = [
             },
             {
               "turn": 2,
-              "label": "After Turn 2",
+              "label": "Turn 2",
               "states": {
                 "IU2: Completing the Square": "knows_well",
                 "IU3: Equation Transformation": "partial_understanding",
@@ -4096,7 +4096,7 @@ const SAMPLE_QUESTIONS = [
             },
             {
               "turn": 3,
-              "label": "After Turn 3",
+              "label": "Turn 3",
               "states": {
                 "IU2: Completing the Square": "knows_well",
                 "IU3: Equation Transformation": "partial_understanding",
@@ -4174,7 +4174,7 @@ const SAMPLE_QUESTIONS = [
             },
             {
               "turn": 4,
-              "label": "After Turn 4",
+              "label": "Turn 4",
               "states": {
                 "IU2: Completing the Square": "knows_well",
                 "IU3: Equation Transformation": "partial_understanding",
@@ -4252,7 +4252,7 @@ const SAMPLE_QUESTIONS = [
             },
             {
               "turn": 5,
-              "label": "After Turn 5",
+              "label": "Turn 5",
               "states": {
                 "IU2: Completing the Square": "knows_well",
                 "IU3: Equation Transformation": "partial_understanding",
@@ -4330,7 +4330,7 @@ const SAMPLE_QUESTIONS = [
             },
             {
               "turn": 6,
-              "label": "After Turn 6",
+              "label": "Turn 6",
               "states": {
                 "IU2: Completing the Square": "knows_well",
                 "IU3: Equation Transformation": "partial_understanding",
@@ -4408,7 +4408,7 @@ const SAMPLE_QUESTIONS = [
             },
             {
               "turn": 7,
-              "label": "After Turn 7",
+              "label": "Turn 7",
               "states": {
                 "IU2: Completing the Square": "knows_well",
                 "IU3: Equation Transformation": "partial_understanding",
@@ -4681,7 +4681,7 @@ const SAMPLE_QUESTIONS = [
           "knowledge_progression": [
             {
               "turn": 0,
-              "label": "Initial",
+              "label": "Init",
               "states": {
                 "IU2: Completing the Square": "knows_well",
                 "IU3: Equation Transformation": "knows_well",
@@ -4697,7 +4697,7 @@ const SAMPLE_QUESTIONS = [
             },
             {
               "turn": 1,
-              "label": "After Turn 1",
+              "label": "Turn 1",
               "states": {
                 "IU2: Completing the Square": "knows_well",
                 "IU3: Equation Transformation": "knows_well",
@@ -4775,7 +4775,7 @@ const SAMPLE_QUESTIONS = [
             },
             {
               "turn": 2,
-              "label": "After Turn 2",
+              "label": "Turn 2",
               "states": {
                 "IU2: Completing the Square": "knows_well",
                 "IU3: Equation Transformation": "knows_well",
@@ -4853,7 +4853,7 @@ const SAMPLE_QUESTIONS = [
             },
             {
               "turn": 3,
-              "label": "After Turn 3",
+              "label": "Turn 3",
               "states": {
                 "IU2: Completing the Square": "knows_well",
                 "IU3: Equation Transformation": "knows_well",
@@ -4931,7 +4931,7 @@ const SAMPLE_QUESTIONS = [
             },
             {
               "turn": 4,
-              "label": "After Turn 4",
+              "label": "Turn 4",
               "states": {
                 "IU2: Completing the Square": "knows_well",
                 "IU3: Equation Transformation": "knows_well",
@@ -5009,7 +5009,7 @@ const SAMPLE_QUESTIONS = [
             },
             {
               "turn": 5,
-              "label": "After Turn 5",
+              "label": "Turn 5",
               "states": {
                 "IU2: Completing the Square": "knows_well",
                 "IU3: Equation Transformation": "knows_well",
@@ -5087,7 +5087,7 @@ const SAMPLE_QUESTIONS = [
             },
             {
               "turn": 6,
-              "label": "After Turn 6",
+              "label": "Turn 6",
               "states": {
                 "IU2: Completing the Square": "knows_well",
                 "IU3: Equation Transformation": "knows_well",
@@ -5165,7 +5165,7 @@ const SAMPLE_QUESTIONS = [
             },
             {
               "turn": 7,
-              "label": "After Turn 7",
+              "label": "Turn 7",
               "states": {
                 "IU2: Completing the Square": "knows_well",
                 "IU3: Equation Transformation": "knows_well",
@@ -5378,7 +5378,7 @@ const SAMPLE_QUESTIONS = [
           "knowledge_progression": [
             {
               "turn": 0,
-              "label": "Initial",
+              "label": "Init",
               "states": {
                 "IU5: Completing the Square for x": "knows_well",
                 "IU4: Initial Equation Setup": "knows_well",
@@ -5394,7 +5394,7 @@ const SAMPLE_QUESTIONS = [
             },
             {
               "turn": 1,
-              "label": "After Turn 1",
+              "label": "Turn 1",
               "states": {
                 "IU5: Completing the Square for x": "knows_well",
                 "IU4: Initial Equation Setup": "knows_well",
@@ -5472,7 +5472,7 @@ const SAMPLE_QUESTIONS = [
             },
             {
               "turn": 2,
-              "label": "After Turn 2",
+              "label": "Turn 2",
               "states": {
                 "IU5: Completing the Square for x": "knows_well",
                 "IU4: Initial Equation Setup": "knows_well",
