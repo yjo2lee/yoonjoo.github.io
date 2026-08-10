@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KnowSim: Evaluating Information Calibration in LLM Assistants with User Simulators that Learn</title>
+  <meta name="description" content="KnowSim is a knowledge-state-grounded user simulator for evaluating how well LLM assistants calibrate information to users with different knowledge levels.">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ==================== Navigation ==================== -->
+<nav>
+  <div class="container">
+    <a href="#" class="brand">KnowSim</a>
+    <ul class="nav-links">
+      <li><a href="#problem">Problem</a></li>
+      <li><a href="#method">Method</a></li>
+      <li><a href="#examples">Examples</a></li>
+      <li><a href="#results">Results</a></li>
+      <li><a href="#benchmarking">Benchmarking</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ==================== Hero ==================== -->
+<section class="hero">
+  <div class="container">
+    <h1><span class="smallcaps">KnowSim</span>: Evaluating Information Calibration in LLM Assistants with User Simulators that Learn</h1>
+
+    <div class="authors">
+      <a href="#">Yoonjoo Lee</a><sup>&hearts;</sup>,
+      <a href="#">Hyoungwook Jin</a><sup>&hearts;</sup>,
+      <a href="#">Tae Soo Kim</a><sup>&loz;</sup>,
+      <a href="#">Shaoyang Zhang</a><sup>&hearts;</sup>,
+      <a href="#">Philippe Laban</a><sup>&spades;</sup>,
+      <a href="#">Q. Vera Liao</a><sup>&hearts;</sup>
+    </div>
+    <div class="affiliations">
+      <sup>&hearts;</sup>University of Michigan &nbsp;&nbsp;
+      <sup>&loz;</sup>KAIST &nbsp;&nbsp;
+      <sup>&spades;</sup>Microsoft Research
+    </div>
+
+    <div class="venue">Under Review</div>
+
+    <div class="links">
+      <a href="#" class="btn primary">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+        Paper
+      </a>
+      <a href="https://github.com/yjo2lee/knowsim" class="btn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+        Code
+      </a>
+      <a href="https://huggingface.co/datasets/yjlee36/knowchat-multi-turn-dialogues" class="btn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        KnowChat Dataset
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== TL;DR ==================== -->
+<div class="tldr">
+  <div class="container">
+    <p>
+      <span class="smallcaps">KnowSim</span> is a user simulator that tracks
+      <span class="highlight">what the user knows</span> and how their understanding
+      <span class="highlight">evolves turn by turn</span>.
+      Unlike existing simulators, it maintains a knowledge graph of concepts (Information Units),
+      enabling mechanistic metrics&mdash;Knowledge Gain, Delivery Calibration, Cognitive Overload&mdash;that
+      explain <em>why</em> the same response helps one user but overwhelms another.
+      Validated against 950 human&ndash;AI sessions, <span class="smallcaps">KnowSim</span>'s
+      rankings align with human judgments at 73&ndash;75% sign agreement.
+    </p>
+  </div>
+</div>
+
+<!-- ==================== The Problem ==================== -->
+<section id="problem">
+  <div class="container">
+    <div class="section-header">
+      <h2>The Problem</h2>
+      <p>The same response can be perfect for one user and overwhelming for another.
+         Human evaluation captures this&mdash;but doesn't scale. How do we automatically evaluate
+         whether an assistant calibrates information to each user's knowledge level?</p>
+    </div>
+
+    <!-- Question banner -->
+    <div style="background:var(--accent-light); border-radius:8px; padding:0.7rem 1rem; margin-bottom:1.2rem; font-size:0.9rem;">
+      <strong style="color:var(--accent-dark);">User question to a RAG assistant:</strong>
+      "How does retrieval-augmented generation work, and when should I use it instead of fine-tuning?"
+    </div>
+
+    <div class="side-by-side">
+      <!-- Novice Panel -->
+      <div class="user-panel novice">
+        <div class="panel-header">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="7" r="4"/><path d="M5.5 21a6.5 6.5 0 0 1 13 0"/></svg>
+          Beginner (new to ML)
+        </div>
+        <div class="panel-body">
+          <div class="turn">
+            <div class="turn-label">Turn 1 &mdash; Assistant Response</div>
+            <div class="turn-text">Explains vector embeddings, chunking strategies, approximate nearest-neighbor search, hybrid retrieval with BM25, and reranking pipelines&mdash;all in one message.</div>
+            <div class="metric-row">
+              <span class="metric-badge bad">Absorbs nothing&mdash;too many unfamiliar concepts at once</span>
+            </div>
+          </div>
+          <div class="turn">
+            <div class="turn-label">Turn 2 &mdash; User follow-up</div>
+            <div class="turn-text">"Wait, what are embeddings? And what's BM25?"</div>
+            <div class="metric-row">
+              <span class="metric-badge">Slowly picks up basics, but still confused about the big picture</span>
+            </div>
+          </div>
+          <div class="turn">
+            <div class="turn-label">Outcome</div>
+            <div class="turn-text">After 5 turns, the user understands some vocabulary but still can't answer the original question: <em>when to use RAG vs. fine-tuning</em>. The assistant never matched its explanations to what this user actually needed.</div>
+            <div class="metric-row">
+              <span class="metric-badge bad">Overwhelmed</span>
+              <span class="metric-badge bad">Low knowledge gain</span>
+              <span class="metric-badge bad">Poorly calibrated</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Advanced Panel -->
+      <div class="user-panel advanced">
+        <div class="panel-header">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="7" r="4"/><path d="M5.5 21a6.5 6.5 0 0 1 13 0"/></svg>
+          ML Engineer (experienced)
+        </div>
+        <div class="panel-body">
+          <div class="turn">
+            <div class="turn-label">Turn 1 &mdash; Same Assistant Response</div>
+            <div class="turn-text">Same explanation: embeddings, chunking, ANN search, BM25, reranking. The engineer already knows all of these.</div>
+            <div class="metric-row">
+              <span class="metric-badge good">Already familiar&mdash;absorbs instantly, no overload</span>
+            </div>
+          </div>
+          <div class="turn">
+            <div class="turn-label">Turn 2 &mdash; User follow-up</div>
+            <div class="turn-text">"Got it. What about latency tradeoffs between dense retrieval and hybrid approaches at scale?"</div>
+            <div class="metric-row">
+              <span class="metric-badge good">Asks deeper, more targeted questions</span>
+            </div>
+          </div>
+          <div class="turn">
+            <div class="turn-label">Outcome</div>
+            <div class="turn-text">In 3 turns, the engineer gets exactly the comparison they needed. But half the first response was redundant&mdash;time wasted on concepts they already knew.</div>
+            <div class="metric-row">
+              <span class="metric-badge good">No overload</span>
+              <span class="metric-badge good">High knowledge gain</span>
+              <span class="metric-badge">Partially redundant</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div style="text-align:center; margin-top:1.2rem; font-size:0.9rem; color:var(--text-muted);">
+      <strong>The core question:</strong> How do we automatically evaluate whether an assistant calibrates information
+      to each user's knowledge level across a multi-turn conversation?
+    </div>
+  </div>
+</section>
+
+<!-- ==================== How It Works ==================== -->
+<section id="method">
+  <div class="container">
+    <div class="section-header">
+      <h2>How <span class="smallcaps">KnowSim</span> Works</h2>
+      <p>A three-stage pipeline grounded in learning theory for interactive, multi-turn evaluation.</p>
+    </div>
+
+    <div class="steps" style="grid-template-columns: 1fr;">
+      <!-- Pre-Interaction -->
+      <div class="step-card">
+        <div class="step-phase">Pre-Interaction</div>
+        <span class="step-num">01</span>
+        <h3>IU Graph &amp; Knowledge Initialization</h3>
+        <p>From a question and reference answer, an LLM extracts a directed acyclic graph of <strong>Information Units</strong> (IUs)&mdash;self-contained concepts connected by prerequisite edges. The same graph is initialized with different mastery levels per user type.</p>
+        <!-- IU init diagram -->
+        <div class="iu-init-diagram">
+          <div class="iu-init-col">
+            <div class="iu-init-label novice">Novice</div>
+            <div class="iu-init-nodes">
+              <span class="iu-dot unaware"></span>
+              <span class="iu-dot unaware"></span>
+              <span class="iu-dot unaware"></span>
+              <span class="iu-dot struggling"></span>
+              <span class="iu-dot partial"></span>
+            </div>
+            <div class="iu-init-caption">Mostly unaware</div>
+          </div>
+          <div class="iu-init-col">
+            <div class="iu-init-label intermediate">Intermediate</div>
+            <div class="iu-init-nodes">
+              <span class="iu-dot partial"></span>
+              <span class="iu-dot partial"></span>
+              <span class="iu-dot knows_well"></span>
+              <span class="iu-dot struggling"></span>
+              <span class="iu-dot unaware"></span>
+            </div>
+            <div class="iu-init-caption">Mixed understanding</div>
+          </div>
+          <div class="iu-init-col">
+            <div class="iu-init-label advanced">Advanced</div>
+            <div class="iu-init-nodes">
+              <span class="iu-dot knows_well"></span>
+              <span class="iu-dot knows_well"></span>
+              <span class="iu-dot knows_well"></span>
+              <span class="iu-dot partial"></span>
+              <span class="iu-dot partial"></span>
+            </div>
+            <div class="iu-init-caption">Mostly mastered</div>
+          </div>
+        </div>
+        <div class="iu-init-note">Same graph structure, different initial knowledge states per user level.</div>
+      </div>
+
+      <!-- During Interaction -->
+      <div class="step-card">
+        <div class="step-phase">During Interaction</div>
+        <span class="step-num">02</span>
+        <h3>Knowledge-State Simulation</h3>
+        <p>Each turn follows four steps:</p>
+
+        <!-- A → B → C → D per-turn flow (simplified) -->
+        <div class="perturn-flow">
+          <div class="perturn-step">
+            <div class="perturn-header">
+              <span class="perturn-circle" style="background:#1e3a8a;">A</span>
+              <span class="perturn-title" style="color:#1e3a8a;">User Message</span>
+            </div>
+            <p>Conditioned on current knowledge state.</p>
+            <div class="perturn-constraints">
+              <div class="perturn-constraint"><span class="iu-swatch unaware"></span> <strong>Unaware</strong> &mdash; cannot mention</div>
+              <div class="perturn-constraint"><span class="iu-swatch struggling"></span> <strong>Struggling</strong> &mdash; makes errors</div>
+              <div class="perturn-constraint"><span class="iu-swatch partial"></span> <strong>Partial</strong> &mdash; uses with gaps</div>
+              <div class="perturn-constraint"><span class="iu-swatch knows_well"></span> <strong>Known</strong> &mdash; applies correctly</div>
+            </div>
+          </div>
+
+          <div class="perturn-arrow">&rarr;</div>
+
+          <div class="perturn-step perturn-external">
+            <div class="perturn-header">
+              <span class="perturn-circle" style="background:#94a3b8;">B</span>
+              <span class="perturn-title" style="color:#64748b;">Assistant Responds</span>
+            </div>
+            <p>The model under evaluation (external).</p>
+          </div>
+
+          <div class="perturn-arrow">&rarr;</div>
+
+          <div class="perturn-step">
+            <div class="perturn-header">
+              <span class="perturn-circle" style="background:#7c3aed;">C</span>
+              <span class="perturn-title" style="color:#7c3aed;">Signal Extraction</span>
+            </div>
+            <p>Per-IU <strong>teaching quality</strong> from assistant and <strong>engagement</strong> from user.</p>
+          </div>
+
+          <div class="perturn-arrow">&rarr;</div>
+
+          <div class="perturn-step">
+            <div class="perturn-header">
+              <span class="perturn-circle" style="background:#059669;">D</span>
+              <span class="perturn-title" style="color:#059669;">State Update</span>
+            </div>
+            <div class="perturn-rules">
+              <div class="perturn-rule"><strong>Driver:</strong> well_explained &rarr; advance +1</div>
+              <div class="perturn-rule"><strong>Prereq. ceiling:</strong> capped by prerequisites</div>
+              <div class="perturn-rule"><strong>Cognitive load:</strong> too many IUs &rarr; reduced absorption</div>
+              <div class="perturn-rule"><strong>Monotonicity:</strong> never regresses</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Before / After IU graph example -->
+        <div class="perturn-example">
+          <div class="perturn-graph-col">
+            <div class="perturn-graph-label">s<sub>t&minus;1</sub> (before)</div>
+            <div id="perturn-graph-before"></div>
+          </div>
+          <div class="perturn-graph-arrow">
+            <span>&rarr;</span>
+            <small>update</small>
+          </div>
+          <div class="perturn-graph-col">
+            <div class="perturn-graph-label">s<sub>t</sub> (after)</div>
+            <div id="perturn-graph-after"></div>
+          </div>
+          <div class="perturn-graph-explanation">
+            <p><strong style="color:#92400e;">Embeddings</strong> well explained: struggling &rarr; partial</p>
+            <p><strong style="color:#991b1b;">Sim. search</strong> well explained: prerequisite not mastered &rarr; blocked</p>
+            <p><strong style="color:#94a3b8;">5 IUs in one turn</strong> &rarr; cognitive load</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== Metrics ==================== -->
+<section id="metrics">
+  <div class="container">
+    <div class="section-header">
+      <h2>Evaluation Metrics</h2>
+      <p>Computed directly from the knowledge state trajectory&mdash;mechanistic, interpretable, and human-aligned.</p>
+    </div>
+
+    <div class="metric-cards">
+      <div class="metric-card">
+        <div class="metric-icon" style="color:#2563eb;">&#9650;</div>
+        <h3>Knowledge Gain (KG)</h3>
+        <p>Total IU state advancement from start to end.</p>
+      </div>
+      <div class="metric-card">
+        <div class="metric-icon" style="color:#6366f1;">&#9678;</div>
+        <h3>Delivery Calibration (DC)</h3>
+        <p>Fraction of explained IUs that were novel and within the user's learning frontier.</p>
+      </div>
+      <div class="metric-card">
+        <div class="metric-icon" style="color:#ef4444;">&#9888;</div>
+        <h3>Cognitive Overload (CO)</h3>
+        <p>Per-turn information load relative to user capacity. Lower is better.</p>
+      </div>
+      <div class="metric-card">
+        <div class="metric-icon" style="color:#f59e0b;">&#9733;</div>
+        <h3>Interaction Quality (IQ)</h3>
+        <p>Holistic quality scored by an LLM judge, shared across all simulators.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== Conversation Examples ==================== -->
+<section id="examples">
+  <div class="container">
+    <div class="section-header">
+      <h2>Simulated Conversations</h2>
+      <p>Pick a question, then switch between user knowledge levels to see how <span class="smallcaps">KnowSim</span> adapts the simulated conversation. Compare side-by-side with baseline simulators.</p>
+    </div>
+
+    <!-- Example selector: 3 dropdowns -->
+    <div class="example-controls">
+      <div class="example-select-row">
+        <label for="question-select">Question:</label>
+        <select id="question-select"></select>
+      </div>
+      <div class="example-select-row">
+        <label for="level-select">User level:</label>
+        <select id="level-select">
+          <option value="novice">Novice</option>
+          <option value="intermediate">Intermediate</option>
+          <option value="advanced">Advanced</option>
+        </select>
+      </div>
+      <div class="example-select-row">
+        <label for="baseline-select">Compare with:</label>
+        <select id="baseline-select">
+          <option value="zero-shot">Zero-Shot</option>
+          <option value="zero-shot-cot">ZS-CoT</option>
+          <option value="zero-shot-cot-prof">ZS-CoT-Prof</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Question context -->
+    <div class="example-context" id="example-context"></div>
+
+    <!-- IU Graph -->
+    <div class="iu-graph-wrapper" id="iu-graph-wrapper" style="display:none;">
+      <h3>Information Unit Graph</h3>
+      <p class="iu-graph-subtitle">Concepts extracted from the question and reference answer, connected by prerequisite edges.</p>
+      <div class="iu-graph-container" id="iu-graph"></div>
+    </div>
+
+    <!-- Side-by-side conversations -->
+    <div class="same-assistant-note">Both conversations use the <strong>same assistant</strong> (GPT-4.1, comprehensive strategy). Only the <strong>user simulator</strong> differs.</div>
+    <div class="conv-comparison">
+      <!-- Left: KnowSim -->
+      <div class="conv-column">
+        <div class="conv-column-header knowsim-header">
+          <span class="method-label">KnowSim (Ours)</span>
+          <span class="metric-summary" id="knowsim-metrics"></span>
+        </div>
+        <div class="conv-scroll" id="knowsim-conv"></div>
+      </div>
+
+      <!-- Right: Baseline -->
+      <div class="conv-column">
+        <div class="conv-column-header baseline-header">
+          <span class="method-label" id="baseline-label">Zero-Shot</span>
+          <span class="metric-summary" id="baseline-metrics"></span>
+        </div>
+        <div class="conv-scroll" id="baseline-conv"></div>
+      </div>
+    </div>
+
+    <!-- Knowledge state progression (heatmap only) -->
+    <div class="ks-progression-wrapper">
+      <h3>Knowledge State Progression</h3>
+      <p class="ks-subtitle">How the simulated user's understanding evolves turn by turn. Each row is an Information Unit; colors show mastery level.</p>
+      <div class="ks-grid-wrapper" id="ks-grid"></div>
+    </div>
+
+    <!-- Qualitative insight -->
+    <div class="conv-insight">
+      <h4>Qualitative Differences</h4>
+      <p>Across all examples, KnowSim is the only simulator that produces <strong>actual mathematical errors</strong> at the novice level&mdash;baseline simulators say "I'm confused" but compute flawlessly. KnowSim novices also engage for <strong>2&ndash;3&times; more turns</strong>, while advanced users terminate early after asking extension questions&mdash;a pattern consistent with real learners.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== Results ==================== -->
+<section id="results">
+  <div class="container">
+    <div class="section-header">
+      <h2>Alignment with Human Judgment</h2>
+      <p><span class="smallcaps">KnowSim</span>'s rankings align with human preferences at 73&ndash;75% sign agreement across two task domains, outperforming three baseline simulators.</p>
+    </div>
+
+    <!-- Task tabs -->
+    <div class="tab-bar">
+      <button class="tab-btn active" data-group="results" data-target="math">MathQA</button>
+      <button class="tab-btn" data-group="results" data-target="expertqa">ExpertQA</button>
+    </div>
+
+    <!-- MathQA panel -->
+    <div class="result-panel active" data-group="results" data-panel="math">
+      <div class="chart-grid">
+        <div class="chart-container">
+          <h3>Per-Level Sign Agreement</h3>
+          <div id="chart-sign-math"></div>
+        </div>
+        <div class="chart-container">
+          <h3>Key Findings</h3>
+          <ul style="font-size:0.95rem; color:var(--text-muted); padding-left:1.2rem; line-height:1.9;">
+            <li><strong>Novice level:</strong> 100% agreement (13/13, p&lt;.001) &mdash; strongest alignment</li>
+            <li><strong>Pooled:</strong> 73% agreement (27/37, p=.003)</li>
+            <li>KG, IQ, CO each reach 75% sign agreement</li>
+            <li>DC trails at 67%, reflecting difficulty of calibration ratings</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- ExpertQA panel -->
+    <div class="result-panel" data-group="results" data-panel="expertqa">
+      <div class="chart-grid">
+        <div class="chart-container">
+          <h3>Per-Level Sign Agreement</h3>
+          <div id="chart-sign-expertqa"></div>
+        </div>
+        <div class="chart-container">
+          <h3>Key Findings</h3>
+          <ul style="font-size:0.95rem; color:var(--text-muted); padding-left:1.2rem; line-height:1.9;">
+            <li><strong>Novice level:</strong> 83% agreement (10/12, p=.019)</li>
+            <li><strong>Intermediate:</strong> 80% agreement (8/10, p=.055)</li>
+            <li><strong>Pooled:</strong> 74% agreement (26/35, p=.003)</li>
+            <li>IQ (80%, p=.055) and CO (79%, p=.029) lead; DC at 64%</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Baseline comparison -->
+    <div style="margin-top:2.5rem;">
+      <h3 style="text-align:center; margin-bottom:1rem;">Comparison with Baseline Simulators (IQ Sign Agreement)</h3>
+      <div style="max-width:500px; margin:0 auto;">
+        <div style="display:flex; align-items:center; gap:1rem; margin-bottom:0.6rem;">
+          <span style="width:120px; font-size:0.85rem; font-weight:600; text-align:right;">KnowSim</span>
+          <div style="flex:1; background:#e2e8f0; border-radius:4px; height:28px; position:relative;">
+            <div style="width:77%; height:100%; background:var(--accent); border-radius:4px; display:flex; align-items:center; justify-content:flex-end; padding-right:8px; color:#fff; font-size:0.78rem; font-weight:700;">77%**</div>
+          </div>
+        </div>
+        <div style="display:flex; align-items:center; gap:1rem; margin-bottom:0.6rem;">
+          <span style="width:120px; font-size:0.85rem; font-weight:500; text-align:right; color:var(--text-muted);">ZS-CoT-Prof</span>
+          <div style="flex:1; background:#e2e8f0; border-radius:4px; height:28px; position:relative;">
+            <div style="width:73%; height:100%; background:#94a3b8; border-radius:4px; display:flex; align-items:center; justify-content:flex-end; padding-right:8px; color:#fff; font-size:0.78rem; font-weight:700;">73%*</div>
+          </div>
+        </div>
+        <div style="display:flex; align-items:center; gap:1rem; margin-bottom:0.6rem;">
+          <span style="width:120px; font-size:0.85rem; font-weight:500; text-align:right; color:var(--text-muted);">ZS</span>
+          <div style="flex:1; background:#e2e8f0; border-radius:4px; height:28px; position:relative;">
+            <div style="width:68%; height:100%; background:#94a3b8; border-radius:4px; display:flex; align-items:center; justify-content:flex-end; padding-right:8px; color:#fff; font-size:0.78rem; font-weight:700;">68%&dagger;</div>
+          </div>
+        </div>
+        <div style="display:flex; align-items:center; gap:1rem; margin-bottom:0.6rem;">
+          <span style="width:120px; font-size:0.85rem; font-weight:500; text-align:right; color:var(--text-muted);">ZS-CoT</span>
+          <div style="flex:1; background:#e2e8f0; border-radius:4px; height:28px; position:relative;">
+            <div style="width:64%; height:100%; background:#94a3b8; border-radius:4px; display:flex; align-items:center; justify-content:flex-end; padding-right:8px; color:#fff; font-size:0.78rem; font-weight:700;">64%</div>
+          </div>
+        </div>
+        <div style="text-align:center; font-size:0.75rem; color:var(--text-muted); margin-top:0.5rem;">
+          ** p&lt;.01 &nbsp; * p&lt;.05 &nbsp; &dagger; p&lt;.10 &nbsp; (one-sided binomial vs. 50% chance)
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== Benchmarking ==================== -->
+<section id="benchmarking">
+  <div class="container">
+    <div class="section-header">
+      <h2>Frontier Model Benchmarking</h2>
+      <p>Applied to 9 LLMs, <span class="smallcaps">KnowSim</span> reveals that the best model shifts by user knowledge level&mdash;aptitude&ndash;treatment interactions invisible to aggregate leaderboards.</p>
+    </div>
+
+    <div class="table-wrapper" id="benchmark-table">
+      <!-- Table rendered by JS -->
+    </div>
+
+    <div style="margin-top:1.5rem;">
+      <h3 style="text-align:center; margin-bottom:1rem;">Key Takeaways</h3>
+      <div class="steps" style="grid-template-columns: repeat(3, 1fr);">
+        <div class="step-card">
+          <h3 style="color:#f59e0b;">For Novice Users</h3>
+          <p><strong>DeepSeek V4</strong> maximizes knowledge gain (KG=15.5) but at high cognitive overload (CO=0.945). <strong>Gemini 3.1 Pro</strong> ties for best R&#773; (3.25) with the highest IQ (8.39) and lowest CO.</p>
+        </div>
+        <div class="step-card">
+          <h3 style="color:#2563eb;">For Intermediate Users</h3>
+          <p><strong>Claude Opus 4.7</strong> leads overall (R&#773;=2.50) with highest IQ (8.39) and best delivery calibration (DC=0.137).</p>
+        </div>
+        <div class="step-card">
+          <h3 style="color:#6366f1;">For Advanced Users</h3>
+          <p><strong>Gemini 3.1 Pro</strong> achieves the best overall rank (R&#773;=1.75) with the highest KG and DC, best serving knowledgeable users.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== Citation ==================== -->
+<section id="citation">
+  <div class="container">
+    <div class="section-header">
+      <h2>Citation &middot; If you use this work</h2>
+    </div>
+    <div class="citation-block">
+      <button class="copy-btn">Copy</button>
+<code>@article{lee2026knowsim,
+  title={KnowSim: Evaluating Information Calibration in LLM Assistants with User Simulators that Learn},
+  author={Lee, Yoonjoo and Jin, Hyoungwook and Kim, Tae Soo and Zhang, Shaoyang and Laban, Philippe and Liao, Q. Vera},
+  year={2026}
+}</code>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== Footer ==================== -->
+<footer>
+  <div class="container">
+    <div class="footer-links">
+      <a href="#">Paper</a>
+      <a href="https://github.com/yjo2lee/knowsim">Code</a>
+      <a href="https://huggingface.co/datasets/yjlee36/knowchat-multi-turn-dialogues">KnowChat Dataset</a>
+    </div>
+    <p>&copy; 2026 <span class="smallcaps">KnowSim</span> Authors</p>
+  </div>
+</footer>
+
+<script src="samples.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
