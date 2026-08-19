@@ -16,9 +16,9 @@ My research interest lies in the intersection of human-AI interaction and natura
 _**Yoonjoo Lee**, Hyoungwook Jin, Tae Soo Kim, Shaoyang Zhang, Philippe Laban, Q. Vera Liao_\
 [preprint](http://arxiv.org/abs/2608.17150){:target="_blank"}
 
-[Revibing Code from Papers: Reimplementing HCI Artifacts](https://drive.google.com/file/d/1OmtGB2SXxKXA5a5oe2HqfDMk7iVOoFZK/view?usp=drive_link){:target="_blank"}\
+[Revibing Code from Papers: Reimplementing HCI Artifacts](http://arxiv.org/abs/2608.00450){:target="_blank"}\
 _Eytan Adar, **Yoonjoo Lee**, Ning-Er Lei, Q.Vera Liao, Weirui Peng_\
-UIST 2026
+UIST 2026 | [arxiv](http://arxiv.org/abs/2608.00450){:target="_blank"}
 
 [DISCOVERLLM: From Executing Intents to Discovering Them](https://arxiv.org/pdf/2602.03429){:target="_blank"}\
 _Tae Soo Kim, **Yoonjoo Lee**, Jaesang Yu, John Joon Young Chung, and Juho Kim_\
