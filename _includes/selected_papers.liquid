@@ -63,6 +63,13 @@
     color: var(--global-text-color-light, var(--global-text-color));
     font-style: italic;
   }
+
+  /* The theme marks the author's own name with <em> (italic). In the selected
+     list, render it bold instead so it stands out at a glance. */
+  .selected-papers .author em {
+    font-style: normal;
+    font-weight: 700;
+  }
 </style>
 
 <script>
