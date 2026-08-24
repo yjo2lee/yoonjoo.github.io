@@ -41,30 +41,6 @@
         }
       }
     </style> <h2>news</h2> <style>
-  /* The theme colors links via `table.table a`, which outranks a bare
-     `.news a` -- match it in specificity so the news override wins. */
-  .news a,
-  .news table.table a {
-    color: #6f42c1;
-  }
-
-  .news a:hover,
-  .news table.table a:hover {
-    color: #6f42c1;
-  }
-
-  html[data-theme='dark'] .news a,
-  html[data-theme='dark'] .news table.table a {
-    color: #a78bfa;
-  }
-
-  html[data-theme='dark'] .news a:hover,
-  html[data-theme='dark'] .news table.table a:hover {
-    color: #a78bfa;
-  }
-
-  /* The theme forces `strong` to the text color, which turns bold link text
-     black -- inside a news link, bold text keeps the link's purple. */
   .news a strong {
     color: inherit;
   }
