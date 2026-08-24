@@ -1,0 +1,167 @@
+{% comment %}
+  Research-area filter pills for a bibliography list.
+
+  Usage: wrap the list in a container that carries
+    class="publications" data-paper-areas='{{ site.data.paper_areas | jsonify }}'
+  then include this file inside that container before {% bibliography %}, and put
+    <p class="area-empty" hidden>...</p>
+  after it.
+
+  The script drives every [data-paper-areas] container on the page, so the same
+  include serves both the selected list on the about page and the full list on
+  /publications/. Area tags live in _data/paper_areas.yml, keyed by bib key --
+  editing that file is enough; nothing here needs updating.
+{% endcomment %}
+
+{%- assign area_order = "HCI,AI/NLP" | split: "," -%}
+
+<div class="area-filter" role="group" aria-label="Filter publications by research area">
+  <button type="button" class="area-pill is-active" data-area="all" aria-pressed="true">All</button>
+  {%- for area in area_order -%}
+    <button type="button" class="area-pill" data-area="{{ area }}" aria-pressed="false" hidden>{{ area }}</button>
+  {%- endfor -%}
+</div>
+
+<style>
+  .area-filter {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .area-pill {
+    padding: 0.3rem 1rem;
+    font-size: 0.85rem;
+    line-height: 1.4;
+    border: 1px solid var(--global-divider-color);
+    border-radius: 999px;
+    background: transparent;
+    color: var(--global-text-color);
+    cursor: pointer;
+    transition:
+      background-color 0.15s ease,
+      border-color 0.15s ease,
+      color 0.15s ease;
+  }
+
+  .area-pill:hover {
+    border-color: var(--global-theme-color);
+    color: var(--global-theme-color);
+  }
+
+  .area-pill.is-active {
+    background-color: var(--global-theme-color);
+    border-color: var(--global-theme-color);
+    color: var(--global-hover-text-color);
+  }
+
+  .area-pill[hidden] {
+    display: none;
+  }
+
+  .area-empty {
+    color: var(--global-text-color-light, var(--global-text-color));
+    font-style: italic;
+  }
+
+  /* The theme marks the author's own name with <em> (italic). Render it bold
+     instead so it stands out at a glance. */
+  .publications .author em {
+    font-style: normal;
+    font-weight: 700;
+  }
+
+  /* Drop the theme's dashed underline under linked co-author names -- it reads
+     as clutter across a long list. Hover still underlines, so the links stay
+     discoverable. */
+  .publications ol.bibliography li .author a {
+    border-bottom: none;
+  }
+
+  .publications ol.bibliography li .author a:hover {
+    border-bottom: none;
+    text-decoration: underline;
+  }
+</style>
+
+<script>
+  (function () {
+    function initRoot(root) {
+      var areas;
+      try {
+        areas = JSON.parse(root.dataset.paperAreas || "{}") || {};
+      } catch (e) {
+        areas = {};
+      }
+
+      var items = Array.prototype.slice.call(root.querySelectorAll("ol.bibliography > li"));
+      if (!items.length) return;
+
+      // Tag each entry with the areas of its bib key.
+      var present = {};
+      items.forEach(function (li) {
+        var keyed = li.querySelector("[id]");
+        var tags = (keyed && areas[keyed.id]) || [];
+        li.dataset.areas = tags.join(" ");
+        tags.forEach(function (t) {
+          present[t] = true;
+        });
+      });
+
+      var pills = Array.prototype.slice.call(root.querySelectorAll(".area-pill"));
+      var empty = root.querySelector(".area-empty");
+
+      // Only offer a pill for areas that some paper in this list actually uses.
+      pills.forEach(function (pill) {
+        var area = pill.dataset.area;
+        if (area !== "all" && !present[area]) return;
+        pill.hidden = false;
+      });
+
+      function apply(area) {
+        var shown = 0;
+        items.forEach(function (li) {
+          var match = area === "all" || (" " + li.dataset.areas + " ").indexOf(" " + area + " ") !== -1;
+          li.hidden = !match;
+          if (match) shown++;
+        });
+
+        // Year headings would otherwise linger over an empty stretch of list.
+        Array.prototype.slice.call(root.querySelectorAll("h2.bibliography")).forEach(function (h) {
+          var list = h.nextElementSibling;
+          if (!list || list.tagName !== "OL") return;
+          var any = Array.prototype.slice.call(list.children).some(function (li) {
+            return !li.hidden;
+          });
+          h.hidden = !any;
+        });
+
+        if (empty) empty.hidden = shown !== 0;
+        pills.forEach(function (pill) {
+          var on = pill.dataset.area === area;
+          pill.classList.toggle("is-active", on);
+          pill.setAttribute("aria-pressed", on ? "true" : "false");
+        });
+      }
+
+      pills.forEach(function (pill) {
+        pill.addEventListener("click", function () {
+          apply(pill.dataset.area);
+        });
+      });
+
+      apply("all");
+    }
+
+    function init() {
+      Array.prototype.slice.call(document.querySelectorAll("[data-paper-areas]")).forEach(initRoot);
+    }
+
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", init);
+    } else {
+      init();
+    }
+  })();
+</script>

@@ -1,22 +1,38 @@
-# Research-area tags for the filter pills above "selected publications" on the
-# about page. Keys are bib keys from _bibliography/papers.bib; values are any of
-# the areas listed in `area_order` in _includes/selected_papers.liquid.
-# A paper may carry more than one.
+# Research-area tags for the filter pills above the publication lists (both the
+# selected list on the about page and the full list on /publications/).
+# Keys are bib keys from _bibliography/papers.bib; values are any of the areas
+# listed in `area_order` in _includes/area_filter.liquid. A paper may carry more
+# than one.
 #
-# Papers not listed here are still shown, but only under "All".
-# The pill bar hides any area that no selected paper uses, so adding or removing
-# an area here is all that's needed -- nothing else to update.
+# Papers not listed here are still shown, but only under "All" -- that is the
+# case for the pre-PhD signal-processing and time-series work at the bottom,
+# which belongs to neither area.
+# The pill bar hides any area that no paper in a given list uses, so adding or
+# removing an area here is all that's needed -- nothing else to update.
 
 lee2026knowsim: [AI/NLP]
+jeong2026assistantbias: [AI/NLP]
 adar2026reviving: [HCI]
 kim2026discoverllm: [AI/NLP]
+kim2026evalet: [HCI, AI/NLP]
+lim2025panorama: [AI/NLP]
 kim2025cupid: [AI/NLP]
+shin2025blindspots: [AI/NLP]
+kim2025biggen: [AI/NLP]
 newman2024arxivdigestables: [AI/NLP]
 lee2024onevsmany: [HCI]
 lee2024paperweaver: [HCI]
 kim2024evallm: [HCI, AI/NLP]
+choi2024vivid: [HCI]
+lee2024healworkshop: [HCI, AI/NLP]
 lee2023qasa: [AI/NLP]
 kim2023cells: [HCI]
 lee2023dapie: [HCI, AI/NLP]
+kim2023lmcanvas: [HCI]
 lee2022promptiverse: [HCI]
+lee2022in2writing: [HCI, AI/NLP]
+shin2022xdesign: [HCI]
 lee2021studywithme: [HCI]
+
+# Not tagged (shown only under "All"):
+#   lee2024csam, lee2019ictc, lee2019commlett, lee2018kicsrb, kim2018kicsse

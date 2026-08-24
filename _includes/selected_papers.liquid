@@ -1,142 +1,16 @@
 {% comment %}
   Local override of al_folio_core's _includes/selected_papers.liquid.
 
-  Adds a row of research-area filter pills above the selected publications.
-  Area tags live in _data/paper_areas.yml, keyed by bib key; the pill bar and the
-  per-entry tagging are both derived from that file, so editing it is enough.
+  Adds the research-area filter pills above the selected publications. The pill
+  bar, its styling and its behaviour all live in _includes/area_filter.liquid,
+  shared with the full list on /publications/. Area tags live in
+  _data/paper_areas.yml, keyed by bib key, so editing that file is enough.
 {% endcomment %}
 
-{%- assign area_order = "HCI,AI/NLP" | split: "," -%}
-
 <div class="publications selected-papers" data-paper-areas='{{ site.data.paper_areas | jsonify }}'>
-  <div class="area-filter" role="group" aria-label="Filter selected publications by research area">
-    <button type="button" class="area-pill is-active" data-area="all" aria-pressed="true">All</button>
-    {%- for area in area_order -%}
-      <button type="button" class="area-pill" data-area="{{ area }}" aria-pressed="false" hidden>{{ area }}</button>
-    {%- endfor -%}
-  </div>
+  {% include area_filter.liquid %}
 
   {% bibliography --group_by none --query @*[selected=true]* %}
 
   <p class="area-empty" hidden>No selected publications in this area.</p>
 </div>
-
-<style>
-  .selected-papers .area-filter {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    margin-bottom: 1.25rem;
-  }
-
-  .selected-papers .area-pill {
-    padding: 0.3rem 1rem;
-    font-size: 0.85rem;
-    line-height: 1.4;
-    border: 1px solid var(--global-divider-color);
-    border-radius: 999px;
-    background: transparent;
-    color: var(--global-text-color);
-    cursor: pointer;
-    transition:
-      background-color 0.15s ease,
-      border-color 0.15s ease,
-      color 0.15s ease;
-  }
-
-  .selected-papers .area-pill:hover {
-    border-color: var(--global-theme-color);
-    color: var(--global-theme-color);
-  }
-
-  .selected-papers .area-pill.is-active {
-    background-color: var(--global-theme-color);
-    border-color: var(--global-theme-color);
-    color: var(--global-hover-text-color);
-  }
-
-  .selected-papers .area-pill[hidden] {
-    display: none;
-  }
-
-  .selected-papers .area-empty {
-    color: var(--global-text-color-light, var(--global-text-color));
-    font-style: italic;
-  }
-
-  /* The theme marks the author's own name with <em> (italic). In the selected
-     list, render it bold instead so it stands out at a glance. */
-  .selected-papers .author em {
-    font-style: normal;
-    font-weight: 700;
-  }
-</style>
-
-<script>
-  (function () {
-    function init() {
-      var root = document.querySelector(".selected-papers");
-      if (!root) return;
-
-      var areas;
-      try {
-        areas = JSON.parse(root.dataset.paperAreas || "{}") || {};
-      } catch (e) {
-        areas = {};
-      }
-
-      var items = Array.prototype.slice.call(root.querySelectorAll("ol.bibliography > li"));
-      if (!items.length) return;
-
-      // Tag each entry with the areas of its bib key.
-      var present = {};
-      items.forEach(function (li) {
-        var keyed = li.querySelector("[id]");
-        var tags = (keyed && areas[keyed.id]) || [];
-        li.dataset.areas = tags.join(" ");
-        tags.forEach(function (t) {
-          present[t] = true;
-        });
-      });
-
-      var pills = Array.prototype.slice.call(root.querySelectorAll(".area-pill"));
-      var empty = root.querySelector(".area-empty");
-
-      // Only offer a pill for areas that some selected paper actually uses.
-      pills.forEach(function (pill) {
-        var area = pill.dataset.area;
-        if (area !== "all" && !present[area]) return;
-        pill.hidden = false;
-      });
-
-      function apply(area) {
-        var shown = 0;
-        items.forEach(function (li) {
-          var match = area === "all" || (" " + li.dataset.areas + " ").indexOf(" " + area + " ") !== -1;
-          li.hidden = !match;
-          if (match) shown++;
-        });
-        if (empty) empty.hidden = shown !== 0;
-        pills.forEach(function (pill) {
-          var on = pill.dataset.area === area;
-          pill.classList.toggle("is-active", on);
-          pill.setAttribute("aria-pressed", on ? "true" : "false");
-        });
-      }
-
-      pills.forEach(function (pill) {
-        pill.addEventListener("click", function () {
-          apply(pill.dataset.area);
-        });
-      });
-
-      apply("all");
-    }
-
-    if (document.readyState === "loading") {
-      document.addEventListener("DOMContentLoaded", init);
-    } else {
-      init();
-    }
-  })();
-</script>

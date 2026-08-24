@@ -9,12 +9,12 @@ nav_order: 2
 
 <!-- _pages/publications.md -->
 
-<!-- Bibsearch Feature -->
+<div class="publications" data-paper-areas='{{ site.data.paper_areas | jsonify }}'>
 
-{% include bib_search.liquid %}
-
-<div class="publications">
+{% include area_filter.liquid %}
 
 {% bibliography %}
+
+<p class="area-empty" hidden>No publications in this area.</p>
 
 </div>

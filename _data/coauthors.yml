@@ -76,10 +76,6 @@
   - firstname: ["Benjamin"]
     url: https://bnewm0609.github.io/
 
-"fok":
-  - firstname: ["Raymond"]
-    url: https://rayfok.github.io/
-
 "kang":
   - firstname: ["Hyeonsu B.", "Hyeonsu B"]
     url: http://www.hyeonsukang.com/
@@ -90,11 +86,15 @@
 
 "son":
   - firstname: ["Kihoon"]
-    url: https://kihoonson.com/
+    url: https://kihoon-son.github.io/
 
 "jin":
   - firstname: ["Hyoungwook"]
     url: https://jhw123.github.io/
+
+"jeong":
+  - firstname: ["Daeheon"]
+    url: https://jdaeheon.github.io/
 
 "choi":
   - firstname: ["Seulgi"]

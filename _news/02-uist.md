@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-**Reviving Code from Papers** is heading to **UIST 2026**!
+**Revibing Code from Papers** accepted to **UIST 2026**!
