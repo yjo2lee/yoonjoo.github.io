@@ -13,7 +13,7 @@
   editing that file is enough; nothing here needs updating.
 {% endcomment %}
 
-{%- assign area_order = "HCI,AI/NLP" | split: "," -%}
+{%- assign area_order = 'HCI,AI/NLP' | split: ',' -%}
 
 <div class="area-filter" role="group" aria-label="Filter publications by research area">
   <button type="button" class="area-pill is-active" data-area="all" aria-pressed="true">All</button>
@@ -90,47 +90,47 @@
     function initRoot(root) {
       var areas;
       try {
-        areas = JSON.parse(root.dataset.paperAreas || "{}") || {};
+        areas = JSON.parse(root.dataset.paperAreas || '{}') || {};
       } catch (e) {
         areas = {};
       }
 
-      var items = Array.prototype.slice.call(root.querySelectorAll("ol.bibliography > li"));
+      var items = Array.prototype.slice.call(root.querySelectorAll('ol.bibliography > li'));
       if (!items.length) return;
 
       // Tag each entry with the areas of its bib key.
       var present = {};
       items.forEach(function (li) {
-        var keyed = li.querySelector("[id]");
+        var keyed = li.querySelector('[id]');
         var tags = (keyed && areas[keyed.id]) || [];
-        li.dataset.areas = tags.join(" ");
+        li.dataset.areas = tags.join(' ');
         tags.forEach(function (t) {
           present[t] = true;
         });
       });
 
-      var pills = Array.prototype.slice.call(root.querySelectorAll(".area-pill"));
-      var empty = root.querySelector(".area-empty");
+      var pills = Array.prototype.slice.call(root.querySelectorAll('.area-pill'));
+      var empty = root.querySelector('.area-empty');
 
       // Only offer a pill for areas that some paper in this list actually uses.
       pills.forEach(function (pill) {
         var area = pill.dataset.area;
-        if (area !== "all" && !present[area]) return;
+        if (area !== 'all' && !present[area]) return;
         pill.hidden = false;
       });
 
       function apply(area) {
         var shown = 0;
         items.forEach(function (li) {
-          var match = area === "all" || (" " + li.dataset.areas + " ").indexOf(" " + area + " ") !== -1;
+          var match = area === 'all' || (' ' + li.dataset.areas + ' ').indexOf(' ' + area + ' ') !== -1;
           li.hidden = !match;
           if (match) shown++;
         });
 
         // Year headings would otherwise linger over an empty stretch of list.
-        Array.prototype.slice.call(root.querySelectorAll("h2.bibliography")).forEach(function (h) {
+        Array.prototype.slice.call(root.querySelectorAll('h2.bibliography')).forEach(function (h) {
           var list = h.nextElementSibling;
-          if (!list || list.tagName !== "OL") return;
+          if (!list || list.tagName !== 'OL') return;
           var any = Array.prototype.slice.call(list.children).some(function (li) {
             return !li.hidden;
           });
@@ -140,26 +140,26 @@
         if (empty) empty.hidden = shown !== 0;
         pills.forEach(function (pill) {
           var on = pill.dataset.area === area;
-          pill.classList.toggle("is-active", on);
-          pill.setAttribute("aria-pressed", on ? "true" : "false");
+          pill.classList.toggle('is-active', on);
+          pill.setAttribute('aria-pressed', on ? 'true' : 'false');
         });
       }
 
       pills.forEach(function (pill) {
-        pill.addEventListener("click", function () {
+        pill.addEventListener('click', function () {
           apply(pill.dataset.area);
         });
       });
 
-      apply("all");
+      apply('all');
     }
 
     function init() {
-      Array.prototype.slice.call(document.querySelectorAll("[data-paper-areas]")).forEach(initRoot);
+      Array.prototype.slice.call(document.querySelectorAll('[data-paper-areas]')).forEach(initRoot);
     }
 
-    if (document.readyState === "loading") {
-      document.addEventListener("DOMContentLoaded", init);
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', init);
     } else {
       init();
     }

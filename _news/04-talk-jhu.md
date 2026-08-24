@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Gave a talk at **Johns Hopkins** on *Cognitive Alignment: Building AI Systems That Empower Human Thinking*.
+Gave a talk at **Johns Hopkins** on _Cognitive Alignment: Building AI Systems That Empower Human Thinking_.
