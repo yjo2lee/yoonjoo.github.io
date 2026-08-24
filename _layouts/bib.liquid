@@ -31,6 +31,15 @@
           <abbr class="badge rounded w-100">{{ entry.abbr }}</abbr>
         {% endif %}
       {% endif %}
+      {%- if entry.award %}
+        <div
+          class="abbr-award"
+          title="{{ entry.award | strip_html | strip }}"
+          style="font-size: 0.72rem; font-weight: 400; line-height: 1.3; color: var(--global-theme-color); text-align: center; margin-bottom: 0.5rem;"
+        >
+          🏆 {% if entry.award_name %}{{ entry.award_name }}{% else %}Awarded{% endif %}
+        </div>
+      {%- endif %}
       {% if entry.preview %}
         {% if entry.preview contains '://' %}
           <img class="preview z-depth-1 rounded" src="{{ entry.preview }}">
@@ -54,18 +63,7 @@
   <!-- Entry bib key -->
   <div id="{{ entry.key }}" class="{% if site.enable_publication_thumbnails %}col-sm-8{% else %}col-sm-10{% endif %}">
     <!-- Title -->
-    <div class="title">
-      {{ entry.title }}
-      {%- if entry.award %}
-        <span
-          class="title-award"
-          title="{{ entry.award | strip_html | strip }}"
-          style="white-space: nowrap; font-size: 0.82em; font-weight: 600; color: var(--global-theme-color);"
-        >
-          🏆 {% if entry.award_name %}{{ entry.award_name }}{% else %}Awarded{% endif %}
-        </span>
-      {%- endif %}
-    </div>
+    <div class="title">{{ entry.title }}</div>
     <!-- Author -->
     <div class="author">
       {% assign author_array_size = entry.author_array | size %}
