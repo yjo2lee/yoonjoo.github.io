@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Gave a guest lecture in [Q. Vera Liao](https://qveraliao.com/)'s **EECS 493** class at the University of Michigan.
+Gave a guest lecture in Q. Vera Liao's **EECS 493** class at the University of Michigan.
