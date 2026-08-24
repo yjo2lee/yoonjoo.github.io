@@ -3,11 +3,15 @@ layout: default
 ---
 {% comment %}
   Local override of al_folio_core's _layouts/about.liquid.
-  Only change: the "news" heading is plain text instead of a link to /news/.
-  That archive page is an awkward bare list, and every news item is already
-  shown inline right below the heading, so the link led nowhere useful.
-  The "selected publications" heading keeps its link -- /publications/ is a
-  real destination.
+  Changes from the theme:
+  - The "news" heading is plain text instead of a link to /news/.
+    That archive page is an awkward bare list, and every news item is already
+    shown inline right below the heading, so the link led nowhere useful.
+    The "selected publications" heading keeps its link -- /publications/ is a
+    real destination.
+  - The intro is a two-column flex row (bio | photo) on >=576px instead of the
+    theme's float, so bio text longer than the photo keeps one column width
+    instead of spilling full-width underneath it. On phones it stacks as before.
 
   Note: the front matter above must stay on line 1 -- Jekyll only recognises it
   at the very top of the file, and anything before it (even a Liquid comment)
@@ -27,30 +31,52 @@ layout: default
   </header>
 
   <article>
-    {% if page.profile %}
-      <div class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}">
-        {% if page.profile.image %}
-          {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
-          {% if page.profile.image_circular %}
-            {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
-          {% else %}
-            {% assign profile_image_class = 'img-fluid z-depth-1
+    <div class="about-intro{% if page.profile.align == 'left' %} align-left{% endif %}">
+      {% if page.profile %}
+        <div class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}">
+          {% if page.profile.image %}
+            {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
+            {% if page.profile.image_circular %}
+              {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
+            {% else %}
+              {% assign profile_image_class = 'img-fluid z-depth-1
       rounded' %}
-          {% endif %}
-          {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px)
+            {% endif %}
+            {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px)
       30vw, 95vw"{% endcapture %}
-          {%
-            include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image
-            cache_bust=true
-          %}
-        {% endif %}
-        {% if page.profile.more_info %}
-          <div class="more-info">{{ page.profile.more_info }}</div>
-        {% endif %}
-      </div>
-    {% endif %}
+            {%
+              include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image
+              cache_bust=true
+            %}
+          {% endif %}
+          {% if page.profile.more_info %}
+            <div class="more-info">{{ page.profile.more_info }}</div>
+          {% endif %}
+        </div>
+      {% endif %}
 
-    <div class="clearfix">{{ content }}</div>
+      <div class="clearfix about-bio">{{ content }}</div>
+    </div>
+
+    <style>
+      @media (min-width: 576px) {
+        .about-intro {
+          display: flex;
+          flex-direction: row-reverse;
+          align-items: flex-start;
+        }
+        .about-intro.align-left {
+          flex-direction: row;
+        }
+        .about-intro .profile {
+          flex: 0 0 30%;
+        }
+        .about-intro .about-bio {
+          flex: 1 1 auto;
+          min-width: 0;
+        }
+      }
+    </style>
 
     <!-- News -->
     {% if page.announcements and page.announcements.enabled %}
