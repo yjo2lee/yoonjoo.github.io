@@ -1,8 +1,36 @@
 {% comment %}
   Local override of al_folio_core's _includes/news.liquid.
-  Only change: the date column is removed — news items are ordered by the `date`
-  in their front matter, but the date itself is not shown.
+  Changes from the theme:
+  - The date column is removed — news items are ordered by the `date` in their
+    front matter, but the date itself is not shown.
+  - Links inside news items are purple instead of the theme magenta, with a
+    lighter shade in dark mode for contrast.
 {% endcomment %}
+
+<style>
+  /* The theme colors links via `table.table a`, which outranks a bare
+     `.news a` -- match it in specificity so the news override wins. */
+  .news a,
+  .news table.table a {
+    color: #6f42c1;
+  }
+
+  .news a:hover,
+  .news table.table a:hover {
+    color: #6f42c1;
+  }
+
+  html[data-theme='dark'] .news a,
+  html[data-theme='dark'] .news table.table a {
+    color: #a78bfa;
+  }
+
+  html[data-theme='dark'] .news a:hover,
+  html[data-theme='dark'] .news table.table a:hover {
+    color: #a78bfa;
+  }
+</style>
+
 <div class="news">
   {% if site.news != blank %}
     {% assign news_size = site.news | size %}
