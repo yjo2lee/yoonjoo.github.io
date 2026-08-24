@@ -236,6 +236,12 @@ nav .nav-links a:hover { color: var(--accent-dark); text-decoration: none; }
   gap: 1.5rem;
   margin-top: 1.5rem;
 }
+/* Column counts live here, not inline: an inline grid-template-columns beats
+   the media query below and kept these three across on a phone, where each
+   card had about 60px of text width. */
+.steps-1 { grid-template-columns: 1fr; }
+.steps-3 { grid-template-columns: repeat(3, 1fr); }
+
 .step-card {
   background: var(--bg);
   border: 1px solid var(--border);
@@ -493,7 +499,14 @@ nav .nav-links a:hover { color: var(--accent-dark); text-decoration: none; }
   border: 1px solid var(--border);
   border-radius: 8px;
 }
-.perturn-graph-col { text-align: center; }
+/* drawGraph() emits a fixed pixel width with max-width:none, so on a narrow
+   screen the graph runs past this column. Scroll it inside the box, the way
+   .iu-graph-container already does, instead of letting it push the page. */
+.perturn-graph-col {
+  text-align: center;
+  max-width: 100%;
+  overflow-x: auto;
+}
 .perturn-graph-label {
   font-size: 0.75rem;
   font-weight: 700;
@@ -1023,7 +1036,7 @@ footer .footer-links { display: flex; justify-content: center; gap: 1.5rem; marg
 @media (max-width: 768px) {
   .hero h1 { font-size: 1.6rem; }
   .side-by-side { grid-template-columns: 1fr; }
-  .steps { grid-template-columns: 1fr; }
+  .steps, .steps-3 { grid-template-columns: 1fr; }
   .metric-cards { grid-template-columns: 1fr 1fr; }
   .chart-grid { grid-template-columns: 1fr; }
   .conv-comparison { grid-template-columns: 1fr; }
