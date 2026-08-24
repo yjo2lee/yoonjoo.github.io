@@ -17,6 +17,11 @@
 
 html { scroll-behavior: smooth; }
 
+/* A single element wider than the viewport used to make the whole page scroll
+   sideways, which reads as the layout breaking rather than as one overflow. */
+html, body { overflow-x: hidden; }
+img, svg, canvas, video { max-width: 100%; }
+
 body {
   font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, sans-serif;
   color: var(--text);
@@ -254,7 +259,7 @@ nav .nav-links a:hover { color: var(--accent-dark); text-decoration: none; }
 /* ========== Metrics Cards ========== */
 .metric-cards {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
   gap: 1rem;
   margin-top: 1.5rem;
 }
@@ -271,7 +276,11 @@ nav .nav-links a:hover { color: var(--accent-dark); text-decoration: none; }
   margin-bottom: 0.5rem;
 }
 .metric-card h3 { font-size: 0.95rem; margin-bottom: 0.3rem; }
-.metric-card p { font-size: 0.8rem; color: var(--text-muted); }
+.metric-card p {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  overflow-wrap: anywhere;
+}
 .metric-card .formula {
   font-family: 'IBM Plex Mono', monospace;
   font-size: 0.75rem;
@@ -638,6 +647,7 @@ nav .nav-links a:hover { color: var(--accent-dark); text-decoration: none; }
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  flex-wrap: wrap;
 }
 .example-select-row label {
   font-size: 0.85rem;
@@ -1025,6 +1035,8 @@ footer .footer-links { display: flex; justify-content: center; gap: 1.5rem; marg
 @media (max-width: 480px) {
   .metric-cards { grid-template-columns: 1fr; }
   nav .nav-links { display: none; }
+  /* 200px plus a nowrap label does not fit beside itself on a phone. */
+  .example-select-row select { min-width: 0; width: 100%; }
 }
 
 /* ========== Conversation insight ========== */

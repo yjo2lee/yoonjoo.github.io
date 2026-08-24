@@ -555,3 +555,13 @@ function renderPerturnGraphs() {
     { A:'unaware', B:'partial', C:'unaware', D:'struggling', E:'unaware', F:'unaware' },
     'arr-after', { B: true });
 }
+
+
+// The brand link scrolls back to the top. Without this it follows href="#",
+// which leaves a bare fragment on the URL.
+document.querySelectorAll('a.brand').forEach(function (el) {
+  el.addEventListener('click', function (e) {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+});
