@@ -3,35 +3,11 @@
   Changes from the theme:
   - The date column is removed — news items are ordered by the `date` in their
     front matter, but the date itself is not shown.
-  - Links inside news items are purple instead of the theme magenta, with a
-    lighter shade in dark mode for contrast.
+  - Bold text inside a news link keeps the link color -- the theme forces
+    `strong` to the plain text color, which turned such links black.
 {% endcomment %}
 
 <style>
-  /* The theme colors links via `table.table a`, which outranks a bare
-     `.news a` -- match it in specificity so the news override wins. */
-  .news a,
-  .news table.table a {
-    color: #6f42c1;
-  }
-
-  .news a:hover,
-  .news table.table a:hover {
-    color: #6f42c1;
-  }
-
-  html[data-theme='dark'] .news a,
-  html[data-theme='dark'] .news table.table a {
-    color: #a78bfa;
-  }
-
-  html[data-theme='dark'] .news a:hover,
-  html[data-theme='dark'] .news table.table a:hover {
-    color: #a78bfa;
-  }
-
-  /* The theme forces `strong` to the text color, which turns bold link text
-     black -- inside a news link, bold text keeps the link's purple. */
   .news a strong {
     color: inherit;
   }
