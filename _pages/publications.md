@@ -9,7 +9,7 @@ nav_order: 2
 
 <!-- _pages/publications.md -->
 
-<div class="publications" data-paper-areas='{{ site.data.paper_areas | jsonify }}'>
+<div class="publications" data-paper-areas="{{ site.data.paper_areas | jsonify | escape }}">
 
 {% include area_filter.liquid %}
 
