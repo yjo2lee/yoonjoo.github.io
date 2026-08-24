@@ -29,6 +29,12 @@
   html[data-theme='dark'] .news table.table a:hover {
     color: #a78bfa;
   }
+
+  /* The theme forces `strong` to the text color, which turns bold link text
+     black -- inside a news link, bold text keeps the link's purple. */
+  .news a strong {
+    color: inherit;
+  }
 </style>
 
 <div class="news">
