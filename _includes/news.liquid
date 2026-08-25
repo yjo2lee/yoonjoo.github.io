@@ -1,8 +1,12 @@
 {% comment %}
   Local override of al_folio_core's _includes/news.liquid.
   Changes from the theme:
-  - The date column is removed — news items are ordered by the `date` in their
-    front matter, but the date itself is not shown.
+  - The date column shows month and year only ("Aug 2026") — the day parts in
+    the news front matter are placeholders used as sort keys, so showing them
+    would imply a precision the data doesn't have.
+  - The list is capped at 20rem tall and scrolls vertically past that; the
+    theme sets a max-height but never an overflow, so it clipped instead of
+    scrolling.
   - Bold text inside a news link keeps the link color -- the theme forces
     `strong` to the plain text color, which turned such links black.
 {% endcomment %}
@@ -11,17 +15,24 @@
   .news a strong {
     color: inherit;
   }
+
+  .news .table-responsive {
+    max-height: 20rem;
+    overflow-y: auto;
+  }
+
+  .news th.news-date {
+    width: 6.5rem;
+    font-weight: 400;
+    color: var(--global-text-color-light, var(--global-text-color));
+    white-space: nowrap;
+  }
 </style>
 
 <div class="news">
   {% if site.news != blank %}
     {% assign news_size = site.news | size %}
-    <div
-      class="table-responsive"
-      {% if include.limit and page.announcements.scrollable and news_size > 3 %}
-        style="max-height: 60vw"
-      {% endif %}
-    >
+    <div class="table-responsive">
       <table class="table table-sm table-borderless">
         {% assign news = site.news | reverse %}
         {% if include.limit and page.announcements.limit %}
@@ -31,6 +42,7 @@
         {% endif %}
         {% for item in news limit: news_limit %}
           <tr>
+            <th scope="row" class="news-date">{{ item.date | date: '%b %Y' }}</th>
             <td>
               {% if item.inline %}
                 {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
